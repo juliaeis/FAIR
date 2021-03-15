@@ -1,0 +1,36 @@
+Thank you very much for your comments and suggestions. We have taken them all into account in our revised text. Our point-by-point responses to your comments are given below.
+
+1 (On the carbon cycle IRF). These are good suggestions. The “pool” nomenclature used follows Millar et al., 2017. In the revision, we have used your suggestion of calling this carbon cycle model a "4-timescale IRF" where possible. When referring to the model carbon stores (the R_i), we use the term "reservoirs", and are explicit that these are not physical carbon stores when they are introduced.
+
+2 (alpha time dependency). Thank you very much for pointing out this error. We have changed the text to correct this.
+
+3 (carbon dioxide vs carbon cycle). This is a good suggestion. We have changed the text accordingly.
+
+4 (CH4 pre industrial units). You are correct, and the text has been changed accordingly.
+
+5 (EBM matrix representation). This is a good suggestion, and we have re-written the equation set accordingly.
+
+Best wishes,
+Nicholas Leach & co-authors
+
+References:
+
+Nicholls, Z., Lewis, J., Makin, M., Nattala, U., Zhang, G. Z., Mutch, S. J., … Meinshausen, M. (2021). Regionally aggregated, stitched and de‐drifted CMIP‐climate data, processed with netCDF‐SCM v2.0.0. Geoscience Data Journal, 00, gdj3.113. https://doi.org/10.1002/gdj3.113
+
+Thornhill, G. D., Collins, W. J., Kramer, R. J., Olivié, D., Skeie, R. B., O’Connor, F. M., … Zhang, J. (2021). Effective radiative forcing from emissions of reactive gases and aerosols – a multi-model comparison. Atmospheric Chemistry and Physics, 21(2), 853–874. https://doi.org/10.5194/acp-21-853-2021
+
+Skeie, R. B., Myhre, G., Hodnebrog, Ø., Cameron-Smith, P. J., Deushi, M., Hegglin, M. I., … Wu, T. (2020). Historical total ozone radiative forcing derived from CMIP6 simulations. Npj Climate and Atmospheric Science, 3(1), 1–10. https://doi.org/10.1038/s41612-020-00131-0
+
+Haustein, K., Allen, M. R., Forster, P. M., Otto, F. E. L., Mitchell, D. M., Matthews, H. D., & Frame, D. J. (2017). A real-time Global Warming Index. Scientific Reports, 7(1), 15417. https://doi.org/10.1038/s41598-017-14828-5
+
+Geoffroy, O., Saint-Martin, D., Olivié, D. J. L. L., Voldoire, A., Bellon, G., Tytéca, S., … Tytéca, S. (2013). Transient Climate Response in a Two-Layer Energy-Balance Model. Part I: Analytical Solution and Parameter Calibration Using CMIP5 AOGCM Experiments. Journal of Climate, 26(6), 1841–1857. https://doi.org/10.1175/JCLI-D-12-00195.1
+
+Cummins, D. P., Stephenson, D. B., & Stott, P. A. (2020). A new energy-balance approach to linear filtering for estimating effective radiative forcing from temperature time series. Advances in Statistical Climatology, Meteorology and Oceanography, 6(2), 91–102. https://doi.org/10.5194/ascmo-6-91-2020
+
+Tsutsui, J. (2020). Diagnosing Transient Response to CO 2 Forcing in Coupled Atmosphere‐Ocean Model Experiments Using a Climate Model Emulator. Geophysical Research Letters, 47(7). https://doi.org/10.1029/2019GL085844
+
+Nicholls, Z., Meinshausen, M., Lewis, J., Gieseke, R., Dommenget, D., Dorheim, K., … Xie, Z. (2020). Reduced complexity model intercomparison project phase 1: Protocol, results and initial observations. Geoscientific Model Development Discussions, 1–33. https://doi.org/10.5194/gmd-2019-375
+
+Nicholls, Z. R. J., Meinshausen, M. A., Lewis, J., Rojas Corradi, M., Dorheim, K., Gasser, T., … et al. (2020). Reduced Complexity Model Intercomparison Project Phase 2: Synthesising Earth system knowledge for probabilistic climate projections. Earth and Space Science Open Archive, 29. https://doi.org/10.1002/ESSOAR.10504793.1
+
+Millar, R. J., Nicholls, Z. R., Friedlingstein, P., & Allen, M. R. (2017). A modified impulse-response representation of the global near-surface air temperature and atmospheric concentration response to carbon dioxide emissions. Atmospheric Chemistry and Physics, 17(11), 7213–7228. https://doi.org/10.5194/acp-17-7213-2017

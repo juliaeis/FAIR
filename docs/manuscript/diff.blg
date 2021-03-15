@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: diff.aux
+The style file: copernicus.bst
+Database file #1: reference_list.bib.bib
+Warning--I didn't find a database entry for "Arora2019"
+Warning--to sort, need author or key in WMOAppA
+Warning--empty author in WMOAppA
+Warning--missing institution in Bellouin
+Warning--can't use both author and editor fields in IPCC2018
+Warning--missing publisher in IPCC2018
+Warning--empty journal in Smith2020c
+You've used 95 entries,
+            2819 wiz_defined-function locations,
+            1753 strings with 52944 characters,
+and the built_in function-call counts, 144695 in all, are:
+= -- 13531
+> -- 10772
+< -- 30
++ -- 4081
+- -- 3500
+* -- 11017
+:= -- 16738
+add.period$ -- 95
+call.type$ -- 95
+change.case$ -- 1344
+chr.to.int$ -- 92
+cite$ -- 293
+duplicate$ -- 11538
+empty$ -- 5802
+format.name$ -- 3792
+if$ -- 28139
+int.to.chr$ -- 4
+int.to.str$ -- 1
+missing$ -- 1830
+newline$ -- 294
+num.names$ -- 380
+pop$ -- 6494
+preamble$ -- 1
+purify$ -- 1344
+quote$ -- 0
+skip$ -- 6503
+stack$ -- 0
+substring$ -- 4203
+swap$ -- 10270
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 852
+warning$ -- 6
+while$ -- 508
+width$ -- 0
+write$ -- 1133
+(There were 7 warnings)

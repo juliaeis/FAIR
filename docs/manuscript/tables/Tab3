@@ -1,0 +1,18 @@
+\begin{tabular}{lllll}
+\toprule
+\textbf{parameter} & $r_0$ &     $r_u$ &   $r_T$ &     $r_a$ \\
+\textbf{model        } &       &           &         &           \\
+\midrule
+\textbf{ACCESS-ESM1-5} &  36.7 &     0.035 &    3.04 &  -0.00066 \\
+\textbf{BCC-CSM2-MR  } &  25.6 &   0.00598 &     5.2 &   0.00439 \\
+\textbf{CESM2        } &  40.7 &    0.0107 &    1.28 &   0.00421 \\
+\textbf{CNRM-ESM2-1  } &  38.1 &  0.000581 &    2.47 &   0.00978 \\
+\textbf{CanESM5      } &  35.7 &  -0.00596 &  -0.104 &    0.0181 \\
+\textbf{GFDL-ESM4    } &  34.3 &    0.0219 &    4.86 &  -0.00424 \\
+\textbf{IPSL-CM6A-LR } &  32.2 &    0.0166 &    1.07 &    0.0123 \\
+\textbf{MIROC-ES2L   } &  33.4 &    0.0131 &    3.46 &   0.00399 \\
+\textbf{MPI-ESM1-2-LR} &  33.3 &     0.031 &     1.5 &  -0.00257 \\
+\textbf{NorESM2-LM   } &  40.7 &   0.00947 &    1.56 &   0.00489 \\
+\textbf{UKESM1-0-LL  } &  37.9 &    0.0201 &    2.67 &   0.00181 \\
+\bottomrule
+\end{tabular}

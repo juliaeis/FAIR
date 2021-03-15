@@ -4,10 +4,12 @@ import versioneer
 
 # README #
 def readme():
-    with open('README.rst') as f:
+    with open('README.md') as f:
         return f.read()
 
 AUTHORS = [
+    ("Nicholas Leach", "nicholas.leach@stx.ox.ac.uk"),
+    ("Stuart Jenkins", "stuart.jenkins@wadham.ox.ac.uk"),
     ("Chris Smith", "c.j.smith1@leeds.ac.uk"),
     ("Richard Millar", "richard.millar@ouce.ox.ac.uk"),
     ("Zeb Nicholls", "zebedee.nicholls@climate-energy-college.org"),
@@ -30,15 +32,11 @@ setup(
     python_requires='>=3.6, <4',
     include_package_data=True,
     install_requires=[
-        'matplotlib',
-        'numpy>=1.14.5',
-        'scipy>=0.19.0',
+        'numpy',
         'pandas',
+        'numexpr',
+        'scipy',
+        'tqdm',
     ],
     zip_safe=False,
-    extras_require={
-        'docs': ['sphinx>=1.4', 'nbsphinx'],
-        'dev' : ['notebook', 'scmdata>=0.7.1', 'wheel', 'twine'],
-        'test': ['pytest>=4.0', 'nbval', 'pytest-cov', 'codecov']
-    }
 )

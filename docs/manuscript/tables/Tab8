@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+                                 & \textbf{ensemble} & \multicolumn{5}{l}{ALT} & \multicolumn{5}{l}{ALT-CONSTRAINED} \\
+                                 & \textbf{percentile} &   5\% & 16.6\% &  50\% & 83.3\% &   95\% &             5\% & 16.6\% &  50\% & 83.3\% &  95\% \\
+\midrule
+\multirow{2}{*}{\textbf{climate sensitivities / K}} & \textbf{ECS} &  1.38 &   2.18 &  4.03 &   7.08 &  10.46 &            1.82 &   2.23 &  3.28 &   5.42 &  7.63 \\
+                                 & \textbf{TCR} &  0.85 &   1.25 &  2.17 &   3.06 &   3.37 &            1.21 &   1.40 &  1.73 &   2.18 &  2.59 \\
+\cline{1-12}
+\multirow{13}{*}{\textbf{2019 ERF components / W m$^{-2}$}} & \textbf{CO$_2$} &  1.61 &   1.81 &  2.12 &   2.45 &   2.70 &            1.67 &   1.85 &  2.15 &   2.46 &  2.69 \\
+                                 & \textbf{CH$_4$} &  0.45 &   0.52 &  0.62 &   0.72 &   0.80 &            0.45 &   0.52 &  0.62 &   0.72 &  0.80 \\
+                                 & \textbf{N$_2$O} &  0.16 &   0.17 &  0.20 &   0.22 &   0.24 &            0.16 &   0.17 &  0.20 &   0.22 &  0.24 \\
+                                 & \textbf{other WMGHGs} &  0.29 &   0.32 &  0.36 &   0.40 &   0.43 &            0.29 &   0.32 &  0.36 &   0.40 &  0.43 \\
+                                 & \textbf{ozone} &  0.23 &   0.33 &  0.47 &   0.61 &   0.70 &            0.23 &   0.33 &  0.47 &   0.61 &  0.70 \\
+                                 & \textbf{stratospheric H$_2$O from CH$_4$} &  0.01 &   0.03 &  0.05 &   0.07 &   0.09 &            0.01 &   0.03 &  0.05 &   0.07 &  0.09 \\
+                                 & \textbf{aerosol-radation interaction} & -0.60 &  -0.47 & -0.30 &  -0.15 &  -0.03 &           -0.59 &  -0.46 & -0.31 &  -0.16 & -0.05 \\
+                                 & \textbf{aerosol-cloud interaction} & -2.28 &  -1.48 & -0.70 &  -0.26 &  -0.05 &           -1.19 &  -0.90 & -0.53 &  -0.24 & -0.07 \\
+                                 & \textbf{total aerosol} & -2.63 &  -1.81 & -1.02 &  -0.53 &  -0.27 &           -1.51 &  -1.23 & -0.85 &  -0.53 & -0.32 \\
+                                 & \textbf{black carbon on snow} &  0.04 &   0.06 &  0.09 &   0.14 &   0.19 &            0.04 &   0.06 &  0.09 &   0.14 &  0.19 \\
+                                 & \textbf{contrails} &  0.01 &   0.03 &  0.06 &   0.08 &   0.10 &            0.01 &   0.03 &  0.06 &   0.08 &  0.10 \\
+                                 & \textbf{albedo from land use change} & -0.35 &  -0.29 & -0.20 &  -0.11 &  -0.05 &           -0.35 &  -0.29 & -0.20 &  -0.11 & -0.05 \\
+                                 & \textbf{total anthropogenic} &  1.01 &   1.86 &  2.73 &   3.39 &   3.82 &            2.16 &   2.47 &  2.93 &   3.40 &  3.73 \\
+\bottomrule
+\end{tabular}

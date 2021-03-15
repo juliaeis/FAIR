@@ -4,6 +4,9 @@ Changelog
 master
 ------
 
+v2.0.0-alpha
+------------
+
 v1.6.3
 ------
 

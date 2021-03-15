@@ -1,0 +1,854 @@
+\begin{thebibliography}{95}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{WMO(2018)}]{WMOAppA}
+{J.B. Burkholder (lead author), {\O}. Hodnebrog and V.L. Orkin, Appendix A:
+  Summary of Abundances, Lifetimes, ODPs, REs, GWPs, and GTPs}, Scientific
+  Assessment of Ozone Depletion: 2018, Global Ozone Research and Monitoring
+  Project – Report No. 58, World Meteorological Organization, Geneva,
+  Switzerland, 2018.
+
+\bibitem[{Alexander and Easterbrook(2015)}]{Alexander2015}
+Alexander, K. and Easterbrook, S.~M.: {The software architecture of climate
+  models: a graphical comparison of CMIP5 and EMICAR5 configurations}, Geosci.
+  Model Dev, 8, 1221--1232, \doi{10.5194/gmd-8-1221-2015}, 2015.
+
+\bibitem[{Allen et~al.(2009)Allen, Frame, Huntingford, Jones, Lowe,
+  Meinshausen, and Meinshausen}]{Allen2009}
+Allen, M.~R., Frame, D.~J., Huntingford, C., Jones, C.~D., Lowe, J.~A.,
+  Meinshausen, M., and Meinshausen, N.: {Warming caused by cumulative carbon
+  emissions towards the trillionth tonne}, Nature, 458, 1163--1166,
+  \doi{10.1038/nature08019}, 2009.
+
+\bibitem[{Allen et~al.(2018)Allen, Shine, Fuglestvedt, Millar, Cain, Frame, and
+  Macey}]{Allen2018a}
+Allen, M.~R., Shine, K.~P., Fuglestvedt, J.~S., Millar, R.~J., Cain, M., Frame,
+  D.~J., and Macey, A.~H.: {A solution to the misrepresentations of
+  CO2-equivalent emissions of short-lived climate pollutants under ambitious
+  mitigation}, npj Climate and Atmospheric Science, 1,
+  \doi{10.1038/s41612-018-0026-8}, 2018.
+
+\bibitem[{Bellouin et~al.(2020{\natexlab{a}})Bellouin, Davies, Shine, Quaas,
+  M{\"{u}}lmenst{\"{a}}dt, Forster, Smith, Lee, Regayre, Brasseur,
+  Sudarchikova, Bouarar, Boucher, and Myhre}]{Bellouin2020}
+Bellouin, N., Davies, W., Shine, K.~P., Quaas, J., M{\"{u}}lmenst{\"{a}}dt, J.,
+  Forster, P.~M., Smith, C., Lee, L., Regayre, L., Brasseur, G., Sudarchikova,
+  N., Bouarar, I., Boucher, O., and Myhre, G.: {Radiative forcing of climate
+  change from the Copernicus reanalysis of atmospheric composition}, Earth
+  System Science Data, 12, 1649--1677, \doi{10.5194/essd-12-1649-2020},
+  2020{\natexlab{a}}.
+
+\bibitem[{Bellouin et~al.(2020{\natexlab{b}})Bellouin, Quaas, Gryspeerdt,
+  Kinne, Stier, Watson-Parris, Boucher, Carslaw, Christensen, Daniau, Dufresne,
+  Feingold, Fiedler, Forster, Gettelman, Haywood, Lohmann, Malavelle,
+  Mauritsen, McCoy, Myhre, M{\"{u}}lmenst{\"{a}}dt, Neubauer, Possner,
+  Rugenstein, Sato, Schulz, Schwartz, Sourdeval, Storelvmo, Toll, Winker, and
+  Stevens}]{Bellouin}
+Bellouin, N., Quaas, J., Gryspeerdt, E., Kinne, S., Stier, P., Watson-Parris,
+  D., Boucher, O., Carslaw, K.~S., Christensen, M., Daniau, A.~L., Dufresne,
+  J.~L., Feingold, G., Fiedler, S., Forster, P., Gettelman, A., Haywood, J.~M.,
+  Lohmann, U., Malavelle, F., Mauritsen, T., McCoy, D.~T., Myhre, G.,
+  M{\"{u}}lmenst{\"{a}}dt, J., Neubauer, D., Possner, A., Rugenstein, M., Sato,
+  Y., Schulz, M., Schwartz, S.~E., Sourdeval, O., Storelvmo, T., Toll, V.,
+  Winker, D., and Stevens, B.: {Bounding Global Aerosol Radiative Forcing of
+  Climate Change}, Tech. Rep.~1, \doi{10.1029/2019RG000660},
+  2020{\natexlab{b}}.
+
+\bibitem[{Bodman and Jones(2016)}]{Bodman2016}
+Bodman, R.~W. and Jones, R.~N.: {Bayesian estimation of climate sensitivity
+  using observationally constrained simple climate models}, Wiley
+  Interdisciplinary Reviews: Climate Change, 7, 461--473,
+  \doi{10.1002/wcc.397}, 2016.
+
+\bibitem[{Bond et~al.(2013)Bond, Doherty, Fahey, Forster, Berntsen, Deangelo,
+  Flanner, Ghan, K{\"{a}}rcher, Koch, Kinne, Kondo, Quinn, Sarofim, Schultz,
+  Schulz, Venkataraman, Zhang, Zhang, Bellouin, Guttikunda, Hopke, Jacobson,
+  Kaiser, Klimont, Lohmann, Schwarz, Shindell, Storelvmo, Warren, and
+  Zender}]{Bond2013}
+Bond, T.~C., Doherty, S.~J., Fahey, D.~W., Forster, P.~M., Berntsen, T.,
+  Deangelo, B.~J., Flanner, M.~G., Ghan, S., K{\"{a}}rcher, B., Koch, D.,
+  Kinne, S., Kondo, Y., Quinn, P.~K., Sarofim, M.~C., Schultz, M.~G., Schulz,
+  M., Venkataraman, C., Zhang, H., Zhang, S., Bellouin, N., Guttikunda, S.~K.,
+  Hopke, P.~K., Jacobson, M.~Z., Kaiser, J.~W., Klimont, Z., Lohmann, U.,
+  Schwarz, J.~P., Shindell, D., Storelvmo, T., Warren, S.~G., and Zender,
+  C.~S.: {Bounding the role of black carbon in the climate system: A scientific
+  assessment}, Journal of Geophysical Research Atmospheres, 118, 5380--5552,
+  \doi{10.1002/jgrd.50171}, 2013.
+
+\bibitem[{Brunner et~al.(2020)Brunner, Pendergrass, Lehner, Merrifield, Lorenz,
+  and Knutti}]{Brunner2020}
+Brunner, L., Pendergrass, A.~G., Lehner, F., Merrifield, A.~L., Lorenz, R., and
+  Knutti, R.: {Reduced global warming from CMIP6 projections when weighting
+  models by performance and independence}, Earth System Dynamics, 11,
+  995--1012, \doi{10.5194/esd-11-995-2020}, 2020.
+
+\bibitem[{Butchart and Scaife(2001)}]{Butchart2001}
+Butchart, N. and Scaife, A.~A.: {Removal of chlorofluorocarbons by increased
+  mass exchange between the stratosphere and troposphere in a changing
+  climate}, Nature, 410, 799--802, \doi{10.1038/35071047}, 2001.
+
+\bibitem[{Cain et~al.(2019)Cain, Lynch, Allen, Fuglestvedt, Frame, and
+  Macey}]{Cain2019}
+Cain, M., Lynch, J., Allen, M.~R., Fuglestvedt, J.~S., Frame, D.~J., and Macey,
+  A.~H.: {Improved calculation of warming-equivalent emissions for short-lived
+  climate pollutants}, npj Climate and Atmospheric Science, 2, 29,
+  \doi{10.1038/s41612-019-0086-4}, 2019.
+
+\bibitem[{Cinquini et~al.(2014)Cinquini, Crichton, Mattmann, Harney, Shipman,
+  Wang, Ananthakrishnan, Miller, Denvil, Morgan, Pobre, Bell, Doutriaux, Drach,
+  Williams, Kershaw, Pascoe, Gonzalez, Fiore, and Schweitzer}]{Cinquini2014}
+Cinquini, L., Crichton, D., Mattmann, C., Harney, J., Shipman, G., Wang, F.,
+  Ananthakrishnan, R., Miller, N., Denvil, S., Morgan, M., Pobre, Z., Bell,
+  G.~M., Doutriaux, C., Drach, R., Williams, D., Kershaw, P., Pascoe, S.,
+  Gonzalez, E., Fiore, S., and Schweitzer, R.: {The Earth System Grid
+  Federation: An open infrastructure for access to distributed geospatial
+  data}, Future Generation Computer Systems, 36, 400--417,
+  \doi{10.1016/j.future.2013.07.002}, 2014.
+
+\bibitem[{Collins et~al.(2013)Collins, Knutti, Arblaster, Dufresne, Fichefet,
+  Friedlingstein, Gao, Gutowski, Johns, Krinner, Shongwe, Tebaldi, Weaver, and
+  Wehner}]{Collins2013}
+Collins, M., Knutti, R., Arblaster, J., Dufresne, J.-L., Fichefet, T.,
+  Friedlingstein, P., Gao, X., Gutowski, W.~J., Johns, T., Krinner, G.,
+  Shongwe, M., Tebaldi, C., Weaver, A.~J., and Wehner, M.: {Long-term Climate
+  Change: Projections, Commitments and Irreversibility}, in: Climate Change
+  2013: The Physical Science Basis. Contribution of Working Group I to the
+  Fifth Assessment Report of the Intergovernmental Panel on Climate Change,
+  edited by Stocker, T.~F., Qin, D., Plattner, G.-K., Tignor, M., Allen, S.~K.,
+  Boschung, J., Nauels, A., Xia, Y., Bex, V., and Midgley, P.~M., chap.~12, pp.
+  1029--1136, Cambridge University Press, Cambridge, United Kingdom and New
+  York, NY, USA, \doi{10.1017/CBO9781107415324.024}, 2013.
+
+\bibitem[{Cowtan and Way(2014)}]{Cowtan2014}
+Cowtan, K. and Way, R.~G.: {Coverage bias in the HadCRUT4 temperature series
+  and its impact on recent temperature trends}, Quarterly Journal of the Royal
+  Meteorological Society, 140, 1935--1944, \doi{10.1002/qj.2297}, 2014.
+
+\bibitem[{Cummins et~al.(2020)Cummins, Stephenson, and Stott}]{Cummins2020}
+Cummins, D.~P., Stephenson, D.~B., and Stott, P.~A.: {Optimal estimation of
+  stochastic energy balance model parameters}, Journal of Climate, 33,
+  7909--7926, \doi{10.1175/JCLI-D-19-0589.1}, 2020.
+
+\bibitem[{Engel et~al.(2018)Engel, Rigby, Burkholder, Fernandez, Froidevaux,
+  Hall, Hossaini, Saito, Vollmer, and Yao}]{Engel2018}
+Engel, A., Rigby, M., Burkholder, J., Fernandez, R., Froidevaux, L., Hall, B.,
+  Hossaini, R., Saito, T., Vollmer, M., and Yao, B.: {Update on Ozone-Depleting
+  Substances (ODSs) and Other Gases of Interest to the Montreal Protocol,
+  Chapter 1 in Scientific Assessment of Ozone Depletion: 2018}, Global Ozone
+  Research and Monitoring Project — Report No. 58, World Meteorological
+  Organization, Geneva, Switzerland, 2018.
+
+\bibitem[{Etminan et~al.(2016)Etminan, Myhre, Highwood, and
+  Shine}]{Etminan2016}
+Etminan, M., Myhre, G., Highwood, E.~J., and Shine, K.~P.: {Radiative forcing
+  of carbon dioxide, methane, and nitrous oxide: A significant revision of the
+  methane radiative forcing}, Geophysical Research Letters, 43, 12,614--12,623,
+  \doi{10.1002/2016GL071930}, 2016.
+
+\bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
+  and Taylor}]{Eyring2016}
+Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
+  R.~J., and Taylor, K.~E.: {Overview of the Coupled Model Intercomparison
+  Project Phase 6 (CMIP6) experimental design and organization}, Geoscientific
+  Model Development, 9, 1937--1958, \doi{10.5194/gmd-9-1937-2016}, 2016.
+
+\bibitem[{Forest et~al.(2002)Forest, Stone, Sokolov, Allen, and
+  Webster}]{Forest2002}
+Forest, C.~E., Stone, P.~H., Sokolov, A.~P., Allen, M.~R., and Webster, M.~D.:
+  {Quantifying uncertainties in climate system properties with the use of
+  recent climate observations}, Science, 295, 113--117,
+  \doi{10.1126/science.1064419}, 2002.
+
+\bibitem[{Friedlingstein et~al.(2019)Friedlingstein, Jones, O'Sullivan, Andrew,
+  Hauck, Peters, Peters, Pongratz, Sitch, {Le Qu{\'{e}}r{\'{e}}}, DBakker,
+  Canadell1, Ciais1, Jackson, Anthoni1, Barbero, Bastos, Bastrikov, Becker,
+  Bopp, Buitenhuis, Chandra, Chevallier, Chini, Currie, Feely, Gehlen,
+  Gilfillan, Gkritzalis, Goll, Gruber, Gutekunst, Harris, Haverd, Houghton,
+  Hurtt, Ilyina, Jain, Joetzjer, Kaplan, Kato, Goldewijk, Korsbakken,
+  Landsch{\"{u}}tzer, Lauvset, Lef{\`{e}}vre, Lenton, Lienert, Lombardozzi,
+  Marland, McGuire, Melton, Metzl, Munro, Nabel, Nakaoka, Neill, Omar, Ono,
+  Peregon, Pierrot, Poulter, Rehder, Resplandy, Robertson, R{\"{o}}denbeck,
+  S{\'{e}}f{\'{e}}rian, Schwinger, Smith, Tans, Tian, Tilbrook, Tubiello, {Van
+  Der Werf}, Wiltshire, and Zaehle}]{Friedlingstein2019}
+Friedlingstein, P., Jones, M.~W., O'Sullivan, M., Andrew, R.~M., Hauck, J.,
+  Peters, G.~P., Peters, W., Pongratz, J., Sitch, S., {Le Qu{\'{e}}r{\'{e}}},
+  C., DBakker, O.~C., Canadell1, J.~G., Ciais1, P., Jackson, R.~B., Anthoni1,
+  P., Barbero, L., Bastos, A., Bastrikov, V., Becker, M., Bopp, L., Buitenhuis,
+  E., Chandra, N., Chevallier, F., Chini, L.~P., Currie, K.~I., Feely, R.~A.,
+  Gehlen, M., Gilfillan, D., Gkritzalis, T., Goll, D.~S., Gruber, N.,
+  Gutekunst, S., Harris, I., Haverd, V., Houghton, R.~A., Hurtt, G., Ilyina,
+  T., Jain, A.~K., Joetzjer, E., Kaplan, J.~O., Kato, E., Goldewijk, K.~K.,
+  Korsbakken, J.~I., Landsch{\"{u}}tzer, P., Lauvset, S.~K., Lef{\`{e}}vre, N.,
+  Lenton, A., Lienert, S., Lombardozzi, D., Marland, G., McGuire, P.~C.,
+  Melton, J.~R., Metzl, N., Munro, D.~R., Nabel, J.~E., Nakaoka, S.~I., Neill,
+  C., Omar, A.~M., Ono, T., Peregon, A., Pierrot, D., Poulter, B., Rehder, G.,
+  Resplandy, L., Robertson, E., R{\"{o}}denbeck, C., S{\'{e}}f{\'{e}}rian, R.,
+  Schwinger, J., Smith, N., Tans, P.~P., Tian, H., Tilbrook, B., Tubiello,
+  F.~N., {Van Der Werf}, G.~R., Wiltshire, A.~J., and Zaehle, S.: {Global
+  carbon budget 2019}, Earth System Science Data, 11, 1783--1838,
+  \doi{10.5194/essd-11-1783-2019}, 2019.
+
+\bibitem[{Friedlingstein et~al.(2020)Friedlingstein, O'Sullivan, Jones, Andrew,
+  Hauck, Olsen, Peters, Peters, Pongratz, Sitch, {Le Qu{\'{e}}r{\'{e}}},
+  Canadell, Ciais, Jackson, Alin, Arag{\~{a}}o, Arneth, Arora, Bates, Becker,
+  Benoit-Cattin, Bittig, Bopp, Bultan, Chandra, Chevallier, Chini, Evans,
+  Florentie, Forster, Gasser, Gehlen, Gilfillan, Gkritzalis, Gregor, Gruber,
+  Harris, Hartung, Haverd, Houghton, Ilyina, Jain, Joetzjer, Kadono, Kato,
+  Kitidis, Korsbakken, Landsch{\"{u}}tzer, Lef{\`{e}}vre, Lenton, Lienert, Liu,
+  Lombardozzi, Marland, Metzl, Munro, Nabel, Nakaoka, Niwa, O'Brien, Ono,
+  Palmer, Pierrot, Poulter, Resplandy, Robertson, R{\"{o}}denbeck, Schwinger,
+  S{\'{e}}f{\'{e}}rian, Skjelvan, Smith, Sutton, Tanhua, Tans, Tian, Tilbrook,
+  van~der Werf, Vuichard, Walker, Wanninkhof, Watson, Willis, Wiltshire, Yuan,
+  Yue, and Zaehle}]{Friedlingstein2020}
+Friedlingstein, P., O'Sullivan, M., Jones, M.~W., Andrew, R.~M., Hauck, J.,
+  Olsen, A., Peters, G.~P., Peters, W., Pongratz, J., Sitch, S., {Le
+  Qu{\'{e}}r{\'{e}}}, C., Canadell, J.~G., Ciais, P., Jackson, R.~B., Alin, S.,
+  Arag{\~{a}}o, L. E. O.~C., Arneth, A., Arora, V., Bates, N.~R., Becker, M.,
+  Benoit-Cattin, A., Bittig, H.~C., Bopp, L., Bultan, S., Chandra, N.,
+  Chevallier, F., Chini, L.~P., Evans, W., Florentie, L., Forster, P.~M.,
+  Gasser, T., Gehlen, M., Gilfillan, D., Gkritzalis, T., Gregor, L., Gruber,
+  N., Harris, I., Hartung, K., Haverd, V., Houghton, R.~A., Ilyina, T., Jain,
+  A.~K., Joetzjer, E., Kadono, K., Kato, E., Kitidis, V., Korsbakken, J.~I.,
+  Landsch{\"{u}}tzer, P., Lef{\`{e}}vre, N., Lenton, A., Lienert, S., Liu, Z.,
+  Lombardozzi, D., Marland, G., Metzl, N., Munro, D.~R., Nabel, J. E. M.~S.,
+  Nakaoka, S.-I., Niwa, Y., O'Brien, K., Ono, T., Palmer, P.~I., Pierrot, D.,
+  Poulter, B., Resplandy, L., Robertson, E., R{\"{o}}denbeck, C., Schwinger,
+  J., S{\'{e}}f{\'{e}}rian, R., Skjelvan, I., Smith, A. J.~P., Sutton, A.~J.,
+  Tanhua, T., Tans, P.~P., Tian, H., Tilbrook, B., van~der Werf, G., Vuichard,
+  N., Walker, A.~P., Wanninkhof, R., Watson, A.~J., Willis, D., Wiltshire,
+  A.~J., Yuan, W., Yue, X., and Zaehle, S.: {Global Carbon Budget 2020}, Earth
+  System Science Data, 12, 3269--3340, \doi{10.5194/essd-12-3269-2020}, 2020.
+
+\bibitem[{Geoffroy et~al.(2013)Geoffroy, Saint-Martin, Olivi{\'{e}}, Voldoire,
+  Bellon, Tyt{\'{e}}ca, Geoffroy, Saint-Martin, Olivi{\'{e}}, Voldoire, Bellon,
+  and Tyt{\'{e}}ca}]{Geoffroy2013}
+Geoffroy, O., Saint-Martin, D., Olivi{\'{e}}, D. J.~L., Voldoire, A., Bellon,
+  G., Tyt{\'{e}}ca, S., Geoffroy, O., Saint-Martin, D., Olivi{\'{e}}, D. J.~L.,
+  Voldoire, A., Bellon, G., and Tyt{\'{e}}ca, S.: {Transient Climate Response
+  in a Two-Layer Energy-Balance Model. Part I: Analytical Solution and
+  Parameter Calibration Using CMIP5 AOGCM Experiments}, Journal of Climate, 26,
+  1841--1857, \doi{10.1175/JCLI-D-12-00195.1}, 2013.
+
+\bibitem[{Gillett et~al.(2013)Gillett, Arora, Matthews, Allen, Gillett, Arora,
+  Matthews, and Allen}]{Gillett2013}
+Gillett, N.~P., Arora, V.~K., Matthews, D., Allen, M.~R., Gillett, N.~P.,
+  Arora, V.~K., Matthews, D., and Allen, M.~R.: {Constraining the Ratio of
+  Global Warming to Cumulative CO <sub>2</sub> Emissions Using CMIP5
+  Simulations*}, Journal of Climate, 26, 6844--6858,
+  \doi{10.1175/JCLI-D-12-00476.1}, 2013.
+
+\bibitem[{Gillett et~al.(2021)Gillett, Kirchmeier-Young, Ribes, Shiogama,
+  Hegerl, Knutti, Gastineau, John, Li, Nazarenko, Rosenbloom, Seland, Wu,
+  Yukimoto, and Ziehn}]{Gillett2021}
+Gillett, N.~P., Kirchmeier-Young, M., Ribes, A., Shiogama, H., Hegerl, G.~C.,
+  Knutti, R., Gastineau, G., John, J.~G., Li, L., Nazarenko, L., Rosenbloom,
+  N., Seland, {\O}., Wu, T., Yukimoto, S., and Ziehn, T.: {Constraining human
+  contributions to observed warming since the pre-industrial period}, Nature
+  Climate Change, pp. 1--6, \doi{10.1038/s41558-020-00965-9}, 2021.
+
+\bibitem[{Goodwin et~al.(2019)Goodwin, Williams, Roussenov, and
+  Katavouta}]{Goodwin2019}
+Goodwin, P., Williams, R.~G., Roussenov, V.~M., and Katavouta, A.: {Climate
+  Sensitivity From Both Physical and Carbon Cycle Feedbacks}, Geophysical
+  Research Letters, 46, 7554--7564, \doi{10.1029/2019GL082887}, 2019.
+
+\bibitem[{Gregory et~al.(2004)Gregory, Ingram, Palmer, Jones, Stott, Thorpe,
+  Lowe, Johns, and Williams}]{Gregory2004}
+Gregory, J.~M., Ingram, W.~J., Palmer, M.~A., Jones, G.~S., Stott, P.~A.,
+  Thorpe, R.~B., Lowe, J.~A., Johns, T.~C., and Williams, K.~D.: {A new method
+  for diagnosing radiative forcing and climate sensitivity}, Geophysical
+  Research Letters, 31, \doi{10.1029/2003GL018747}, 2004.
+
+\bibitem[{Haustein et~al.(2017)Haustein, Allen, Forster, Otto, Mitchell,
+  Matthews, and Frame}]{Haustein2017}
+Haustein, K., Allen, M.~R., Forster, P.~M., Otto, F. E.~L., Mitchell, D.~M.,
+  Matthews, H.~D., and Frame, D.~J.: {A real-time Global Warming Index},
+  Scientific Reports, 7, 15\,417, \doi{10.1038/s41598-017-14828-5}, 2017.
+
+\bibitem[{Held et~al.(2010)Held, Winton, Takahashi, Delworth, Zeng, Vallis,
+  Held, Winton, Takahashi, Delworth, Zeng, and Vallis}]{Held2010}
+Held, I.~M., Winton, M., Takahashi, K., Delworth, T., Zeng, F., Vallis, G.~K.,
+  Held, I.~M., Winton, M., Takahashi, K., Delworth, T., Zeng, F., and Vallis,
+  G.~K.: {Probing the Fast and Slow Components of Global Warming by Returning
+  Abruptly to Preindustrial Forcing}, Journal of Climate, 23, 2418--2427,
+  \doi{10.1175/2009JCLI3466.1}, 2010.
+
+\bibitem[{Hersbach et~al.(2020)Hersbach, Bell, Berrisford, Hirahara,
+  Hor{\'{a}}nyi, Mu{\~{n}}oz-Sabater, Nicolas, Peubey, Radu, Schepers, Simmons,
+  Soci, Abdalla, Abellan, Balsamo, Bechtold, Biavati, Bidlot, Bonavita, {De
+  Chiara}, Dahlgren, Dee, Diamantakis, Dragani, Flemming, Forbes, Fuentes,
+  Geer, Haimberger, Healy, Hogan, H{\'{o}}lm, Janiskov{\'{a}}, Keeley,
+  Laloyaux, Lopez, Lupu, Radnoti, de~Rosnay, Rozum, Vamborg, Villaume, and
+  Th{\'{e}}paut}]{Hersbach2020}
+Hersbach, H., Bell, B., Berrisford, P., Hirahara, S., Hor{\'{a}}nyi, A.,
+  Mu{\~{n}}oz-Sabater, J., Nicolas, J., Peubey, C., Radu, R., Schepers, D.,
+  Simmons, A., Soci, C., Abdalla, S., Abellan, X., Balsamo, G., Bechtold, P.,
+  Biavati, G., Bidlot, J., Bonavita, M., {De Chiara}, G., Dahlgren, P., Dee,
+  D., Diamantakis, M., Dragani, R., Flemming, J., Forbes, R., Fuentes, M.,
+  Geer, A., Haimberger, L., Healy, S., Hogan, R.~J., H{\'{o}}lm, E.,
+  Janiskov{\'{a}}, M., Keeley, S., Laloyaux, P., Lopez, P., Lupu, C., Radnoti,
+  G., de~Rosnay, P., Rozum, I., Vamborg, F., Villaume, S., and Th{\'{e}}paut,
+  J.~N.: {The ERA5 global reanalysis}, Quarterly Journal of the Royal
+  Meteorological Society, 146, 1999--2049, \doi{10.1002/qj.3803}, 2020.
+
+\bibitem[{Hoesly et~al.(2018)Hoesly, Smith, Feng, Klimont, Janssens-Maenhout,
+  Pitkanen, Seibert, Vu, Andres, Bolt, Bond, Dawidowski, Kholod, Kurokawa, Li,
+  Liu, Lu, Moura, O'Rourke, and Zhang}]{Hoesly2018}
+Hoesly, R.~M., Smith, S.~J., Feng, L., Klimont, Z., Janssens-Maenhout, G.,
+  Pitkanen, T., Seibert, J.~J., Vu, L., Andres, R.~J., Bolt, R.~M., Bond,
+  T.~C., Dawidowski, L., Kholod, N., Kurokawa, J.-i., Li, M., Liu, L., Lu, Z.,
+  Moura, M. C.~P., O'Rourke, P.~R., and Zhang, Q.: {Historical (1750–2014)
+  anthropogenic emissions of reactive gases and aerosols from the Community
+  Emissions Data System (CEDS)}, Geoscientific Model Development, 11, 369--408,
+  \doi{10.5194/gmd-11-369-2018}, 2018.
+
+\bibitem[{Holmes et~al.(2013)Holmes, Prather, S{\o}vde, and Myhre}]{Holmes2013}
+Holmes, C.~D., Prather, M.~J., S{\o}vde, O.~A., and Myhre, G.: {Future methane,
+  hydroxyl, and their uncertainties: key climate and emission parameters for
+  future predictions}, Atmospheric Chemistry and Physics, 13, 285--302,
+  \doi{10.5194/acp-13-285-2013}, 2013.
+
+\bibitem[{Hooss et~al.(2001)Hooss, Voss, Hasselmann, Maier-Reimer, and
+  Joos}]{Hooss2001}
+Hooss, G., Voss, R., Hasselmann, K., Maier-Reimer, E., and Joos, F.: {A
+  nonlinear impulse response model of the coupled carbon cycle-climate system
+  (NICCS)}, Climate Dynamics, 18, 189--202, \doi{10.1007/s003820100170}, 2001.
+
+\bibitem[{Huppmann et~al.(2018)Huppmann, Kriegler, Krey, Riahi, Rogelj, Rose,
+  Weyant, Bauer, Bertram, Bosetti, Calvin, Doelman, Drouet, Emmerling, Frank,
+  Fujimori, Gernaat, Grubler, Guivarch, Haigh, Holz, Iyer, Kato, Keramidas,
+  Kitous, Leblanc, Liu, L{\"{o}}ffler, Luderer, Marcucci, McCollum, Mima, Popp,
+  Sands, Sano, Strefler, Tsutsui, {Van Vuuren}, Vrontisi, Wise, and
+  Zhang}]{Huppmann:2018:scenario-data}
+Huppmann, D., Kriegler, E., Krey, V., Riahi, K., Rogelj, J., Rose, S.~K.,
+  Weyant, J., Bauer, N., Bertram, C., Bosetti, V., Calvin, K., Doelman, J.,
+  Drouet, L., Emmerling, J., Frank, S., Fujimori, S., Gernaat, D., Grubler, A.,
+  Guivarch, C., Haigh, M., Holz, C., Iyer, G., Kato, E., Keramidas, K., Kitous,
+  A., Leblanc, F., Liu, J.-Y., L{\"{o}}ffler, K., Luderer, G., Marcucci, A.,
+  McCollum, D., Mima, S., Popp, A., Sands, R.~D., Sano, F., Strefler, J.,
+  Tsutsui, J., {Van Vuuren}, D., Vrontisi, Z., Wise, M., and Zhang, R.: {IAMC
+  1.5°C Scenario Explorer and Data hosted by IIASA}, Integrated Assessment
+  Modeling Consortium \& International Institute for Applied Systems Analysis,
+  \doi{10.22022/SR15/08-2018.15429}, 2018.
+
+\bibitem[{IPCC(2018)}]{IPCC2018}
+IPCC: {Global warming of 1.5°C. An IPCC Special Report on the impacts of
+  global warming of 1.5°C above pre-industrial levels and related global
+  greenhouse gas emission pathways, in the context of strengthening the global
+  response to the threat of climate change,}, 2018.
+
+\bibitem[{IPCC et~al.(2013)IPCC, Prather, Flato, Friedlingstein, Jones,
+  Lamarque, Liao, and Rasch}]{IPCC2013f}
+IPCC, Prather, M., Flato, G., Friedlingstein, P., Jones, C., Lamarque, J.-F.,
+  Liao, H., and Rasch, P.: {Annex II: Climate System Scenario Tables }, in:
+  Climate Change 2013: The Physical Science Basis. Contribution of Working
+  Group I to the Fifth Assessment Report of the Intergovernmental Panel on
+  Climate Change, edited by Stocker, T.~F., Qin, D., Plattner, G.-K., Tignor,
+  M., Allen, S.~K., Boschung, J., Nauels, A., Xia, Y., Bex, V., and Midgley,
+  P.~M., chap. AII, pp. 1395--1446, Cambridge University Press, Cambridge,
+  United Kingdom and New York, NY, USA, \doi{10.1017/CBO9781107415324.030},
+  2013.
+
+\bibitem[{Jenkins et~al.(2018)Jenkins, Millar, Leach, and Allen}]{Jenkins2018}
+Jenkins, S., Millar, R.~J., Leach, N., and Allen, M.~R.: {Framing Climate Goals
+  in Terms of Cumulative CO2-Forcing-Equivalent Emissions}, Geophysical
+  Research Letters, 45, 2795-- 2804, \doi{10.1002/2017GL076173}, 2018.
+
+\bibitem[{Jim{\'{e}}nez-de-la Cuesta and
+  Mauritsen(2019)}]{Jimenez-de-la-Cuesta2019}
+Jim{\'{e}}nez-de-la Cuesta, D. and Mauritsen, T.: {Emergent constraints on
+  Earth's transient and equilibrium response to doubled CO2 from post-1970s
+  global warming}, Nature Geoscience, \doi{10.1038/s41561-019-0463-y}, 2019.
+
+\bibitem[{Jones et~al.(2016)Jones, Arora, Friedlingstein, Bopp, Brovkin, Dunne,
+  Graven, Hoffman, Ilyina, John, Jung, Kawamiya, Koven, Pongratz, Raddatz,
+  Randerson, and Zaehle}]{Jones2016}
+Jones, C.~D., Arora, V., Friedlingstein, P., Bopp, L., Brovkin, V., Dunne, J.,
+  Graven, H., Hoffman, F., Ilyina, T., John, J.~G., Jung, M., Kawamiya, M.,
+  Koven, C., Pongratz, J., Raddatz, T., Randerson, J.~T., and Zaehle, S.:
+  {C4MIP – The Coupled Climate–Carbon Cycle Model Intercomparison Project:
+  experimental protocol for CMIP6}, Geoscientific Model Development, 9,
+  2853--2880, \doi{10.5194/gmd-9-2853-2016}, 2016.
+
+\bibitem[{Joos et~al.(1996)Joos, Bruno, Fink, Siegenthaler, Stocker, {Le
+  Qu{\'{e}}r{\'{e}}}, and Sarmiento}]{JOOS1996}
+Joos, F., Bruno, M., Fink, R., Siegenthaler, U., Stocker, T.~F., {Le
+  Qu{\'{e}}r{\'{e}}}, C., and Sarmiento, J.~L.: {An efficient and accurate
+  representation of complex oceanic and biospheric models of anthropogenic
+  carbon uptake}, Tellus, Series B: Chemical and Physical Meteorology, 48,
+  397--417, \doi{10.1034/j.1600-0889.1996.t01-2-00006.x}, 1996.
+
+\bibitem[{Joos et~al.(2013)Joos, Roth, Fuglestvedt, Peters, Enting, von Bloh,
+  Brovkin, Burke, Eby, Edwards, Friedrich, Fr{\"{o}}licher, Halloran, Holden,
+  Jones, Kleinen, Mackenzie, Matsumoto, Meinshausen, Plattner, Reisinger,
+  Segschneider, Shaffer, Steinacher, Strassmann, Tanaka, Timmermann, and
+  Weaver}]{Joos2013}
+Joos, F., Roth, R., Fuglestvedt, J.~S., Peters, G.~P., Enting, I.~G., von Bloh,
+  W., Brovkin, V., Burke, E.~J., Eby, M., Edwards, N.~R., Friedrich, T.,
+  Fr{\"{o}}licher, T.~L., Halloran, P.~R., Holden, P.~B., Jones, C., Kleinen,
+  T., Mackenzie, F.~T., Matsumoto, K., Meinshausen, M., Plattner, G.-K.,
+  Reisinger, A., Segschneider, J., Shaffer, G., Steinacher, M., Strassmann, K.,
+  Tanaka, K., Timmermann, A., and Weaver, A.~J.: {Carbon dioxide and climate
+  impulse response functions for the computation of greenhouse gas metrics: a
+  multi-model analysis}, Atmospheric Chemistry and Physics, 13, 2793--2825,
+  \doi{10.5194/acp-13-2793-2013}, 2013.
+
+\bibitem[{{K. Arora} et~al.(2020){K. Arora}, Katavouta, Williams, Jones,
+  Brovkin, Friedlingstein, Schwinger, Bopp, Boucher, Cadule, Chamberlain,
+  Christian, Delire, Fisher, Hajima, Ilyina, Joetzjer, Kawamiya, Koven,
+  Krasting, Law, Lawrence, Lenton, Lindsay, Pongratz, Raddatz,
+  S{\'{e}}f{\'{e}}rian, Tachiiri, Tjiputra, Wiltshire, Wu, and
+  Ziehn}]{K.Arora2020}
+{K. Arora}, V., Katavouta, A., Williams, R.~G., Jones, C.~D., Brovkin, V.,
+  Friedlingstein, P., Schwinger, J., Bopp, L., Boucher, O., Cadule, P.,
+  Chamberlain, M.~A., Christian, J.~R., Delire, C., Fisher, A. R.~A., Hajima,
+  T., Ilyina, T., Joetzjer, E., Kawamiya, M., Koven, C.~D., Krasting, J.~P.,
+  Law, R.~M., Lawrence, D.~M., Lenton, A., Lindsay, K., Pongratz, J., Raddatz,
+  T., S{\'{e}}f{\'{e}}rian, R., Tachiiri, K., Tjiputra, J.~F., Wiltshire, A.,
+  Wu, T., and Ziehn, T.: {Carbon-concentration and carbon-climate feedbacks in
+  CMIP6 models and their comparison to CMIP5 models}, Biogeosciences, 17,
+  4173--4222, \doi{10.5194/bg-17-4173-2020}, 2020.
+
+\bibitem[{Kristiansen et~al.(2016)Kristiansen, Stohl, Olivi{\'{e}}, Croft,
+  S{\o}vde, Klein, Christoudias, Kunkel, Leadbetter, Lee, Zhang, Tsigaridis,
+  Bergman, Evangeliou, Wang, Ma, Easter, Rasch, Liu, Pitari, {Di Genova}, Zhao,
+  Balkanski, Bauer, Faluvegi, Kokkola, Martin, Pierce, Schulz, Shindell, Tost,
+  and Zhang}]{Kristiansen2016}
+Kristiansen, N.~I., Stohl, A., Olivi{\'{e}}, D. J.~L., Croft, B., S{\o}vde,
+  O.~A., Klein, H., Christoudias, T., Kunkel, D., Leadbetter, S.~J., Lee,
+  Y.~H., Zhang, K., Tsigaridis, K., Bergman, T., Evangeliou, N., Wang, H., Ma,
+  P.-L., Easter, R.~C., Rasch, P.~J., Liu, X., Pitari, G., {Di Genova}, G.,
+  Zhao, S.~Y., Balkanski, Y., Bauer, S.~E., Faluvegi, G.~S., Kokkola, H.,
+  Martin, R.~V., Pierce, J.~R., Schulz, M., Shindell, D., Tost, H., and Zhang,
+  H.: {Evaluation of observed and modelled aerosol lifetimes using radioactive
+  tracers of opportunity and an ensemble of 19 global models}, Atmospheric
+  Chemistry and Physics, 16, 3525--3561, \doi{10.5194/acp-16-3525-2016}, 2016.
+
+\bibitem[{Lashof and Ahuja(1990)}]{Lashof1990}
+Lashof, D.~A. and Ahuja, D.~R.: {Relative contributions of greenhouse gas
+  emissions to global warming}, Nature, 344, 529--531, \doi{10.1038/344529a0},
+  1990.
+
+\bibitem[{Leach et~al.(2018)Leach, Millar, Haustein, Jenkins, Graham, and
+  Allen}]{Leach2018}
+Leach, N.~J., Millar, R.~J., Haustein, K., Jenkins, S., Graham, E., and Allen,
+  M.~R.: {Current level and rate of warming determine emissions budgets under
+  ambitious mitigation}, Nature Geoscience, 11, 574--579,
+  \doi{10.1038/s41561-018-0156-y}, 2018.
+
+\bibitem[{Lee et~al.(2021)Lee, Fahey, Skowron, Allen, Burkhardt, Chen, Doherty,
+  Freeman, Forster, Fuglestvedt, Gettelman, {De Le{\'{o}}n}, Lim, Lund, Millar,
+  Owen, Penner, Pitari, Prather, Sausen, and Wilcox}]{Lee2020}
+Lee, D., Fahey, D., Skowron, A., Allen, M., Burkhardt, U., Chen, Q., Doherty,
+  S., Freeman, S., Forster, P., Fuglestvedt, J., Gettelman, A., {De
+  Le{\'{o}}n}, R., Lim, L., Lund, M., Millar, R., Owen, B., Penner, J., Pitari,
+  G., Prather, M., Sausen, R., and Wilcox, L.: {The contribution of global
+  aviation to anthropogenic climate forcing for 2000 to 2018}, Atmospheric
+  Environment, 244, 117\,834, \doi{10.1016/j.atmosenv.2020.117834}, 2021.
+
+\bibitem[{Lenssen et~al.(2019)Lenssen, Schmidt, Hansen, Menne, Persin, Ruedy,
+  and Zyss}]{Lenssen2019}
+Lenssen, N. J.~L., Schmidt, G.~A., Hansen, J.~E., Menne, M.~J., Persin, A.,
+  Ruedy, R., and Zyss, D.: {Improvements in the uncertainty model in the
+  Goddard Institute for Space Studies Surface Temperature (GISTEMP) analysis},
+  Journal of Geophysical Research: Atmospheres, p. 2018JD029522,
+  \doi{10.1029/2018JD029522}, 2019.
+
+\bibitem[{MacDougall(2016)}]{MacDougall2016}
+MacDougall, A.~H.: {The Transient Response to Cumulative CO2 Emissions: a
+  Review}, \doi{10.1007/s40641-015-0030-6}, 2016.
+
+\bibitem[{Marvel et~al.(2016)Marvel, Schmidt, Miller, and
+  Nazarenko}]{Marvel2016}
+Marvel, K., Schmidt, G.~A., Miller, R.~L., and Nazarenko, L.~S.: {Implications
+  for climate sensitivity from the response to individual forcings}, Nature
+  Climate Change, 6, 386--389, \doi{10.1038/nclimate2888}, 2016.
+
+\bibitem[{Matthews et~al.(2009)Matthews, Gillett, Stott, and
+  Zickfeld}]{Matthews2009a}
+Matthews, H.~D., Gillett, N.~P., Stott, P.~A., and Zickfeld, K.: {The
+  proportionality of global warming to cumulative carbon emissions}, Nature,
+  459, 829--832, \doi{10.1038/nature08047}, 2009.
+
+\bibitem[{Meinshausen et~al.(2009)Meinshausen, Meinshausen, Hare, Raper,
+  Frieler, Knutti, Frame, and Allen}]{Meinshausen2009}
+Meinshausen, M., Meinshausen, N., Hare, W., Raper, S. C.~B., Frieler, K.,
+  Knutti, R., Frame, D.~J., and Allen, M.~R.: {Greenhouse-gas emission targets
+  for limiting global warming to 2 °C}, Nature, 458, 1158--1162,
+  \doi{10.1038/nature08017}, 2009.
+
+\bibitem[{Meinshausen et~al.(2011{\natexlab{a}})Meinshausen, Raper, and
+  Wigley}]{Meinshausen2011}
+Meinshausen, M., Raper, S. C.~B., and Wigley, T. M.~L.: {Emulating coupled
+  atmosphere-ocean and carbon cycle models with a simpler model, MAGICC6 –
+  Part 1: Model description and calibration}, Atmospheric Chemistry and
+  Physics, 11, 1417--1456, \doi{10.5194/acp-11-1417-2011}, 2011{\natexlab{a}}.
+
+\bibitem[{Meinshausen et~al.(2011{\natexlab{b}})Meinshausen, Wigley, and
+  Raper}]{Meinshausen2011b}
+Meinshausen, M., Wigley, T. M.~L., and Raper, S. C.~B.: {Emulating
+  atmosphere-ocean and carbon cycle models with a simpler model, MAGICC6 –
+  Part 2: Applications}, Atmospheric Chemistry and Physics, 11, 1457--1471,
+  \doi{10.5194/acp-11-1457-2011}, 2011{\natexlab{b}}.
+
+\bibitem[{Meinshausen et~al.(2017)Meinshausen, Vogel, Nauels, Lorbacher,
+  Meinshausen, Etheridge, Fraser, Montzka, Rayner, Trudinger, Krummel, Beyerle,
+  Canadell, Daniel, Enting, Law, Lunder, O\&apos;Doherty, Prinn, Reimann,
+  Rubino, Velders, Vollmer, Wang, and Weiss}]{Meinshausen2017}
+Meinshausen, M., Vogel, E., Nauels, A., Lorbacher, K., Meinshausen, N.,
+  Etheridge, D.~M., Fraser, P.~J., Montzka, S.~A., Rayner, P.~J., Trudinger,
+  C.~M., Krummel, P.~B., Beyerle, U., Canadell, J.~G., Daniel, J.~S., Enting,
+  I.~G., Law, R.~M., Lunder, C.~R., O\&apos;Doherty, S., Prinn, R.~G., Reimann,
+  S., Rubino, M., Velders, G. J.~M., Vollmer, M.~K., Wang, R. H.~J., and Weiss,
+  R.: {Historical greenhouse gas concentrations for climate modelling (CMIP6)},
+  Geoscientific Model Development, 10, 2057--2116,
+  \doi{10.5194/gmd-10-2057-2017}, 2017.
+
+\bibitem[{Meinshausen et~al.(2019)Meinshausen, Nicholls, Lewis, Gidden, Vogel,
+  Freund, Beyerle, Gessner, Nauels, Bauer, Canadell, Daniel, John, Krummel,
+  Luderer, Meinshausen, Montzka, Rayner, Reimann, Smith, van~den Berg, Velders,
+  Vollmer, and Wang}]{Meinshausen2019}
+Meinshausen, M., Nicholls, Z., Lewis, J., Gidden, M., Vogel, E., Freund, M.,
+  Beyerle, U., Gessner, C., Nauels, A., Bauer, N., Canadell, J., Daniel, J.,
+  John, A., Krummel, P., Luderer, G., Meinshausen, N., Montzka, S., Rayner, P.,
+  Reimann, S., Smith, S., van~den Berg, M., Velders, G., Vollmer, M., and Wang,
+  H.~J.: {The SSP greenhouse gas concentrations and their extensions to 2500},
+  Geoscientific Model Development Discussions, pp. 1--77,
+  \doi{10.5194/gmd-2019-222}, 2019.
+
+\bibitem[{Millar and Friedlingstein(2018)}]{Millar20160449}
+Millar, R.~J. and Friedlingstein, P.: {The utility of the historical record for
+  assessing the transient climate response to cumulative emissions},
+  Philosophical Transactions of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences, 376, \doi{10.1098/rsta.2016.0449}, 2018.
+
+\bibitem[{Millar et~al.(2015)Millar, Otto, Forster, Lowe, Ingram, and
+  Allen}]{Millar2015}
+Millar, R.~J., Otto, A., Forster, P.~M., Lowe, J.~A., Ingram, W.~J., and Allen,
+  M.~R.: {Model structure in observational constraints on transient climate
+  response}, Climatic Change, 131, 199--211, \doi{10.1007/s10584-015-1384-4},
+  2015.
+
+\bibitem[{Millar et~al.(2017)Millar, Nicholls, Friedlingstein, and
+  Allen}]{Millar2016}
+Millar, R.~J., Nicholls, Z.~R., Friedlingstein, P., and Allen, M.~R.: {A
+  modified impulse-response representation of the global near-surface air
+  temperature and atmospheric concentration response to carbon dioxide
+  emissions}, Atmospheric Chemistry and Physics, 17, 7213--7228,
+  \doi{10.5194/acp-17-7213-2017}, 2017.
+
+\bibitem[{Morice et~al.(2011)Morice, Kennedy, Rayner, Jones, P., J., A., and
+  D.}]{Morice2011}
+Morice, C.~P., Kennedy, J.~J., Rayner, N.~A., Jones, P.~D., P., M.~C., J.,
+  K.~J., A., R.~N., and D., J.~P.: {Quantifying uncertainties in global and
+  regional temperature change using an ensemble of observational estimates: The
+  HadCRUT4 data set}, Journal of Geophysical Research: Atmospheres, 117,
+  \doi{10.1029/2011JD017187}, 2011.
+
+\bibitem[{Morice et~al.(2020)Morice, Kennedy, Rayner, Winn, Hogan, Killick,
+  Dunn, Osborn, Jones, and Simpson}]{Morice2020}
+Morice, C.~P., Kennedy, J.~J., Rayner, N.~A., Winn, J.~P., Hogan, E., Killick,
+  R.~E., Dunn, R. J.~H., Osborn, T.~J., Jones, P.~D., and Simpson, I.~R.: {An
+  updated assessment of near‐surface temperature change from 1850: the
+  HadCRUT5 dataset}, Journal of Geophysical Research: Atmospheres,
+  \doi{10.1029/2019JD032361}, 2020.
+
+\bibitem[{Myhre et~al.(2013)Myhre, Shindell, Bréon, Collins, Fuglestvedt,
+  Huang, Koch, Lamarque, Lee, Mendoza, Nakajima, Robock, Stephens, Takemura,
+  and Zhang}]{Myhre2013a}
+Myhre, G., Shindell, D., Bréon, F.-M., Collins, W., Fuglestvedt, J., Huang,
+  J., Koch, D., Lamarque, J.-F., Lee, D., Mendoza, B., Nakajima, T., Robock,
+  A., Stephens, G., Takemura, T., and Zhang, H.: {Anthropogenic and Natural
+  Radiative Forcing}, in: Climate Change 2013: The Physical Science Basis.
+  Contribution of Working Group I to the Fifth Assessment Report of the
+  Intergovernmental Panel on Climate Change, edited by Stocker, T.~F., Qin, D.,
+  Plattner, G.-K., Tignor, M., Allen, S.~K., Boschung, J., Nauels, A., Xia, Y.,
+  Bex, V., and Midgley, P.~M., chap.~8, pp. 659--740, Cambridge University
+  Press, Cambridge, United Kingdom and New York, NY, USA,
+  \doi{10.1017/CBO9781107415324.018}, 2013.
+
+\bibitem[{Nelder and Mead(1965)}]{Nelder1965}
+Nelder, J.~A. and Mead, R.: {A Simplex Method for Function Minimization}, The
+  Computer Journal, 7, 308--313, \doi{10.1093/comjnl/7.4.308}, 1965.
+
+\bibitem[{Newman et~al.(2007)Newman, Daniel, Waugh, and Nash}]{Newman2007}
+Newman, P.~A., Daniel, J.~S., Waugh, D.~W., and Nash, E.~R.: {A new formulation
+  of equivalent effective stratospheric chlorine (EESC)}, Atmospheric Chemistry
+  and Physics, 7, 4537--4552, \doi{10.5194/acp-7-4537-2007}, 2007.
+
+\bibitem[{Nicholls et~al.(2020{\natexlab{a}})Nicholls, Meinshausen, Lewis,
+  Gieseke, Dommenget, Dorheim, Fan, Fuglestvedt, Gasser, Gol{\"{u}}ke, Goodwin,
+  Kriegler, Leach, Marchegiani, Quilcaille, Samset, Sandstad, Shiklomanov,
+  Skeie, Smith, Tanaka, Tsutsui, and Xie}]{Nicholls2019}
+Nicholls, Z., Meinshausen, M., Lewis, J., Gieseke, R., Dommenget, D., Dorheim,
+  K., Fan, C.-S., Fuglestvedt, J., Gasser, T., Gol{\"{u}}ke, U., Goodwin, P.,
+  Kriegler, E., Leach, N., Marchegiani, D., Quilcaille, Y., Samset, B.,
+  Sandstad, M., Shiklomanov, A., Skeie, R., Smith, C., Tanaka, K., Tsutsui, J.,
+  and Xie, Z.: {Reduced complexity model intercomparison project phase 1:
+  Protocol, results and initial observations}, Geoscientific Model Development
+  Discussions, pp. 1--33, \doi{10.5194/gmd-2019-375}, 2020{\natexlab{a}}.
+
+\bibitem[{Nicholls et~al.(2021)Nicholls, Lewis, Makin, Nattala, Zhang, Mutch,
+  Tescari, and Meinshausen}]{Nicholls2021}
+Nicholls, Z., Lewis, J., Makin, M., Nattala, U., Zhang, G.~Z., Mutch, S.~J.,
+  Tescari, E., and Meinshausen, M.: {Regionally aggregated, stitched and
+  de‐drifted CMIP‐climate data, processed with netCDF‐SCM v2.0.0},
+  Geoscience Data Journal, 00, gdj3.113, \doi{10.1002/gdj3.113}, 2021.
+
+\bibitem[{Nicholls et~al.(2020{\natexlab{b}})Nicholls, Meinshausen, Lewis,
+  {Rojas Corradi}, Dorheim, Gasser, Gieseke, Hope, Leach, McBride, and
+  al.}]{Nicholls2020}
+Nicholls, Z. R.~J., Meinshausen, M.~A., Lewis, J., {Rojas Corradi}, M.,
+  Dorheim, K., Gasser, T., Gieseke, R., Hope, A.~P., Leach, N., McBride, L.~A.,
+  and al., E.: {Reduced Complexity Model Intercomparison Project Phase 2:
+  Synthesising Earth system knowledge for probabilistic climate projections},
+  Earth and Space Science Open Archive, p.~29, \doi{10.1002/ESSOAR.10504793.1},
+  2020{\natexlab{b}}.
+
+\bibitem[{Nijsse et~al.(2020)Nijsse, Cox, and Williamson}]{Nijsse2020}
+Nijsse, F. J. M.~M., Cox, P.~M., and Williamson, M.~S.: {Emergent constraints
+  on transient climate response (TCR) and equilibrium climate
+  sensitivity (ECS) from historical warming in CMIP5 and CMIP6 models}, Earth
+  System Dynamics, 11, 737--750, \doi{10.5194/esd-11-737-2020}, 2020.
+
+\bibitem[{Prather et~al.(2012)Prather, Holmes, and Hsu}]{Prather2012}
+Prather, M.~J., Holmes, C.~D., and Hsu, J.: {Reactive greenhouse gas scenarios:
+  Systematic exploration of uncertainties and the role of atmospheric
+  chemistry}, Geophysical Research Letters, \doi{10.1029/2012GL051440}, 2012.
+
+\bibitem[{Prather et~al.(2015)Prather, Hsu, DeLuca, Jackman, Oman, Douglass,
+  Fleming, Strahan, Steenrod, S{\o}vde, Isaksen, Froidevaux, and
+  Funke}]{Prather2015}
+Prather, M.~J., Hsu, J., DeLuca, N.~M., Jackman, C.~H., Oman, L.~D., Douglass,
+  A.~R., Fleming, E.~L., Strahan, S.~E., Steenrod, S.~D., S{\o}vde, O.~A.,
+  Isaksen, I. S.~A., Froidevaux, L., and Funke, B.: {Measuring and modeling the
+  lifetime of nitrous oxide including its variability}, Journal of Geophysical
+  Research: Atmospheres, 120, 5693--5705, \doi{10.1002/2015JD023267}, 2015.
+
+\bibitem[{Ramaswamy et~al.(2001)Ramaswamy, Boucher, Haigh, Hauglustaine,
+  Haywood, Myhre, Nakajima, Shi, and Solomon}]{Ramaswamy2001}
+Ramaswamy, V., Boucher, O., Haigh, J., Hauglustaine, D., Haywood, J., Myhre,
+  G., Nakajima, T., Shi, G., and Solomon, S.: {Radiative Forcing of Climate
+  Change}, in: Climate Change 2001: The Scientific Basis. Contribution of
+  Working Group I to the Third Assessment Report of the Intergovernmental Panel
+  on Climate Change, edited by [Houghton, J.T., Y.~D., Griggs, D., Noguer, M.,
+  van~der Linden, P., Dai, X., Maskell, K., and Johnson, C., chap.~6, Cambridge
+  University Press, Cambridge, United Kingdom and New York, NY, USA, 881pp,
+  2001.
+
+\bibitem[{Riahi et~al.(2011)Riahi, Rao, Krey, Cho, Chirkov, Fischer,
+  Kindermann, Nakicenovic, and Rafaj}]{Riahi2011}
+Riahi, K., Rao, S., Krey, V., Cho, C., Chirkov, V., Fischer, G., Kindermann,
+  G., Nakicenovic, N., and Rafaj, P.: {RCP 8.5—A scenario of comparatively
+  high greenhouse gas emissions}, Climatic Change, 109, 33--57,
+  \doi{10.1007/s10584-011-0149-y}, 2011.
+
+\bibitem[{Riahi et~al.(2017)Riahi, van Vuuren, Kriegler, Edmonds, O'Neill,
+  Fujimori, Bauer, Calvin, Dellink, Fricko, Lutz, Popp, Cuaresma, KC, Leimbach,
+  Jiang, Kram, Rao, Emmerling, Ebi, Hasegawa, Havlik, Humpen{\"{o}}der, {Da
+  Silva}, Smith, Stehfest, Bosetti, Eom, Gernaat, Masui, Rogelj, Strefler,
+  Drouet, Krey, Luderer, Harmsen, Takahashi, Baumstark, Doelman, Kainuma,
+  Klimont, Marangoni, Lotze-Campen, Obersteiner, Tabeau, and
+  Tavoni}]{Riahi2017}
+Riahi, K., van Vuuren, D.~P., Kriegler, E., Edmonds, J., O'Neill, B.~C.,
+  Fujimori, S., Bauer, N., Calvin, K., Dellink, R., Fricko, O., Lutz, W., Popp,
+  A., Cuaresma, J.~C., KC, S., Leimbach, M., Jiang, L., Kram, T., Rao, S.,
+  Emmerling, J., Ebi, K., Hasegawa, T., Havlik, P., Humpen{\"{o}}der, F., {Da
+  Silva}, L.~A., Smith, S., Stehfest, E., Bosetti, V., Eom, J., Gernaat, D.,
+  Masui, T., Rogelj, J., Strefler, J., Drouet, L., Krey, V., Luderer, G.,
+  Harmsen, M., Takahashi, K., Baumstark, L., Doelman, J.~C., Kainuma, M.,
+  Klimont, Z., Marangoni, G., Lotze-Campen, H., Obersteiner, M., Tabeau, A.,
+  and Tavoni, M.: {The Shared Socioeconomic Pathways and their energy, land
+  use, and greenhouse gas emissions implications: An overview}, Global
+  Environmental Change, 42, 153--168, \doi{10.1016/J.GLOENVCHA.2016.05.009},
+  2017.
+
+\bibitem[{Ribes et~al.(2021)Ribes, Qasmi, and Gillett}]{Ribes2021}
+Ribes, A., Qasmi, S., and Gillett, N.~P.: {Making climate projections
+  conditional on historical observations}, Science Advances, 7, eabc0671,
+  \doi{10.1126/sciadv.abc0671}, 2021.
+
+\bibitem[{Richardson et~al.(2016)Richardson, Cowtan, Hawkins, and
+  Stolpe}]{Richardson2016}
+Richardson, M., Cowtan, K., Hawkins, E., and Stolpe, M.~B.: {Reconciled climate
+  response estimates from climate models and the energy budget of Earth},
+  Nature Climate Change, 6, 931--935, \doi{10.1038/nclimate3066}, 2016.
+
+\bibitem[{Richardson et~al.(2018)Richardson, Cowtan, and
+  Millar}]{Richardson2018}
+Richardson, M., Cowtan, K., and Millar, R.~J.: {Global temperature definition
+  affects achievement of long-term climate goals}, Environmental Research
+  Letters, 13, 54\,004, \doi{10.1088/1748-9326/aab305}, 2018.
+
+\bibitem[{Rohde et~al.(2013)Rohde, Muller, Jacobsen, Muller, Perlmutter,
+  Rosenfeld, Wurtele, Groom, and Wickham}]{Rohde2013}
+Rohde, R., Muller, R.~A., Jacobsen, R., Muller, E., Perlmutter, S., Rosenfeld,
+  A., Wurtele, J., Groom, D., and Wickham, C.: {A New Estimate of the Average
+  Earth Surface Land Temperature Spanning 1753 to 2011}, Geoinformatics \&
+  Geostatistics: An Overview, 1, 1, \doi{10.4172/2327-4581.1000101}, 2013.
+
+\bibitem[{Rugenstein et~al.(2020)Rugenstein, Bloch‐Johnson, Gregory, Andrews,
+  Mauritsen, Li, Fr{\"{o}}licher, Paynter, Danabasoglu, Yang, Dufresne, Cao,
+  Schmidt, Abe‐Ouchi, Geoffroy, and Knutti}]{Rugenstein2020}
+Rugenstein, M., Bloch‐Johnson, J., Gregory, J., Andrews, T., Mauritsen, T.,
+  Li, C., Fr{\"{o}}licher, T.~L., Paynter, D., Danabasoglu, G., Yang, S.,
+  Dufresne, J., Cao, L., Schmidt, G.~A., Abe‐Ouchi, A., Geoffroy, O., and
+  Knutti, R.: {Equilibrium Climate Sensitivity Estimated by Equilibrating
+  Climate Models}, Geophysical Research Letters, 47,
+  \doi{10.1029/2019GL083898}, 2020.
+
+\bibitem[{Sanderson(2020)}]{Sanderson2020a}
+Sanderson, B.: {Relating climate sensitivity indices to projection
+  uncertainty}, Earth System Dynamics, 11, 721--735,
+  \doi{10.5194/esd-11-721-2020}, 2020.
+
+\bibitem[{Sherwood et~al.(2020)Sherwood, Webb, Annan, Armour, Forster,
+  Hargreaves, Hegerl, Klein, Marvel, Rohling, Watanabe, Andrews, Braconnot,
+  Bretherton, Foster, Hausfather, von~der Heydt, Knutti, Mauritsen, Norris,
+  Proistosescu, Rugenstein, Schmidt, Tokarska, and Zelinka}]{Sherwood2020}
+Sherwood, S., Webb, M.~J., Annan, J.~D., Armour, K.~C., Forster, P.~M.,
+  Hargreaves, J.~C., Hegerl, G., Klein, S.~A., Marvel, K.~D., Rohling, E.~J.,
+  Watanabe, M., Andrews, T., Braconnot, P., Bretherton, C.~S., Foster, G.~L.,
+  Hausfather, Z., von~der Heydt, A.~S., Knutti, R., Mauritsen, T., Norris,
+  J.~R., Proistosescu, C., Rugenstein, M., Schmidt, G.~A., Tokarska, K.~B., and
+  Zelinka, M.~D.: {An assessment of Earth's climate sensitivity using multiple
+  lines of evidence}, Reviews of Geophysics, \doi{10.1029/2019rg000678}, 2020.
+
+\bibitem[{Skeie et~al.(2020)Skeie, Myhre, Hodnebrog, Cameron-Smith, Deushi,
+  Hegglin, Horowitz, Kramer, Michou, Mills, Olivi{\'{e}}, Connor, Paynter,
+  Samset, Sellar, Shindell, Takemura, Tilmes, and Wu}]{Skeie2020}
+Skeie, R.~B., Myhre, G., Hodnebrog, {\O}., Cameron-Smith, P.~J., Deushi, M.,
+  Hegglin, M.~I., Horowitz, L.~W., Kramer, R.~J., Michou, M., Mills, M.~J.,
+  Olivi{\'{e}}, D.~J., Connor, F.~M., Paynter, D., Samset, B.~H., Sellar, A.,
+  Shindell, D., Takemura, T., Tilmes, S., and Wu, T.: {Historical total ozone
+  radiative forcing derived from CMIP6 simulations}, npj Climate and
+  Atmospheric Science, 3, 1--10, \doi{10.1038/s41612-020-00131-0}, 2020.
+
+\bibitem[{Smith(2020)}]{Smith2020c}
+Smith, C.: {Effective Radiative Forcing Time Series from the Shared
+  Socioeconomic Pathways}, \doi{10.5281/ZENODO.3973015}, 2020.
+
+\bibitem[{Smith et~al.(2018)Smith, Forster, Allen, Leach, Millar, Passerello,
+  and Regayre}]{Smith2018}
+Smith, C.~J., Forster, P.~M., Allen, M., Leach, N., Millar, R.~J., Passerello,
+  G.~A., and Regayre, L.~A.: {FAIR v1.3: a simple emissions-based impulse
+  response and carbon cycle model}, Geoscientific Model Development, 11,
+  2273--2297, \doi{10.5194/gmd-11-2273-2018}, 2018.
+
+\bibitem[{Smith et~al.(2020)Smith, Harris, Palmer, Bellouin, Myhre, Schulz,
+  Golaz, Ringer, Storelvmo, and Forster}]{Smith2020a}
+Smith, C.~J., Harris, G., Palmer, M.~D., Bellouin, N., Myhre, G., Schulz, M.,
+  Golaz, J.-C., Ringer, M., Storelvmo, T., and Forster, P.~M.: {Energy Budget
+  Constraints on the Time History of Aerosol Forcing and Climate Sensitivity},
+  Journal of Geophysical Research: Atmospheres, in submiss,
+  \doi{10.1002/ESSOAR.10503977.2}, 2020.
+
+\bibitem[{Stevenson et~al.(2013)Stevenson, Young, Naik, Lamarque, Shindell,
+  Voulgarakis, Skeie, Dalsoren, Myhre, Berntsen, Folberth, Rumbold, Collins,
+  MacKenzie, Doherty, Zeng, van Noije, Strunk, Bergmann, Cameron-Smith,
+  Plummer, Strode, Horowitz, Lee, Szopa, Sudo, Nagashima, Josse, Cionni, Righi,
+  Eyring, Conley, Bowman, Wild, and Archibald}]{Stevenson2013}
+Stevenson, D.~S., Young, P.~J., Naik, V., Lamarque, J.-F., Shindell, D.~T.,
+  Voulgarakis, A., Skeie, R.~B., Dalsoren, S.~B., Myhre, G., Berntsen, T.~K.,
+  Folberth, G.~A., Rumbold, S.~T., Collins, W.~J., MacKenzie, I.~A., Doherty,
+  R.~M., Zeng, G., van Noije, T. P.~C., Strunk, A., Bergmann, D.,
+  Cameron-Smith, P., Plummer, D.~A., Strode, S.~A., Horowitz, L., Lee, Y.~H.,
+  Szopa, S., Sudo, K., Nagashima, T., Josse, B., Cionni, I., Righi, M., Eyring,
+  V., Conley, A., Bowman, K.~W., Wild, O., and Archibald, A.: {Tropospheric
+  ozone changes, radiative forcing and attribution to emissions in the
+  Atmospheric Chemistry and Climate Model Intercomparison Project (ACCMIP)},
+  Atmospheric Chemistry and Physics, 13, 3063--3085,
+  \doi{10.5194/acp-13-3063-2013}, 2013.
+
+\bibitem[{Taylor et~al.(2012)Taylor, Stouffer, and Meehl}]{Taylor2012}
+Taylor, K.~E., Stouffer, R.~J., and Meehl, G.~A.: {An Overview of CMIP5 and the
+  Experiment Design}, Bulletin of the American Meteorological Society, 93,
+  485--498, \doi{10.1175/BAMS-D-11-00094.1}, 2012.
+
+\bibitem[{Thornhill et~al.(2021)Thornhill, Collins, Kramer, Olivi{\'{e}},
+  Skeie, O'Connor, Abraham, Checa-Garcia, Bauer, Deushi, Emmons, Forster,
+  Horowitz, Johnson, Keeble, Lamarque, Michou, Mills, Mulcahy, Myhre, Nabat,
+  Naik, Oshima, Schulz, Smith, Takemura, Tilmes, Wu, Zeng, and
+  Zhang}]{Thornhill2021}
+Thornhill, G.~D., Collins, W.~J., Kramer, R.~J., Olivi{\'{e}}, D., Skeie,
+  R.~B., O'Connor, F.~M., Abraham, N.~L., Checa-Garcia, R., Bauer, S.~E.,
+  Deushi, M., Emmons, L.~K., Forster, P.~M., Horowitz, L.~W., Johnson, B.,
+  Keeble, J., Lamarque, J.-F., Michou, M., Mills, M.~J., Mulcahy, J.~P., Myhre,
+  G., Nabat, P., Naik, V., Oshima, N., Schulz, M., Smith, C.~J., Takemura, T.,
+  Tilmes, S., Wu, T., Zeng, G., and Zhang, J.: {Effective radiative forcing
+  from emissions of reactive gases and aerosols – a multi-model comparison},
+  Atmospheric Chemistry and Physics, 21, 853--874,
+  \doi{10.5194/acp-21-853-2021}, 2021.
+
+\bibitem[{Tokarska et~al.(2019)Tokarska, Schleussner, Rogelj, Stolpe, Matthews,
+  Pfleiderer, and Gillett}]{Tokarska2019}
+Tokarska, K.~B., Schleussner, C.-F., Rogelj, J., Stolpe, M.~B., Matthews,
+  H.~D., Pfleiderer, P., and Gillett, N.~P.: {Recommended temperature metrics
+  for carbon budget estimates, model evaluation and climate policy}, Nature
+  Geoscience, 12, 964--971, \doi{10.1038/s41561-019-0493-5}, 2019.
+
+\bibitem[{Tokarska et~al.(2020)Tokarska, Stolpe, Sippel, Fischer, Smith,
+  Lehner, and Knutti}]{Tokarska2020a}
+Tokarska, K.~B., Stolpe, M.~B., Sippel, S., Fischer, E.~M., Smith, C.~J.,
+  Lehner, F., and Knutti, R.: {Past warming trend constrains future warming in
+  CMIP6 models}, Science Advances, 6, 9549--9567, \doi{10.1126/sciadv.aaz9549},
+  2020.
+
+\bibitem[{Trenberth and Fasullo(2013)}]{Trenberth2013}
+Trenberth, K.~E. and Fasullo, J.~T.: {An apparent hiatus in global warming?},
+  Earth's Future, 1, 19--32, \doi{10.1002/2013ef000165}, 2013.
+
+\bibitem[{Tsutsui(2017)}]{Tsutsui2017}
+Tsutsui, J.: {Quantification of temperature response to CO2 forcing in
+  atmosphere–ocean general circulation models}, Climatic Change, 140,
+  287--305, \doi{10.1007/s10584-016-1832-9}, 2017.
+
+\bibitem[{Tsutsui(2020)}]{Tsutsui2020}
+Tsutsui, J.: {Diagnosing Transient Response to CO 2 Forcing in Coupled
+  Atmosphere‐Ocean Model Experiments Using a Climate Model Emulator},
+  Geophysical Research Letters, 47, \doi{10.1029/2019GL085844}, 2020.
+
+\bibitem[{Velders and Daniel(2014)}]{Velders2014}
+Velders, G.~J. and Daniel, J.~S.: {Uncertainty analysis of projections of
+  ozone-depleting substances: Mixing ratios, EESC, ODPs, and GWPs}, Atmospheric
+  Chemistry and Physics, 14, 2757--2776, \doi{10.5194/acp-14-2757-2014}, 2014.
+
+\bibitem[{Vose et~al.(2012)Vose, Arndt, Banzon, Easterling, Gleason, Huang,
+  Kearns, Lawrimore, Menne, Peterson, Reynolds, Smith, Williams, Wuertz, Vose,
+  Arndt, Banzon, Easterling, Gleason, Huang, Kearns, Lawrimore, Menne,
+  Peterson, Reynolds, Smith, Jr., and Wuertz}]{Vose2012}
+Vose, R.~S., Arndt, D., Banzon, V.~F., Easterling, D.~R., Gleason, B., Huang,
+  B., Kearns, E., Lawrimore, J.~H., Menne, M.~J., Peterson, T.~C., Reynolds,
+  R.~W., Smith, T.~M., Williams, C.~N., Wuertz, D.~B., Vose, R.~S., Arndt, D.,
+  Banzon, V.~F., Easterling, D.~R., Gleason, B., Huang, B., Kearns, E.,
+  Lawrimore, J.~H., Menne, M.~J., Peterson, T.~C., Reynolds, R.~W., Smith,
+  T.~M., Jr., C. N.~W., and Wuertz, D.~B.: {NOAA's Merged Land–Ocean Surface
+  Temperature Analysis}, Bulletin of the American Meteorological Society, 93,
+  1677--1685, \doi{10.1175/BAMS-D-11-00241.1}, 2012.
+
+\bibitem[{Wilks(1997)}]{Wilks1997}
+Wilks, D.~S.: {Resampling hypothesis tests for autocorrelated fields}, Journal
+  of Climate, 10, 65--82,
+  \doi{10.1175/1520-0442(1997)010<0065:RHTFAF>2.0.CO;2}, 1997.
+
+\bibitem[{Zelinka et~al.(2014)Zelinka, Andrews, Forster, and
+  Taylor}]{Zelinka2014}
+Zelinka, M.~D., Andrews, T., Forster, P.~M., and Taylor, K.~E.: {Quantifying
+  components of aerosol-cloud-radiation interactions in climate models},
+  Journal of Geophysical Research: Atmospheres, 119, 7599--7615,
+  \doi{10.1002/2014JD021710}, 2014.
+
+\bibitem[{Zickfeld et~al.(2016)Zickfeld, MacDougall, and
+  Matthews}]{Zickfeld2016}
+Zickfeld, K., MacDougall, A.~H., and Matthews, H.~D.: {On the proportionality
+  between global temperature change and cumulative CO <sub>2</sub> emissions
+  during periods of net negative CO <sub>2</sub> emissions}, Environmental
+  Research Letters, 11, 055\,006, \doi{10.1088/1748-9326/11/5/055006}, 2016.
+
+\end{thebibliography}

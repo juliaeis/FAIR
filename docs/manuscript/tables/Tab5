@@ -1,0 +1,10 @@
+\begin{tabular}{lll}
+\toprule
+ &    default value &  scaling factor, $X$ \\
+\textbf{parameter        } &       &         \\
+\midrule
+\textbf{$r_0$} &  33.9 &  $X\sim\mathcal{N}\left(1,0.154\right)$ \\
+\textbf{$r_u$}   &  0.0188 &  $\mathrm{ln}(X)\sim\mathcal{N}\left(0,0.442\right)$ \\
+\textbf{$r_T$}         &  2.67 &  $X\sim\mathcal{N}\left(1,0.615\right)$ \\
+\bottomrule
+\end{tabular}

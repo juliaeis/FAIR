@@ -1,0 +1,53 @@
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+\textbf{experiment} &  1pctCO2 &  abrupt-0p5xCO2 &  abrupt-2xCO2 &  abrupt-4xCO2 &  ssp119 &  ssp126 &  ssp245 &  ssp370 &  ssp460 &  ssp585 \\
+\textbf{model          } &          &                 &               &               &         &         &         &         &         &         \\
+\midrule
+\textbf{ACCESS-CM2     } &        1 &               0 &             0 &             1 &       0 &       3 &       3 &       3 &       0 &       3 \\
+\textbf{ACCESS-ESM1-5  } &        1 &               0 &             0 &             1 &       0 &       3 &       3 &       3 &       0 &       3 \\
+\textbf{AWI-CM-1-1-MR  } &        1 &               0 &             0 &             1 &       0 &       1 &       1 &       5 &       0 &       1 \\
+\textbf{BCC-CSM2-MR    } &        1 &               0 &             0 &             1 &       0 &       1 &       1 &       1 &       0 &       1 \\
+\textbf{BCC-ESM1       } &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{CAMS-CSM1-0    } &        2 &               0 &             0 &             2 &       2 &       2 &       2 &       2 &       0 &       2 \\
+\textbf{CESM2          } &        1 &               1 &             1 &             0 &       0 &       3 &       6 &       3 &       0 &       5 \\
+\textbf{CESM2-FV2      } &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{CESM2-WACCM    } &        1 &               0 &             0 &             1 &       0 &       1 &       5 &       1 &       0 &       5 \\
+\textbf{CESM2-WACCM-FV2} &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{CMCC-CM2-SR5   } &        1 &               0 &             0 &             1 &       0 &       1 &       1 &       1 &       0 &       1 \\
+\textbf{CNRM-CM6-1     } &        1 &               1 &             1 &             1 &       0 &       6 &       6 &       6 &       0 &       6 \\
+\textbf{CNRM-CM6-1-HR  } &        1 &               0 &             0 &             1 &       0 &       1 &       1 &       1 &       0 &       1 \\
+\textbf{CNRM-ESM2-1    } &        1 &               0 &             0 &             2 &       5 &       4 &       5 &       5 &       5 &       5 \\
+\textbf{CanESM5        } &        6 &               0 &             0 &             2 &      50 &      50 &      50 &      50 &       5 &      50 \\
+\textbf{CanESM5-CanOE  } &        1 &               0 &             0 &             0 &       0 &       3 &       3 &       3 &       0 &       3 \\
+\textbf{E3SM-1-0       } &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{FGOALS-g3      } &        3 &               0 &             0 &             1 &       1 &       4 &       4 &       5 &       1 &       4 \\
+\textbf{GISS-E2-1-G    } &        3 &               1 &             4 &             5 &       2 &       7 &      20 &      18 &       6 &       3 \\
+\textbf{GISS-E2-1-H    } &        1 &               0 &             1 &             2 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{GISS-E2-2-G    } &        1 &               0 &             1 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{HadGEM3-GC31-LL} &        4 &               1 &             0 &             1 &       0 &       1 &       1 &       0 &       0 &       4 \\
+\textbf{HadGEM3-GC31-MM} &        1 &               0 &             0 &             1 &       0 &       1 &       0 &       0 &       0 &       3 \\
+\textbf{MIROC-ES2L     } &        1 &               0 &             0 &             1 &       3 &       3 &       1 &       1 &       0 &       1 \\
+\textbf{MIROC6         } &        1 &               1 &             1 &             1 &       1 &      42 &       3 &       3 &       1 &      49 \\
+\textbf{MPI-ESM-1-2-HAM} &        1 &               0 &             0 &             0 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{MPI-ESM1-2-HR  } &        1 &               0 &             0 &             1 &       0 &       2 &       2 &      10 &       0 &       2 \\
+\textbf{MPI-ESM1-2-LR  } &        1 &               0 &             0 &             1 &       0 &      10 &      10 &      10 &       0 &      10 \\
+\textbf{MRI-ESM2-0     } &        2 &               1 &             1 &             6 &       1 &       1 &       1 &       5 &       1 &       2 \\
+\textbf{NorCPM1        } &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{SAM0-UNICON    } &        1 &               0 &             0 &             1 &       0 &       0 &       0 &       0 &       0 &       0 \\
+\textbf{CIESM          } &        0 &               0 &             0 &             0 &       0 &       1 &       1 &       0 &       0 &       1 \\
+\textbf{EC-Earth3      } &        0 &               0 &             0 &             0 &      51 &       7 &      22 &       6 &       0 &      57 \\
+\textbf{EC-Earth3-Veg  } &        0 &               0 &             0 &             0 &       3 &       5 &       6 &       4 &       0 &       5 \\
+\textbf{FGOALS-f3-L    } &        0 &               0 &             0 &             0 &       0 &       1 &       1 &       1 &       0 &       1 \\
+\textbf{INM-CM4-8      } &        0 &               0 &             0 &             0 &       0 &       0 &       0 &       0 &       0 &       1 \\
+\textbf{INM-CM5-0      } &        0 &               0 &             0 &             0 &       0 &       0 &       0 &       0 &       0 &       1 \\
+\textbf{IPSL-CM6A-LR   } &        0 &               0 &             0 &             0 &       6 &       6 &      11 &      11 &       7 &       6 \\
+\textbf{KACE-1-0-G     } &        0 &               0 &             0 &             0 &       0 &       3 &       3 &       3 &       0 &       3 \\
+\textbf{KIOST-ESM      } &        0 &               0 &             0 &             0 &       0 &       0 &       0 &       0 &       0 &       1 \\
+\textbf{NESM3          } &        0 &               0 &             0 &             0 &       0 &       2 &       2 &       0 &       0 &       2 \\
+\textbf{NorESM2-LM     } &        0 &               0 &             0 &             0 &       0 &       1 &       3 &       1 &       0 &       1 \\
+\textbf{NorESM2-MM     } &        0 &               0 &             0 &             0 &       0 &       1 &       1 &       1 &       0 &       1 \\
+\textbf{TaiESM1        } &        0 &               0 &             0 &             0 &       0 &       0 &       0 &       0 &       0 &       1 \\
+\textbf{UKESM1-0-LL    } &        0 &               0 &             0 &             0 &       5 &      13 &       6 &      13 &       0 &       5 \\
+\textbf{Total models   } &       31 &               6 &             7 &            28 &      12 &      32 &      31 &      28 &       7 &      36 \\
+\bottomrule
+\end{tabular}

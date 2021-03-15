@@ -1,0 +1,2369 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL ../../../FaIR_v2-0_paper/LEACH_GMD_rev.tex   Mon Sep 21 14:47:03 2020
+%DIF ADD FaIRv2-main-revision.tex                     Thu Mar 11 10:27:53 2021
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for discussion papers and final revised papers.
+
+%% 2-column papers and discussion papers
+\documentclass[gmd, manuscript]{copernicus}
+
+
+%DIF 15d15
+%DIF < 
+%DIF -------
+%% Journal abbreviations (please use the same for discussion papers and final revised papers)
+
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% ASTRA Proceedings (ap)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% DEUQUA Special Publications (deuquasp)
+% Drinking Water Engineering and Science (dwes)
+% Earth Surface Dynamics (esurf)
+% Earth System Dynamics (esd)
+% Earth System Science Data (essd)
+% E&G Quaternary Science Journal (egqsj)
+% European Journal of Mineralogy (ejm)
+% Fossil Record (fr)
+% Geochronology (gchron)
+% Geographica Helvetica (gh)
+% Geoscience Communication (gc)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% History of Geo- and Space Sciences (hgss)
+% Hydrology and Earth System Sciences (hess)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Magnetic Resonance (mr)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Primate Biology (pb)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% The Cryosphere (tc)
+% Weather and Climate Dynamics (wcd)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+\usepackage{booktabs} %DIF > 
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}#1}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\title{FaIRv2.0.0: a generalised impulse-response model for climate uncertainty and future scenario exploration}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1]{Nicholas J.}{Leach}
+\Author[1]{Stuart}{Jenkins}
+\Author[2,3]{Zebedee}{Nicholls}
+\Author[4,5]{Christopher J.}{Smith}
+\Author[1]{John}{Lynch}
+\Author[1]{Michelle}{Cain}
+\Author[1]{Tristram}{Walsh}
+\Author[1]{Bill}{Wu}
+\Author[6]{Junichi}{Tsutsui}
+\Author[1,7]{Myles R.}{Allen}
+
+\affil[1]{Department of Physics, Atmospheric, Oceanic, and Planetary Physics, University of Oxford, United Kingdom.}
+\affil[2]{Australian--German Climate and Energy College, University of Melbourne, Australia.}
+\affil[3]{School of Earth Sciences, University of Melbourne, Australia.}
+\affil[4]{School of Earth and Environment, University of Leeds, Leeds, UK.}
+\affil[5]{International Institute for Applied Systems Analysis, Laxenburg, Austria.}
+\affil[6]{Environmental Science Laboratory, Central Research Institute of Electric Power Industry, Abiko-shi, Japan.}
+\affil[7]{Environmental Change Institute, University of Oxford, Oxford, UK.}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please add a further affiliation and mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Aman}" with the affiliations "\affil[2]{University of ...}" and "\affil[$\dag$]{deceased, 1 July 2019}"
+
+
+\correspondence{Nicholas J. Leach (nicholas.leach@stx.ox.ac.uk)}
+
+\runningtitle{TEXT}
+
+\runningauthor{TEXT}
+
+
+
+
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+
+\firstpage{1}
+
+\maketitle
+
+
+
+\begin{abstract}
+    Here we present an update to the FaIR model for use in probabilistic future climate and scenario exploration, integrated assessment, policy analysis and education. In this update we have focussed on identifying a minimum level of structural complexity in the model. The result is a set of six equations, five of which correspond to the standard Impulse Response model used for greenhouse gas (GHG) metric calculations in the IPCC’s fifth assessment report, plus one additional physically-motivated additional equation to represent state-dependent feedbacks on the response timescales of each greenhouse gas cycle. This additional equation is necessary to reproduce non-linearities in the carbon cycle apparent in both Earth System Models and observations. These six equations are transparent and sufficiently simple that the model is able to be \DIFdelbegin \DIFdel{written in }\DIFdelend \DIFaddbegin \DIFadd{ported into }\DIFaddend standard tabular data analysis packages, such as Excel; increasing the potential user base considerably. However, we demonstrate that the equations are flexible enough to be tuned to emulate the behaviour of several key processes within more complex models from CMIP6. The model is exceptionally quick to run, making it ideal for integrating large probabilistic ensembles. We apply a constraint based on the current estimates of the global warming trend to a one million member ensemble, using the constrained ensemble to make scenario dependent projections and infer ranges for properties of the climate system. Through these analyses, we reaffirm that simple climate models (unlike more complex models) are not themselves intrinsically biased “hot” or “cold”: it is the choice of parameters and how those are selected that determines the model response, something that appears to have been misunderstood in the past. This updated FaIR model is able to reproduce the global climate system response to GHG and aerosol emissions with sufficient accuracy to be useful in a wide range of applications; and therefore could be used as a lowest common denominator model to provide consistency in different contexts. The fact that FaIR can be written down in just six equations greatly aids transparency in such contexts.
+\end{abstract}
+
+
+\copyrightstatement{@ Author(s) 2019. This work is distributed under
+the Creative Commons Attribution 4.0 License.}
+
+
+\introduction \label{introduction}
+%DIF < % \introduction[modified heading if necessary]
+Earth System Models (ESMs) are vital tools for providing insight into the drivers behind Earth’s climate system, as well as projecting impacts of future emissions. Large scale multi-model studies, such as the Coupled Model Intercomparison Projects \citep[CMIPs]{Eyring2016,Taylor2012}, have been used in many reports to produce projections of what the future climate may look like based on a range of different concentration scenarios, with associated emission scenarios and socio-economic narratives quantified by Integrated Assessment Models (IAMs). In addition to simulating both the past and possible future climates, these CMIPs extensively use idealised experiments to try to determine some of the key properties of the climate system, such as the equilibrium climate sensitivity [ECS, \cite{Collins2013}], or the transient climate response to cumulative carbon emissions \citep[TCRE]{Allen2009}.\\\\ 
+%
+While ESMs are integral to our current understanding of how the climate system responds to GHG and aerosol emissions, and provide the most comprehensive projections of what a future world might look like, they are so computationally expensive that only a limited set of experiments are able to be run during a CMIP. This constraint on the quantity of experiments necessitates the use of simpler models to provide probabilistic assessments and explore additional experiments and scenarios. These models, often referred to as simple climate models (SCMs), are typically designed to emulate the response of more complex models. In general, they are able to simulate the globally averaged emission $\rightarrow$ concentration $\rightarrow$ radiative forcing $\rightarrow$ temperature response pathway, and can be tuned to emulate an individual ESM (or multi-model-mean). In general, SCMs are considerably less complex than ESMs: while ESMs are three dimensional, gridded, and explicitly represent dynamical and physical processes, therefore outputting many hundreds of variables, SCMs tend to be globally averaged (or cover large regions), and parameterise many processes, resulting in many fewer output variables. This reduction in complexity means that SCMs are much quicker than ESMs in terms of runtime: most SCMs can run tens of thousands of years of simulation per minute on an ``average'' personal computer, whereas ESMs may take several hours to run a single year on hundreds of supercomputer processors; and are much smaller in terms of the number of lines of code: SCMs tend to be on the order of thousands of lines, ESMs can be up to a million lines \citep{Alexander2015}.\\\\
+%
+\DIFdelbegin \DIFdel{Several }\DIFdelend \DIFaddbegin \DIFadd{There are many }\DIFaddend simple climate models \DIFdelbegin \DIFdel{are available, such as the two }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep{Nicholls2019} }\hspace{0pt}%DIFAUXCMD
+that have been in use by the climate science and integrated assessment modelling communities for decades. Of particular note are MAGICC \mbox{%DIFAUXCMD
+\citep{Meinshausen2011}}\hspace{0pt}%DIFAUXCMD
+, which has dominated SCM usage within integrated assessment models, and FaIR}\footnote{\DIFadd{We refer to the FaIR model in general as ``FaIR'', to the version presented in this text as ``FaIRv2.0.0'', and to the specific implementation used to create the figures as ``FaIRv2.0.0-alpha'' throughout.}} \DIFadd{\mbox{%DIFAUXCMD
+\citep{Smith2018}}\hspace{0pt}%DIFAUXCMD
+; both of which were }\DIFaddend used in the Intergovernmental Panel on Climate Change (IPCC) Special Report on 1.5\textdegree C warming \citep[SR15]{IPCC2018}\DIFdelbegin \DIFdel{: FaIR v1.3 \mbox{%DIFAUXCMD
+\citep{Smith2018} }\hspace{0pt}%DIFAUXCMD
+and MAGICC6 \mbox{%DIFAUXCMD
+\citep{Meinshausen2011}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend . However, while these models are ``simple" in comparison to the ESMs they emulate, they are often \DIFdelbegin \DIFdel{still not so simple as }\DIFdelend \DIFaddbegin \DIFadd{not simple enough }\DIFaddend to allow new users to gain enough familiarity with the underlying equations to understand their behaviour without significant effort. This learning curve reduces their uptake by the wider community, and has resulted in different research groups generally using the single model that they are most familiar with \citep{Nicholls2019} from the wide range of SCMs. In the past, this has led to \DIFdelbegin \DIFdel{a }\DIFdelend different simple models being used by different working groups in major reports, reducing the consistency of the overall work. We believe one key step towards a transparent and coherent process in IPCC Assessments would be \DIFdelbegin \DIFdel{the use of }\DIFdelend \DIFaddbegin \DIFadd{to use }\DIFaddend at least one common SCM as widely as possible throughout all working groups, allowing results to be directly comparable. Such use would provide additional context alongside domain specific models. For this to be realised, an SCM that is both easy to understand and adapt is required.\\\\
+%
+An important innovation of the IPCC 5th Assessment Report \citep{Myhre2013a} was the introduction of a \DIFdelbegin \DIFdel{fully }\DIFdelend transparent set of equations (the AR5-IR model) for use in the calculation of GHG metrics. However, that model was not quite adequate to reproduce the evolution of the integrated impulse response to emissions over time, due to the lack of non-linearity in the carbon cycle. The Finite amplitude Impulse Response (FaIR) model v1.0 \citep{Millar2016} introduced a state-dependence to the AR5-IR carbon cycle. This state-dependent carbon cycle was better able to capture both the observed relationship between historical emission trajectories and atmospheric CO$_2$ burden; and the behaviour of ESMs in idealised concentration increase and pulse emission experiments. FaIR v1.0 used four equations to model the atmospheric gas cycle and corresponding effective radiative forcing (ERF) impact of CO$_2$, and a further two (unchanged from the AR5-IR) to emulate the climate system's thermal response to changes in ERF. Subsequently, \cite{Smith2018} added a representation of other GHGs and aerosols, which necessarily increased the structural complexity of the model in \DIFdelbegin \DIFdel{FaIR v1}\DIFdelend \DIFaddbegin \DIFadd{FaIRv1}\DIFaddend .3. In this update, we maintain the ability to simulate the atmospheric response to a wide range of GHGs and aerosol emissions, while attempting to significantly reduce the complexity of the model structure. \\\\
+%
+In FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend we propose a set of six equations that we demonstrate are sufficient to capture the global-mean climate system response to GHG and aerosol emissions. These six equations are outlined in \DIFdelbegin \DIFdel{figure }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend \ref{fig:schematic}. In this text we explain the physical reasoning behind each equation and select a default parameter set based on simple tunings to historical observations and recent literature. We compare the default response of FaIRv2.0\DIFdelbegin \DIFdel{to the }\DIFdelend \DIFaddbegin \DIFadd{.0 to }\DIFaddend a publicly available version of the widely used SCM, MAGICC6 \citep{Meinshausen2011,Meinshausen2011b}, for a range of Socioeconomic Pathways \citep[SSPs]{Riahi2017}. Further, we show that these equations can be tuned to emulate key properties of a range of CMIP6 \citep{Eyring2016} models. Finally, we constrain a large parameter ensemble inferred from more complex models and contemporary assessments with observations of the present-day warming level and rate to provide a set of observationally constrained probabilistic projections for the future climate following \citep{Smith2018}.\\\\
+%
+FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend is sufficiently simple as to be able to be used in undergraduate and high-school teaching of climate change, and can illustrate some key properties of the climate system such as the warming impacts of different GHGs, the implications of uncertainty in ECS and TCR, or the importance of carbon cycle feedbacks. To allow students and other users unfamiliar with scientific programming languages (such as FaIRv2.0's native language, Python) access to the model, we also provide a version of FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend written in Excel. We hope that this may open exploration of the climate system to a large group of potential users who do not have the expertise to run presently-available SCMs. The simplicity of FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend additionally means that although we provide code in a central, open-source repository, which we strongly recommend is used for most cases, users are not forced to rely on this. In fact we expect it would be relatively quick to re-create in whatever language users are familiar with, and in whatever format fits their intended usage.\\\\
+%
+Here we suggest that the major value of SCMs is in their ability to emulate more complex models, such as has been done in \cite{Meinshausen2011b,Tsutsui2017,Tsutsui2020}; and in their ability to efficiently integrate massive parameter ensembles for probabilistic climate projection as in \cite{Smith2018,Goodwin2019}. While default parameters must be provided to enable \DIFdelbegin \DIFdel{unfamilliar }\DIFdelend \DIFaddbegin \DIFadd{unfamiliar }\DIFaddend users access to the model, the response arising from these parameters is a function of how they themselves have been selected, rather than one of the model equations themselves. So long as the underlying model equations are sufficiently flexible to emulate a wide range of climate system responses to the variables of interest (for instance the inferred range of responses within the CMIP ensemble), and have a basis in known physical processes, the SCM should be considered to be valid. Although understanding why the default response of SCMs differ is important, comparisons of solely the default response as a test of how ``good'' a model is are unhelpful; it is likely that any SCM could be re-tuned to better perform against whatever (single) metric is being used for evaluation, whether another SCM, a more complex model, or something else.\\\\
+%
+In this study we first \DIFdelbegin \DIFdel{(section \ref{framework}) }\DIFdelend outline the history and reasoning behind the model equations used \DIFaddbegin \DIFadd{in Section \ref{framework}}\DIFaddend , including how we selected default parameters, stepping through the concentration response to emissions; the concentration-forcing relationships; and the thermal response to forcing. We then demonstrate how several key components of FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend -- the carbon cycle, aerosol response and thermal response to forcing -- can be tuned to emulate a set of CMIP6 models in \DIFdelbegin \DIFdel{section \ref{cmip6_tuning}. section }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{cmip6_tuning}. Section }\DIFaddend \ref{NROY} describes the use of FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend to constrain climate sensitivities and future surface temperature projections using a large ensemble, following \cite{Smith2018}. We then provide a discussion of previous comparisons of SCMs in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{SCM_response_discuss}, and suggest some ways in which FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend could be used in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{FaIR_uses} before concluding.
+\DIFaddbegin \clearpage
+\DIFaddend %
+\begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/FaIRv2_schematic".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig1".pdf}
+    \DIFaddendFL \caption{Schematic showing the full model structure and equations used. \DIFdelbeginFL \DIFdelFL{Model steps take place from left to right, with thick arrows indicating }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Terms without $(t)$ are constants. Colouring splits }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{flow of }\DIFdelendFL model \DIFdelbeginFL \DIFdelFL{steps that occur during timestep $t$}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{into gas cycle, radiative forcing}\DIFaddendFL , and \DIFdelbeginFL \DIFdelFL{thin arrows indicating steps that occur in between timesteps $t$ and $t+dt$. Equations are described in full below}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{climate response components}\DIFaddendFL . The dashed grey line indicates the components identical to AR5-IR \citep{Myhre2013a}. Table \ref{table:p_analogies} provides brief descriptions of each named parameter in the figure. \DIFaddbeginFL \DIFaddFL{We note that under the default parameterisation, for all gases except carbon dioxide, the index $i$ and associated sums can be removed as these gases are modelled as having a single atmospheric decay timescale only. Equations are described in full in Section \ref{gas_cycle}.}\DIFaddendFL }
+    \label{fig:schematic}
+\end{figure}
+\clearpage
+%
+\DIFdelbegin %DIFDELCMD < \captionof{table}{Qualitative analogies for named parameters in FaIRv2.0\label{table:p_analogies}}
+%DIFDELCMD < \begin{tabular}{l|ll}
+%DIFDELCMD <     %%%
+\DIFdel{parameter }%DIFDELCMD < & %%%
+\DIFdel{units }%DIFDELCMD < & %%%
+\DIFdel{qualitative description}%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{$E(t)$ }%DIFDELCMD < & %%%
+\DIFdel{see table S1 }%DIFDELCMD < & %%%
+\DIFdel{Quantity of agent emitted into atmosphere}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$C(t)$ }%DIFDELCMD < & %%%
+\DIFdel{see table S1 }%DIFDELCMD < & %%%
+\DIFdel{Concentration of agent in atmosphere}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$C_0$ }%DIFDELCMD < & %%%
+\DIFdel{unit($C$) }%DIFDELCMD < & %%%
+\DIFdel{Pre-industrial concentration of agent in atmosphere}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$R_i(t)$ }%DIFDELCMD < & %%%
+\DIFdel{unit($E$) }%DIFDELCMD < & %%%
+\DIFdel{Quantity of agent in $i$\textsuperscript{th} atmospheric pool}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$a_i$ }%DIFDELCMD < & %%%
+\DIFdel{- }%DIFDELCMD < & %%%
+\DIFdel{Fraction of emissions entering $i$\textsuperscript{th} atmospheric pool}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$\tau_i$ }%DIFDELCMD < & %%%
+\DIFdel{yrs }%DIFDELCMD < & %%%
+\DIFdel{Atmospheric lifetime of gas in $i$\textsuperscript{th} pool}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$\alpha(t)$ }%DIFDELCMD < & %%%
+\DIFdel{- }%DIFDELCMD < & %%%
+\DIFdel{Multiplicative adjustment coefficient of pool lifetimes}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_0$ }%DIFDELCMD < & %%%
+\DIFdel{- }%DIFDELCMD < & %%%
+\DIFdel{Strength of pre-industrial uptake from atmospheric}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_u$ }%DIFDELCMD < & %%%
+\DIFdel{unit($E$)$^{-1}$ }%DIFDELCMD < & %%%
+\DIFdel{Sensitivity of uptake from atmosphere to cumulative uptake of agent since model initialisation}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_T$ }%DIFDELCMD < & %%%
+\DIFdel{K$^{-1}$ }%DIFDELCMD < & %%%
+\DIFdel{Sensitivity of uptake from atmosphere to model temperature change since initialisation}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_a$ }%DIFDELCMD < & %%%
+\DIFdel{unit($E$)$^{-1}$ }%DIFDELCMD < & %%%
+\DIFdel{Sensitivity of uptake from atmosphere to current atmospheric burden of agent}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$G_u(t)$ }%DIFDELCMD < & %%%
+\DIFdel{unit($E$) }%DIFDELCMD < & %%%
+\DIFdel{Cumulative uptake of agent since model initialisation}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$T$ }%DIFDELCMD < & %%%
+\DIFdel{K }%DIFDELCMD < & %%%
+\DIFdel{Model temperature change since initialisation}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$G_a(t)$ }%DIFDELCMD < & %%%
+\DIFdel{unit($E$) }%DIFDELCMD < & %%%
+\DIFdel{Atmospheric burden of agent above pre-industrial levels}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$F(t)$ }%DIFDELCMD < & %%%
+\DIFdel{W m$^{-2}$ }%DIFDELCMD < & %%%
+\DIFdel{Effective radiative forcing change since the pre-industrial period}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$f_1$ }%DIFDELCMD < & %%%
+\DIFdel{W m$^{-2}$ }%DIFDELCMD < & %%%
+\DIFdel{Logarithmic concentration--forcing coefficient}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$f_2$ }%DIFDELCMD < & %%%
+\DIFdel{W m$^{-2}$ unit($C$)$^{-1}$ }%DIFDELCMD < & %%%
+\DIFdel{Linear concentration--forcing coefficient}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$f_3$ }%DIFDELCMD < & %%%
+\DIFdel{W m$^{-2}$ unit($C$)$^{\frac{-1}{2}}$ }%DIFDELCMD < & %%%
+\DIFdel{Square root concentration--forcing coefficient}%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{$S_k(t)$ }%DIFDELCMD < & %%%
+\DIFdel{K }%DIFDELCMD < & %%%
+\DIFdel{Response of $k$\textsuperscript{th} thermal box}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$q_k$ }%DIFDELCMD < & %%%
+\DIFdel{K W$^{-1}$ m$^{2}$ }%DIFDELCMD < & %%%
+\DIFdel{Equilibrium response of $k$\textsuperscript{th} thermal box}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$d_k$ }%DIFDELCMD < & %%%
+\DIFdel{yrs }%DIFDELCMD < & %%%
+\DIFdel{Response timescale of $k$\textsuperscript{th} thermal box}%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$T(t)$ }%DIFDELCMD < & %%%
+\DIFdel{K }%DIFDELCMD < & %%%
+\DIFdel{Surface temperature response since model initialisation}%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{table}[t]
+    \caption{\DIFaddFL{Qualitative analogies for named parameters in FaIRv2.0.0.}}
+    \label{table:p_analogies}
+    \input{tables/Tab1}
+\end{table}
+\clearpage
+\DIFaddend %
+\section{FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend model framework} \label{framework}
+As with the previous iteration, FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend is a 0D model of globally averaged variables. It models the GHG emission $\rightarrow$ concentration $\rightarrow$ effective radiative forcing (ERF), aerosol emission $\rightarrow$ ERF, and ERF $\rightarrow$ temperature responses of the climate system. Here we present the equations behind these responses, separating out the model into the key components. 
+\subsection{The gas cycle} \label{gas_cycle}
+FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend inherits the GHG gas cycle equations directly from the carbon cycle equations within FaIRv1.5 \citep{Smith2018} and v1.0 \citep{Millar2016}. This carbon cycle adapts the \DIFdelbegin \DIFdel{4 pool }\DIFdelend \DIFaddbegin \DIFadd{4-timescale }\DIFaddend impulse-response function \DIFdelbegin \DIFdel{model in \mbox{%DIFAUXCMD
+\cite{Joos2013} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{for carbon dioxide in \mbox{%DIFAUXCMD
+\citet{Joos2013} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend by introducing a state-dependent timescale adjustment factor, $\alpha$. This factor scales the decay \DIFdelbegin \DIFdel{timescale }\DIFdelend \DIFaddbegin \DIFadd{timescales }\DIFaddend of atmospheric carbon\DIFdelbegin \DIFdel{into each of the 4 pools}\DIFdelend , allowing for the effective carbon sink from the atmosphere to change in strength. This allows FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend to represent non-linearities in the carbon-cycle in a manner similar to \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{JOOS1996} }\hspace{0pt}%DIFAUXCMD
+or \mbox{%DIFAUXCMD
+\cite{Hooss2001}}\hspace{0pt}%DIFAUXCMD
+. In \mbox{%DIFAUXCMD
+\cite{Millar2016}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{JOOS1996} }\hspace{0pt}%DIFAUXCMD
+or \mbox{%DIFAUXCMD
+\citet{Hooss2001}}\hspace{0pt}%DIFAUXCMD
+. In \mbox{%DIFAUXCMD
+\citet{Millar2016}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend , $\alpha$ was calculated through a parameterisation of the 100-year integrated Impulse Response Function (iIRF$_{100}$, the average airborne fraction over a period of 100 years). In \citet{Millar2016}, the iIRF$_{100}$ was parameterised by a simple linear relationship with the quantity of carbon removed since initialisation $G_u$, and the current temperature $T$:
+\DIFdelbegin \begin{displaymath}\DIFdel{\mathrm{iIRF_{100}} = r_0 + r_u G_u + r_T T\,,}\end{displaymath} %DIFAUXCMD
+\DIFdelend \DIFaddbegin \begin{equation}
+    \DIFadd{\mathrm{iIRF_{100}} = r_0 + r_u G_u + r_T T\,,
+}\end{equation}
+\DIFaddend where $r_0$ is the initial (pre-industrial) iIRF$_{100}$, and $r_u$ and $r_T$ control how the iIRF$_{100}$ changes as the cumulative carbon uptake \DIFdelbegin \DIFdel{and temperature increases}\DIFdelend \DIFaddbegin \DIFadd{from the atmosphere and temperature change}\DIFaddend . This parameterisation was informed by the behaviour of ESMs and remains consistent with the key feedbacks involved in the carbon cycle \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Arora2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep{K.Arora2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . However, in \citet{Millar2016}, the root of \DIFdelbegin \DIFdel{a }\DIFdelend \DIFaddbegin \DIFadd{an implicit }\DIFaddend non-linear equation had to be found to update $\alpha$ at each model timestep. The solution of this equation is approximately exponential in iIRF$_{100}$ to a high degree of accuracy for a wide range of values\DIFaddbegin \DIFadd{, }\DIFaddend and so in FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , $\alpha$ is calculated using the exponential form \DIFdelbegin \DIFdel{given below}\DIFdelend \DIFaddbegin \DIFadd{in equation \ref{eq:alpha}}\DIFaddend . We parameterise this carbon cycle to enable it to simulate a wide range of GHGs, as discussed \DIFdelbegin \DIFdel{below}\DIFdelend \DIFaddbegin \DIFadd{in Section \ref{gas_cycle_parameters}}\DIFaddend . The equations for the carbon cycle and all other gas cycles are, in their most general form:\\
+\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelend %
+\begin{align}
+    \frac{\text{d}R_{i}(t)}{\text{d}t} &= a_{i}E(t) - \DIFdelbegin \DIFdel{\frac{R_{i}(t)}{\alpha \tau_{i}}}\DIFdelend \DIFaddbegin \DIFadd{\frac{R_{i}(t)}{\alpha(t) \tau_{i}}}\DIFaddend , \label{eq:gaspool}\\
+    C(t) &= C_0 + \sum_{i=1}^{n}{R_{i}(t)}\DIFaddbegin \DIFadd{, }\DIFaddend \text{~~and~~} \label{eq:conc}\\
+    \alpha(t) &= g_0 \cdot \text{exp}\Big(\frac{r_0 + r_uG_{u}(t) + r_TT(t) + r_aG_a(t)}{g_1}\Big); \label{eq:alpha}\\
+    \text{~~where~~} \DIFaddbegin \DIFadd{G_a(t) }&\DIFadd{= \sum_{i=1}^{n}{R_{i}(t)}, }\nonumber\\
+    \DIFadd{G_u(t) }&\DIFadd{= \sum^t_{s=t_0}{E(s)}-G_a(t); }\nonumber\\
+    \DIFadd{\text{~~and~~}}\DIFaddend g_1 &= \sum_{i=1}^{n}{a_i\tau_i\big[1 - \big(1 + 100/\tau_i\big)\text{e}^{-100/\tau_i}\big]}\DIFaddbegin \DIFadd{, }\DIFaddend \nonumber\\
+    \DIFdelbegin \DIFdel{\text{~~and~~}}\DIFdelend g_0 &= \text{exp} \Big( -\frac{ \sum_{i=1}^{n}{a_i \tau_i [1 - \text{e}^{-100/ \tau_i}]}}{g_1} \Big) . \nonumber
+\end{align}\DIFaddbegin \\
+\DIFaddend Equations \ref{eq:gaspool} and \ref{eq:conc} describe a gas cycle with an atmospheric burden above the pre-industrial concentration, $C_0$, formed of $n$ \DIFdelbegin \DIFdel{pools: each pool }\DIFdelend \DIFaddbegin \DIFadd{reservoirs: each reservoir }\DIFaddend corresponds to a different \DIFdelbegin \DIFdel{sink }\DIFdelend \DIFaddbegin \DIFadd{decay timescale }\DIFaddend from the atmosphere. \DIFdelbegin \DIFdel{Each pool}\DIFdelend \DIFaddbegin \DIFadd{These reservoirs do not correspond to any physical carbon stores, but qualitative analogies for them can be found in \mbox{%DIFAUXCMD
+\citet{Millar2016}}\hspace{0pt}%DIFAUXCMD
+. Each reservoir}\DIFaddend , $R_i$, has an uptake fraction $a_i$ and decay timescale $\alpha \tau_i$. At each timestep, the state-dependent adjustment, $\alpha$, is computed and the \DIFdelbegin \DIFdel{pool }\DIFdelend \DIFaddbegin \DIFadd{reservoir }\DIFaddend concentrations are updated and aggregated to determine the new atmospheric burden. The new atmospheric concentration is then simply the sum of the burden and the pre-industrial concentration. \DIFaddbegin \DIFadd{Here we emphasize that although we have presented this equation set in its general form, with $n$ reservoirs, in practice we set $n=4$ for the carbon-cycle, following \mbox{%DIFAUXCMD
+\citet{Joos2013}}\hspace{0pt}%DIFAUXCMD
+; and $n=1$ emissions for all other gases within FaIRv2.0.0. For the case where $n=1$, equations \ref{eq:gaspool} and \ref{eq:conc} can be simplified by dropping the index $i$ entirely. }\DIFaddend $\alpha$ provides feedbacks to the gas \DIFdelbegin \DIFdel{lifetimes }\DIFdelend \DIFaddbegin \DIFadd{lifetime(s) }\DIFaddend based on the current timestep’s levels of accumulated emissions ($G_u$), global temperature ($T$), and atmospheric \DIFdelbegin \DIFdel{gas }\DIFdelend burden ($G_a$). $G_a$ is included to enable FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend to emulate the sensitivity of the CH$_4$ lifetime to its own atmospheric burden, as predicted by atmospheric chemistry and simulated in chemical transport models (CTMs) \citep{Holmes2013,Prather2015}. We also find that the emulation of the carbon-cycle of a number of CMIP6 models over the 1pctCO$_2$ experiment is significantly improved if $G_a$ is included in the iIRF$_{100}$ parameterisation; see \DIFdelbegin \DIFdel{\ref{cmip6_cc}. }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{cmip6_cc}. In the default parameterisation of FaIRv2.0.0, this state dependence is only active for carbon dioxide and methane; for all other gases, $\alpha$ is constant. }\DIFaddend $g_0$ and $g_1$ \DIFaddbegin \DIFadd{are constants that }\DIFaddend set the value and gradient of our analytic approximation for $\alpha$ equal to the numerical solution of the \citet{Millar2016} iIRF$_{100}$ parameterisation at $\alpha = 1$ \DIFdelbegin \DIFdel{, and are therefore determined by the final two equations above and not independent parameters. }\DIFdelend \DIFaddbegin \DIFadd{for the carbon-cycle. An important point is that although we inherit the iIRF timescale of 100 years from \mbox{%DIFAUXCMD
+\citet{Millar2016} }\hspace{0pt}%DIFAUXCMD
+and \mbox{%DIFAUXCMD
+\citet{Joos2013}}\hspace{0pt}%DIFAUXCMD
+, this timescale does not affect the behaviour of the model, only the quantitative values of the parameters. Hence for a given emulation target (such as the C4MIP models in Section \ref{cmip6_cc}) the optimal model fit is independent of the length of this timescale, but the optimal parameter values are not. Maintaining this timescale at 100 years ensures that the $r$ coefficients found here are comparable to the previous iterations of FaIR \mbox{%DIFAUXCMD
+\citep{Smith2018,Millar2016}}\hspace{0pt}%DIFAUXCMD
+. }\DIFaddend In the following section, we discuss how we parameterise the gas cycle to enable FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend to simulate a wide range of GHGs using these same three equations. Qualitative analogies for each parameter to aid understanding are given in \DIFdelbegin \DIFdel{table }\DIFdelend \DIFaddbegin \DIFadd{Table }\DIFaddend \ref{table:p_analogies}.\\\\
+%
+Here we emphasize the advantage of using this common framework to simulate the response to all the different GHG and aerosol emissions: if a user is able to understand the FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend carbon cycle, then they understand how the model will respond to emissions of any other GHG or aerosol. This is because \DIFdelbegin \DIFdel{the carbon cycle }\DIFdelend \DIFaddbegin \DIFadd{carbon dioxide }\DIFaddend is the most complex parameterisation of the above equations\DIFdelbegin \DIFdel{(it is the only gas that is simulated }\DIFdelend \DIFaddbegin \DIFadd{: being the only species }\DIFaddend with more than one atmospheric \DIFdelbegin \DIFdel{pool as discussed below)}\DIFdelend \DIFaddbegin \DIFadd{decay timescale; and alongside methane one of the only two species to make use of the state-dependence through $\alpha$ within the default parameterisation}\DIFaddend . This structural simplicity makes gaining familiarity with the model far easier than if several different gas cycle formulations were used for different GHGs.
+%
+%DIF <  We discuss the adequacy of this analytic form in the Supplementary Information and compare it to the numerical solution used in FaIR v1.3 \citep{Smith2018}. While we do not include any lifetime feedbacks beyond those described above to avoid having to specify additional exogenous variables and to maintain independence of the gas species, other feedbacks could theoretically be incorporated in the same framework by adding further $r$ coefficients to the model. We would, however, caution against adding additional complexity unless it can be shown to be necessary to significantly improve the emulation of more complex models in a policy-relevant application. %For example, we have linearised the band-interaction terms in the calculation of ERF due to CH$_4$ and N$_2$O: this approximation has some impact under very high concentration scenarios, but not under ambitious or moderate mitigation scenarios that are the principal focus of policy.
+%DIF < 
+\subsubsection{Parameterising the gas cycle for a wide range of GHGs} \label{gas_cycle_parameters}
+In this section, we consider how \DIFdelbegin \DIFdel{the above }\DIFdelend \DIFaddbegin \DIFadd{these }\DIFaddend equations can be parameterised to represent the gas cycles for many different GHGs. We also provide default parametersations for each GHG, given in full in \DIFdelbegin \DIFdel{table }\DIFdelend \DIFaddbegin \DIFadd{Table }\DIFaddend S2.
+\paragraph*{Carbon dioxide}
+As discussed above \DIFaddbegin \DIFadd{in Section \ref{gas_cycle}}\DIFaddend , FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend retains the state-dependent formulation \citep{Millar2016} of the \DIFdelbegin \DIFdel{4-pool }\DIFdelend \DIFaddbegin \DIFadd{4-timescale }\DIFaddend impulse-reponse model from \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{Joos2013}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{Joos2013}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend ; hence $n=4$. We retain the same state-dependency as in \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{Millar2016}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{Millar2016}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend , so the $r$ parameters are non-zero with the exception of $r_a$. The \DIFdelbegin \DIFdel{multi-model mean }\DIFdelend \DIFaddbegin \DIFadd{default }\DIFaddend $a$ and $\tau$ coefficients \DIFdelbegin \DIFdel{from \mbox{%DIFAUXCMD
+\cite{Joos2013} }\hspace{0pt}%DIFAUXCMD
+are used by default}\DIFdelend \DIFaddbegin \DIFadd{are the multi-model mean from \mbox{%DIFAUXCMD
+\citet{Joos2013}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . Default $r_u$ and $r_T$ parameters are taken as the mean of the parameter distributions inferred from CMIP6 models in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{cc_sampling}. Following \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\cite{Jenkins2018}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{Jenkins2018}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend , we tune the default $r_0$ parameter such that present-day (2018) cumulative CO$_2$ emissions match the \DIFdelbegin \DIFdel{Global Carbon Project (GCP) estimates \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{RCMIP emission protocol \mbox{%DIFAUXCMD
+\citep{Nicholls2019} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend when historical concentrations \citep{Meinshausen2017} are inverted back to emissions by equations \ref{eq:gaspool}, \ref{eq:conc} and \ref{eq:alpha}. Here we take the \DIFdelbegin \DIFdel{GCP dataset as a best-estimate }\DIFdelend \DIFaddbegin \DIFadd{RCMIP protocol as one estimate }\DIFaddend of observed emissions, but it is important to note that using a different dataset \DIFdelbegin \DIFdel{(}\DIFdelend such as the \DIFdelbegin \DIFdel{RCMIP protocol emissions, which are designed to match the data used in CMIP6 esm- runs) }\DIFdelend \DIFaddbegin \DIFadd{Global Carbon Project \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019}}\hspace{0pt}%DIFAUXCMD
+, }\DIFaddend would result in a different value. The pre-industrial concentration is fixed at 278 ppm.
+\paragraph*{Methane}
+We parameterise methane using a single atmospheric sink: $n=1$. Although several individual mechanisms have been identified for the removal of atmospheric methane -- tropospheric OH, tropospheric Cl, stratospheric reactions and soil uptake \citep{Prather2012,Holmes2013} -- these can be aggregated into a single effective atmospheric lifetime. Through $r_T$ and $r_a$, we include the key lifetime feedback dependence on to its own atmospheric burden, and tropospheric air temperature and water vapour mixing ratio \citep{Holmes2013}. We tune $r_a$ to match the sensitivity of the methane lifetime to its own atmospheric burden at the present-day found by \cite{Holmes2013}. $r_T$ is tuned to match the sensitivity of the methane lifetime to tropospheric air temperature and water vapour at the present-day found by \cite{Holmes2013}. Since both tropospheric air temperature and water vapour are closely related to surface air temperatures (they are often approximated by simple parameterisations of the surface air temperature, as in \citet{Holmes2013}), including these two sensitivities through a single surface temperature feedback closely replicates lifetime behaviour if both are included separately. \DIFaddbegin \DIFadd{See Figure S2 for the evolution of the methane lifetime within default FaIRv2.0.0 over history and a future RCP8.5 pathway \mbox{%DIFAUXCMD
+\citep{Riahi2011}}\hspace{0pt}%DIFAUXCMD
+. }\DIFaddend $\tau$ is then set such that the mean emission rate since 2000 matches current estimates from the RCMIP \DIFdelbegin \DIFdel{database }\DIFdelend \DIFaddbegin \DIFadd{protocol }\DIFaddend \citep{Nicholls2019} when historical concentrations \citep{Meinshausen2017} are inverted by FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend ; and $r_0$ is set such that $\alpha=1$ at model initialisation. The pre-industrial concentration is fixed at 720 \DIFdelbegin \DIFdel{ppm}\DIFdelend \DIFaddbegin \DIFadd{ppb}\DIFaddend .
+\paragraph*{Nitrous oxide}
+Nitrous oxide is parameterised with a single atmospheric sink, and no lifetime sensitivities: $n=1$ and $\{r_u,r_T,r_a\}=0$. Although there is evidence that nitrous oxide has a small sensitivity to its atmospheric burden \citep{Prather2015}, when included in FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend this made very little difference to nitrous oxide concentrations, even under high emission scenarios. We therefore do not include this additional complexity. $\tau$ is \DIFdelbegin \DIFdel{set }\DIFdelend \DIFaddbegin \DIFadd{tuned }\DIFaddend to match the \DIFdelbegin \DIFdel{best-estimate present-day residence lifetime in \mbox{%DIFAUXCMD
+\cite{Prather2015} }\hspace{0pt}%DIFAUXCMD
+of 109 years}\DIFdelend \DIFaddbegin \DIFadd{cumulative RCMIP protocol emissions when historical concentrations are inverted by FaIRv2.0.0}\DIFaddend ; and $r_0$ is set such that $\alpha=1$ at model initialisation. The pre-industrial concentration is fixed at 270 ppm.
+\paragraph*{Halogenated gases}
+All other GHGs are treated as having a single atmospheric lifetime and no feedbacks: $n=1$ and $\{r_u,r_T,r_a\}=0$. We take lifetime estimates from \cite{WMOAppA}. Pre-industrial concentrations (if non-zero) are set to the 1750 value from \cite{Meinshausen2017}. Inclusion of a temperature-dependent lifetime to represent changes to the Brewer-Dobson circulation \citep{Butchart2001}, as in the MAGICC SCM \citep{Meinshausen2011}, would be possible through a non-zero $r_T$ parameter. We do not include a representation of this effect in our default \DIFdelbegin \DIFdel{parametersation }\DIFdelend \DIFaddbegin \DIFadd{parameterisation }\DIFaddend due to its small impact on model output and increase in model complexity.
+\paragraph*{Aerosols}
+Aerosols have considerably shorter lifetimes than the timescales generally considered by SCMs \citep{Kristiansen2016}. In FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , as in previous iterations \citep{Smith2018} and other SCMs \citep{Meinshausen2011}, they are therefore converted directly from emissions to radiative forcing. In FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , this can be achieved by setting $n=1$, $\tau=1$, and providing a unit conversion factor of $1$ between emissions and ``concentrations''.
+\subsubsection{Historical and SSP concentration trajectories}
+Here we compare the default parameterisation gas cycle model in FaIRv2.0\DIFaddbegin \DIFadd{.0-alpha }\DIFaddend to a previous version, FaIRv1.5 \citep{Smith2018}, and to MAGICC7.1.0-beta \citep{Meinshausen2019}, highlighting any differences. All three models are run under the fully emission-driven ``esm-allGHG'' RCMIP protocol \citep{Nicholls2019}\DIFdelbegin \DIFdel{; in the case of FaIRv2.0 we use data from the Global Carbon Project \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019} }\hspace{0pt}%DIFAUXCMD
+for the input CO$_2$ emissions}\DIFdelend . FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend matches trajectories from both its previous iteration and the more comprehensive MAGICC closely for all GHGs. We note some discrepancies in the timeseries for halogenated gases between FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend and MAGICC, possibly due to the incorporation of a state-dependent OH abundance and representation of changes to the Brewer-Dobson circulation which modulate the lifetimes of these gases \citep{Meinshausen2011}. We note that for these gases we could have matched historical concentrations closer by tuning the lifetimes to the RCMIP \DIFdelbegin \DIFdel{emission }\DIFdelend \DIFaddbegin \DIFadd{protocol data }\DIFaddend and historical concentration timeseries \citep{Nicholls2019,Meinshausen2017}, but argue that taking the best-estimate lifetimes from \cite{WMOAppA} is defensible; it is more transparent and avoids \DIFdelbegin \DIFdel{emission source dependent }\DIFdelend \DIFaddbegin \DIFadd{source-dependent }\DIFaddend parameters (if a different emission dataset were used, the resulting tuned lifetimes would be different). The lower CO$_2$ concentration projections in FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend compared to FaIRv1.5 are due to weaker temperature and cumulative carbon uptake feedbacks (lower $r_u$ and $r_T$) as inferred from the CMIP6 carbon cycle tunings performed in \DIFdelbegin \DIFdel{section \ref{cmip6_cc}. 
+}%DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{Section \ref{cmip6_cc}. 
+}\clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/SSP_concs".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig2".pdf}
+    \DIFaddendFL \caption{Comparison of historical and future concentration trajectories over a range of SSPs. Units for all GHGs are ppb with the exception of CO$_2$ which is plotted in ppm. Inset panels for CO$_2$, CH$_4$ and N$_2$O show the historic period.}
+    \label{fig:conc_trajectories}
+\end{figure}
+\clearpage
+\paragraph*{Specification of natural emissions}
+In FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend we have chosen to formulate the gas cycle equations in terms of a perturbation above the pre-industrial (natural equilibrium) concentration. By definition, this assumes a time-independent quantity of natural emissions for each gas (which can be derived from the pre-industrial concentration and lifetime of the gas). This differs from \cite{Meinshausen2011} and \cite{Smith2018}, who (when driving the respective models with emissions and with the exception of CO$_2$) require a quantity of natural emissions to be supplied in addition to any anthropogenic emissions by default (though the models can also be run in a fully emission-driven mode as in \DIFdelbegin \DIFdel{figure }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend \ref{fig:conc_trajectories}). Over the historical period, these emissions are chosen such that they ``close the budget'' between total anthropogenic emissions, and observed concentrations \citep{Meinshausen2011,Smith2018}. This procedure of balancing the budget over history is analogous to driving the model with concentrations up to the present day, and then switching to driving the model with emissions afterwards. While this methodology has the advantage of ensuring the model simulates present-day concentrations that match observation exactly, it loses consistency between the way in which the model simulates the past and the future. If care is not taken when running these models, this loss of consistency could lead to discontinuities at the present-day (when the model switches from concentration- to emission-driven). As present-day trends are crucial for the estimation of many policy and scientifically relevant quantities such as TCR, TCRE and remaining carbon budgets \citep{Leach2018,Tokarska2020a,Jimenez-de-la-Cuesta2019}, we have chosen to enforce a consistent model (ie. emission- \emph{or} concentration-driven) over the entire simulation period in FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend . We note that replicating this budget closing procedure is possible in FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend by inverting observed concentrations to emissions and then joining these inverse emission timeseries to any future scenarios manually. In this study, FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend is run in emission-driven mode unless stated otherwise.
+%
+\subsection{Effective radiative forcing} \label{forcing_relations}
+FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend uses a simple formula to relate atmospheric gas concentrations to effective radiative forcing. This equation, \DIFdelbegin \DIFdel{below}\DIFdelend \DIFaddbegin \DIFadd{\ref{eq_forc}}\DIFaddend , includes logarithmic, square-root, and linear terms; motivated by the concentration-forcing relationships in \cite{Myhre2013a} of CO$_2$, CH$_4$ and N$_2$O, and all other well-mixed GHGs respectively. For most agents, the concentration- (or for aerosols, emission-) forcing relationship can be reasonably approximated by one of these terms in isolation, however if there is substantial evidence the relationship deviates significantly from any one term, others are able to be included to provide a more accurate fit. $F_{ext}$ is the sum of all exogenous forcings supplied. These may include natural forcing agents or forcing due to albedo changes.
+\begin{equation}
+    F(t) = \sum_x^{\text{forcing agents}} \Bigg\{ f_1^x \cdot \text{ln}\left[\frac{C^x(t)}{C_0^x}\right] + f_2^x \cdot [C^x(t) - C_0^x] + f_3^x \cdot\left[\sqrt{C^x(t)} - \sqrt{C_0^x}\right] \Bigg\} + F_{ext}. \label{eq_forc}\\
+\end{equation}
+\subsubsection{Parameterising the forcing equation} \label{forcing_parameters}
+\paragraph*{Carbon dixoide, nitrous oxide and methane}
+We assume the forcing relationship for carbon dioxide is well approximated by the combination of a logarithmic and square root term \citep{Ramaswamy2001}, $f_2^{CO_2}=0$; both the methane and nitrous oxide concentration-forcing relationships are approximated by a square root term only, $f_{1,2}^{CH_4,N_2O}=0$. Although overlaps between the spectral bands of these gases mean more complex function forms including interaction terms represent our current best approximation to the observed relationship from spectral calculation \citep{Etminan2016}, inclusion of these interaction terms significantly increases the structural complexity of the model. These overlap terms are most significant for very high concentrations of these gases, and we find that the more simple relationships used here are sufficiently accurate within the context of the uncertainties associated with such high concentration scenarios. We fit the non-zero $f$ coefficients to the Oslo-line-by-line (OLBL) data from \cite{Etminan2016}. Our resulting fits have a maximum absolute error of 0.115 W m$^{-2}$ when compared to the OLBL data, though this is for the most extreme-high concentration data point; and the associated relative error is 1.1\%. Figure S1 provides a complete comparison of how the fit relationships used here compare to the OLBL data, and to the simple formulae which include interaction terms in \cite{Etminan2016}. 
+\paragraph*{Halogenated GHGs}
+Following other simple models \citep{Smith2018,Meinshausen2011}, we assume concentrations of halogenated gases are linearly related to their direct effective radiative forcing, $f_{1,3}^x=0$. The conversion coefficient for each gas is its radiative efficiency, which we take from \cite{WMOAppA}.
+\paragraph*{Aerosol-radiation interaction}
+We follow \cite{Smith2020a}, parameterising the ERF due to aerosol radiation interaction as a linear function of sulphate, organic carbon and black carbon aerosol emissions: 
+\begin{equation}
+    \text{ERFari}= f_2^{SO_2} E^{SO_2} + f_2^{OC} E^{OC} + f_2^{BC} E^{BC}. \label{eq:ERFari}
+\end{equation}
+Default parameters are taken as the \DIFdelbegin \DIFdel{mean of parameters tuned to 10 CMIP6 models in \mbox{%DIFAUXCMD
+\cite[see section \ref{cmip6_erfaer}]{Smith2020a}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{central estimate from the CONSTRAINED ensemble described in Section \ref{NROY}}\DIFaddend .
+\paragraph*{Aerosol-cloud interaction}
+ERF due to aerosol-cloud interactions is parameterised following a modification of \cite{Smith2020a}, as a logarithmic function of sulphate aerosol emissions, and a linear function of organic carbon and black carbon aerosol emissions: 
+\begin{equation}
+    \text{ERFaci}= f_1^{aci}\text{ln}\left(1+\frac{E_{SO_2}}{C_0^{SO_2}}\right)+f_2^{aci}(E^{OC}+E^{BC}). \label{eq:ERFaci}
+\end{equation}
+Here $C_0^{SO_2}$ effectively acts as a shape parameter for the logarithmic term. We fit this functional form to the ERFaci component in 10 CMIP6 models derived by the Approximate Partial Radiative Perturbation method \citep{Zelinka2014} in \DIFdelbegin \DIFdel{section \ref{cmip6_erfaer}. The default value for the OC+BC coefficient is taken as the mean of the CMIP6 fits. For the logarithmic coefficient and shape parameter, which appear to have highly skewed distributions due to some models displaying linear and others displaying logarithmic behaviour against sulphate emissions, we calculate default parameters as the mean of the CMIP6 fits, assuming the underlying distribution is lognormally distributed.
+}\DIFdelend \DIFaddbegin \DIFadd{Section \ref{cmip6_erfaer}. Default parameters are taken as the central estimate from the CONSTRAINED ensemble described in Section \ref{NROY}.
+}
+
+\DIFaddend \paragraph*{\DIFdelbegin \DIFdel{Tropospheric ozone}\DIFdelend \DIFaddbegin \DIFadd{Ozone}\DIFaddend }
+\DIFdelbegin \DIFdel{Tropospheric ozone }\DIFdelend \DIFaddbegin \DIFadd{Ozone }\DIFaddend is parameterised following \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Stevenson2013} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\cite{Thornhill2021}}\hspace{0pt}%DIFAUXCMD
+, }\DIFaddend as a linear function of methane\DIFaddbegin \DIFadd{, nitrous oxide and ODS }\DIFaddend concentrations, and nitrate aerosol, carbon monoxide \DIFdelbegin \DIFdel{, }\DIFdelend and volatile organic compound emissions. \DIFdelbegin \DIFdel{For the methane component, default coefficients are taken from \mbox{%DIFAUXCMD
+\cite{Holmes2013}}\hspace{0pt}%DIFAUXCMD
+. For the others, default coefficients are found by dividing the attributed forcing in \mbox{%DIFAUXCMD
+\citep{Myhre2013a} }\hspace{0pt}%DIFAUXCMD
+by the 2011 emission rate from the Community Emissions Data System (CEDS) inventory \mbox{%DIFAUXCMD
+\citep{Hoesly2018}}\hspace{0pt}%DIFAUXCMD
+.
+}\paragraph*{\DIFdel{Stratospheric ozone}}
+%DIFAUXCMD
+\DIFdel{Stratospheric ozone ERF is parameterised as a linear function of the concentration of ozone depleting substances (ODSs). We assume that the cumulative ERF of a gas over its lifetime is proportional to its ozone depletion potential \mbox{%DIFAUXCMD
+\citep{WMOAppA}}\hspace{0pt}%DIFAUXCMD
+. The best-estimate AR5 value for stratospheric ozone ERF of -0.05 W m$^{-2}$ and observed concentrations of each ODS \mbox{%DIFAUXCMD
+\citep{Meinshausen2017} }\hspace{0pt}%DIFAUXCMD
+in 2011 then allows us to calculate default linear coefficients for each gas}\DIFdelend \DIFaddbegin \DIFadd{This parameterisation is tuned such that the overall ozone forcing timeseries re-produces \mbox{%DIFAUXCMD
+\cite{Skeie2020}}\hspace{0pt}%DIFAUXCMD
+. The contribution of individual ODSs to their total is based on their estimated equivalent effective stratospheric chlorine \mbox{%DIFAUXCMD
+\citep{Newman2007,Velders2014,Smith2018}}\hspace{0pt}%DIFAUXCMD
+, with fractional release factors from \mbox{%DIFAUXCMD
+\cite{Engel2018}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend .
+\paragraph*{Stratospheric water vapour}
+Stratospheric water vapour is assumed to be a linear function of methane concentrations \citep{Smith2018} due to its small magnitude. The default coefficient is derived from the \DIFdelbegin \DIFdel{indirect forcing components in \mbox{%DIFAUXCMD
+\cite{Holmes2013}}\hspace{0pt}%DIFAUXCMD
+: $5.5\times10^{-5}$ }\DIFdelend \DIFaddbegin \DIFadd{5\textsuperscript{th} Assessment Report forcing estimate \mbox{%DIFAUXCMD
+\citep{Myhre2013a} }\hspace{0pt}%DIFAUXCMD
+and historical methane concentrations \mbox{%DIFAUXCMD
+\citep{Meinshausen2017}}\hspace{0pt}%DIFAUXCMD
+: $4.37\times10^{-5}$ }\DIFaddend W m$^{-2}$ ppb$^{-1}$.
+\paragraph*{Black carbon on snow}
+ERF due to light absorbing particles on snow and ice remains a linear function of black carbon emissions \citep{Smith2018}. In AR5, the best estimate of its associated ERF was 0.04 W m$^{-2}$ \citep{Myhre2013a}. However, this value is very uncertain, and the efficacy of black carbon on snow may at least double this value \citep{Bond2013}. We therefore calculate our default forcing efficiency by dividing an adopted value of -0.08 W m$^{-2}$ by the \DIFdelbegin \DIFdel{CEDS }\DIFdelend \DIFaddbegin \DIFadd{RCMIP protocol }\DIFaddend emission rate: \DIFdelbegin \DIFdel{0.011 }\DIFdelend \DIFaddbegin \DIFadd{0.0116 }\DIFaddend W m$^{-2}$ MtBC$^{-1}$.
+\paragraph*{Contrails}
+Combined ERF due to contrails and contrail-induced cirrus is modelled as a linear function of aviation-sector NO\textsubscript{x} emissions. The default coefficient is calculated by dividing the best-estimate present-day contrail ERF \citep{Lee2020} by the \DIFdelbegin \DIFdel{CEDS }\DIFdelend \DIFaddbegin \DIFadd{RCMIP protocol }\DIFaddend emission rate: \DIFdelbegin \DIFdel{0.011 }\DIFdelend \DIFaddbegin \DIFadd{0.0164 }\DIFaddend W m$^{-2}$ MtNO\textsubscript{x}$^{-1}$.
+\paragraph*{Albedo shift due to land-use change}
+In this study we prescribe ERF due to land-use change externally. However, it could be incorporated in a manner identical to FaIRv1.5 by supplying a time-series of cumulative land-use change CO$_2$ emissions, and scaling linearly by a coefficient of -0.00114 W m$^{-2}$ GtC$^{-1}$ \citep{Smith2018}.
+\subsection{Default parameter metric values for comparison}
+Table S3 contains default parameter calculated values for the global warming potential \citep{Lashof1990} of each emission type simulated in FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend . These values are intended to aid comparison between FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend and other SCMs and do not represent any new analysis.
+\subsection{Temperature response} \label{temp_response}
+The final component of the model calculates the surface temperature response to the changes in ERF. A common representation of this physical process is the energy balance model outlined by \cite{Geoffroy2013}. Here we consider the three-box energy balance model, including the ocean heat uptake efficacy factor introduced by \cite{Held2010}. Recent literature has suggested that a two-box energy balance model is insufficient to capture the full range of behaviour observed in CMIP6 models \citep{Tsutsui2020,Tsutsui2017,Cummins2020}. The three-box model can be written in state-space form as:\DIFaddbegin \\
+\DIFaddend \begin{align}
+    \mathbf{\dot{X}}\DIFaddbegin \DIFadd{(t)}\DIFaddend &=A\mathbf{X}\DIFaddbegin \DIFadd{(t)+\mathbf{b}F(t)}\DIFaddend ,\label{eq:statespace}\\
+    \DIFdelbegin \DIFdel{\mathbf{Y} }%DIFDELCMD < &%%%
+\DIFdel{= C_d\mathbf{X};}%DIFDELCMD < \nonumber\\
+%DIFDELCMD <     %%%
+\DIFdelend \text{where} \quad \mathbf{X}\DIFaddbegin \DIFadd{(t) }\DIFaddend &= 
+    \DIFdelbegin %DIFDELCMD < \begin{pmatrix}
+%DIFDELCMD <         F\\
+%DIFDELCMD <         T_1\\
+%DIFDELCMD <         T_2\\
+%DIFDELCMD <         T_3
+%DIFDELCMD <     \end{pmatrix}%%%
+\DIFdelend \DIFaddbegin \begin{pmatrix}
+        T_1(t) & T_2(t) & T_3(t)
+    \end{pmatrix}\DIFadd{^T}\DIFaddend ,\nonumber\\
+    A &= 
+    \DIFdelbegin %DIFDELCMD < \begin{pmatrix}
+%DIFDELCMD <     0 & 0 & 0 & 0\\
+%DIFDELCMD <     1/C_1 & -(\lambda+\kappa_2)/C_1 & \kappa_2/C_1 & 0\\
+%DIFDELCMD <     0 & \kappa_2/C_2 & -(\kappa_2+\epsilon\kappa_3)/C_2 & \epsilon\kappa_3/C_2\\
+%DIFDELCMD <     0 & 0 & \kappa_3/C_3 & -\kappa_3/C_3
+%DIFDELCMD <     \end{pmatrix}%%%
+\DIFdelend \DIFaddbegin \begin{pmatrix}
+    -(\lambda+\kappa_2)/C_1 & \kappa_2/C_1 & 0\\
+    \kappa_2/C_2 & -(\kappa_2+\epsilon\kappa_3)/C_2 & \epsilon\kappa_3/C_2\\
+    0 & \kappa_3/C_3 & -\kappa_3/C_3
+    \end{pmatrix}\DIFaddend ,\nonumber \\
+    \DIFdelbegin \DIFdel{\mathbf{Y} }\DIFdelend \DIFaddbegin \DIFadd{\text{~~and~~}\mathbf{b} }\DIFaddend &= 
+    \DIFdelbegin %DIFDELCMD < \begin{pmatrix}
+%DIFDELCMD <         T_1\\
+%DIFDELCMD <         N\\
+%DIFDELCMD <     \end{pmatrix}%%%
+\DIFdel{,}\DIFdelend \DIFaddbegin \begin{pmatrix}
+        1/C_1 & 0 & 0
+    \end{pmatrix}\DIFadd{^T }\DIFaddend \nonumber\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{\text{and} }%DIFDELCMD < \quad %%%
+\DIFdel{C_d }%DIFDELCMD < &%%%
+\DIFdel{=
+    }%DIFDELCMD < \begin{pmatrix}
+%DIFDELCMD <         0 & 1 & 0 & 0\\
+%DIFDELCMD <         1 & -\lambda & (1-\epsilon)\kappa_3 & -(1-\epsilon)\kappa_3
+%DIFDELCMD <     \end{pmatrix}%%%
+\DIFdelend .
+\DIFdelbegin %DIFDELCMD < \nonumber
+%DIFDELCMD < %%%
+\DIFdelend \end{align}\DIFaddbegin \\
+\DIFaddend Here, each box $i$ has a temperature $T_i$ and heat capacity $C_i$. $F$ is the prescribed radiative forcing\DIFdelbegin \DIFdel{and $N$ is the observed top-of-atmosphere energy imbalance}\DIFdelend . Heat exchange coefficients $\kappa$ represent the strength of thermal coupling between boxes $i$ and $i-1$. $\lambda$ is the so-called climate feedback parameter. $\epsilon$ is the efficacy factor that enables the energy balance model to account for the variations in $\lambda$ during periods of transient warming observed in GCMs. $T_1$ represents the surface temperature change relative to a pre-industrial climate. For many users of SCMs, the key variable of interest is $T_1$, the surface temperature response. \DIFdelbegin \DIFdel{Calculating }\DIFdelend \DIFaddbegin \DIFadd{To allow parameters of this energy-balance model to be fit to finite-length CMIP6 experiments with any degree of certainty, \mbox{%DIFAUXCMD
+\citeauthor{Cummins2020} }\hspace{0pt}%DIFAUXCMD
+also take advantage of the following relationship with the top of atmosphere flux, $N(t)$:}\\
+\begin{align}
+    \DIFadd{N(t) = F(t) - \lambda T_1(t) + (1-\epsilon)\kappa_3 }[\DIFadd{T_2(t) - T_3(t)}] \DIFadd{\label{eq:TOA_flux}
+}\end{align}\\
+\DIFadd{However, calculating }\DIFaddend the surface temperature response \DIFaddbegin \DIFadd{to radiative forcing within the energy-balance model }\DIFaddend can be simplified by diagonalising equation \ref{eq:statespace}, resulting in an impulse-response in $T_1$ (henceforth referred to as $T$), giving the thermal response form in \cite{Millar2016} \citep{Tsutsui2017}:\DIFaddbegin \\
+\DIFaddend \begin{align}
+    \frac{\text{d}S_j(t)}{\text{d}t} &= \frac{q_jF(t) - S_j(t)}{d_j} \label{eq:response_comp}\\
+    \text{~~and~~}T(t) &= \sum_{j=1}^{3}S_j(t). \label{eq:response_sum}
+\end{align}\DIFdelbegin \DIFdel{The response timescales, $d_i$, are given by $\frac{-1}{e_i}$, where $e_i$ are }\DIFdelend \DIFaddbegin \\
+\DIFadd{We can relate the energy-balance model matrix representation to the impulse-response parameters as follows. If we let $\Phi$ be the matrix that diagonalises $A$ such that $\Phi^{-1}A\Phi=D$, where $D$ is a diagonal matrix with }\DIFaddend the eigenvalues of \DIFdelbegin \DIFdel{$A_{ij;\,2\leq i,j \leq 4}$, and the response coefficients, $q_i$, are given by the product of $e_i$ with the first element of the associated right and left eigenvectors of $A_{ij;\,2\leq i,j \leq 4}$}\DIFdelend \DIFaddbegin \DIFadd{$A$ on the diagonals, then the response timescales are $d_i=-1/D_{ii}$ \mbox{%DIFAUXCMD
+\citep{Geoffroy2013}}\hspace{0pt}%DIFAUXCMD
+. The response coefficients are $q_i=d_i \Phi^{-1}_{i,0} \Phi_{0,i} / C_1$}\DIFaddend . In FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , we use this three timescale impulse response form due to its simplicity and flexibility. Two common measures of the climate sensitivity, the equilibrium climate sensitivity (ECS) and transient climate response (TCR) \citep{Collins2013} are easily expressed in terms of the impulse response parameters:\DIFaddbegin \\
+\DIFaddend \begin{align}
+    \text{ECS}&=F_{2\times \text{CO}_2} \cdot \sum\DIFdelbegin \DIFdel{_{i=1}}\DIFdelend \DIFaddbegin \DIFadd{_{j=1}}\DIFaddend ^3 q\DIFdelbegin \DIFdel{_i }\DIFdelend \DIFaddbegin \DIFadd{_j }\DIFaddend \label{eq:ECS}\\
+    \text{TCR}&=F_{2\times \text{CO}_2} \cdot \sum\DIFdelbegin \DIFdel{_{i=1}}\DIFdelend \DIFaddbegin \DIFadd{_{j=1}}\DIFaddend ^3 \left\{q\DIFdelbegin \DIFdel{_i}\DIFdelend \DIFaddbegin \DIFadd{_j}\DIFaddend \left(1-\DIFdelbegin \DIFdel{\frac{d_i}{70}}\DIFdelend \DIFaddbegin \DIFadd{\frac{d_j}{70}}\DIFaddend \left[1-e\DIFdelbegin \DIFdel{^{-\frac{70}{d_i}}}\DIFdelend \DIFaddbegin \DIFadd{^{-\frac{70}{d_j}}}\DIFaddend \right]\right)\right\}. \label{eq:TCR}
+\end{align}\DIFaddbegin \\
+\DIFaddend The default thermal response parameters in FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend are derived as follows. \DIFdelbegin \DIFdel{$d_1$, $d_2$, $d_3$ and $q_1$ }\DIFdelend \DIFaddbegin \DIFadd{$d_1=0.903$, $d_2=7.92$, $d_3=355$ and $q_1=0.180$ }\DIFaddend are taken as \DIFdelbegin \DIFdel{the central value of }\DIFdelend \DIFaddbegin \DIFadd{their central value within the CONSTRAINED ensemble in Section \ref{NROY_results}, which do not differ significantly from }\DIFaddend the CMIP6 inferred \DIFdelbegin \DIFdel{distributions described in section \ref{response_sampling}. $q_2$ and $q_3$ }\DIFdelend \DIFaddbegin \DIFadd{distribution described in Section \ref{response_sampling}. $q_2=0.297$ and $q_3=0.386$ }\DIFaddend are then set by equations \ref{eq:ECS} and \ref{eq:TCR} such that the default parameter set response has climate sensitivites (ECS and TCR) equal to the central values of the constrained ensemble described in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{NROY}: ECS = \DIFdelbegin \DIFdel{3.2 }\DIFdelend \DIFaddbegin \DIFadd{3.24 }\DIFaddend K and TCR = \DIFdelbegin \DIFdel{1.8 }\DIFdelend \DIFaddbegin \DIFadd{1.79 }\DIFaddend K.
+\section{Emulating complex climate models} \label{cmip6_tuning}
+In this section we demonstrate the ability of FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend to emulate the more complex models from CMIP6 \citep{Eyring2016} in a limited set of experiments. Due to constraints on data availability, we have focussed on tuning the key components of the model: the carbon cycle; the thermal response; and the aerosol ERF relationships. We use the abrupt-4xCO2 and 1pctCO2 CMIP6 experiments to tune the carbon cycle and thermal response. The highly idealised nature of these experiments means that parameters arising from these tunings will not necessarily be able to emulate complex model response to more realistic scenarios due to processes that FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend cannot represent. In the near future we hope to be able to tune to the historical and SSP CMIP6 experiments in order to validate the tunings given here. 
+\subsection{Tuning the thermal response} \label{cmip6_response}
+We follow the statistically rigorous methodology of \cite{Cummins2020} to tune thermal response parameters to \DIFdelbegin \DIFdel{40 }\DIFdelend \DIFaddbegin \DIFadd{28 }\DIFaddend CMIP6 models. This involves fitting parameters to the energy balance model \DIFdelbegin \DIFdel{above }\DIFdelend \DIFaddbegin \DIFadd{outlined in equation \ref{eq:statespace} }\DIFaddend by recursively computing the likelihood via \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{a }\DIFaddend Kalman filter; the optimal parameters are those that maximise the computed likelihood. We then transform the \DIFdelbegin \DIFdel{calculated }\DIFdelend optimal energy balance parameters into the impulse response form used in FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend . We obtain model data from the ``abrupt-4xCO2'', ``1pctCO2'' and ``piControl'' experiments for the top-of-energy imbalance and surface temperature response from ESGF \citep{Cinquini2014}. \DIFdelbegin \DIFdel{We calculate anomalies and correct for model drift in the abrupt-4xCO2 and 1pctCO2 experiments using output from the piControl experiment, based on the CMOR parent branch time metadata}\DIFdelend \DIFaddbegin \DIFadd{These data are normalised as described in \mbox{%DIFAUXCMD
+\citet{Nicholls2021}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . To reduce \DIFdelbegin \DIFdel{noise }\DIFdelend \DIFaddbegin \DIFadd{internal variability }\DIFaddend in the input \DIFdelbegin \DIFdel{data}\DIFdelend \DIFaddbegin \DIFadd{timeseries used to fit parameters}\DIFaddend , we average over all available ensemble members for each model. \DIFdelbegin \DIFdel{For full details of this anomaly-correction procedure, see the supplement}\DIFdelend \DIFaddbegin \DIFadd{The number of ensemble members per model is stated in Table S4}\DIFaddend . The \cite{Cummins2020} methodology uses surface temperatures and top-of-atmosphere energy imbalances \DIFaddbegin \DIFadd{(as related by equation \ref{eq:TOA_flux}) }\DIFaddend from the abrupt-4xCO2 experiment to return all the parameters of the energy balance model\DIFdelbegin \DIFdel{above}\DIFdelend , plus the radiative forcing arising from the quadrupling of carbon dioxide concentrations. While this would fully specify both the thermal response and the concentration-forcing relationship if concentration-forcing was a pure logarithmic relationship, several models display significant deviations from a pure logarithmic concentration-forcing relationship \citep{Tsutsui2020,Tsutsui2017}. We account for this within the \DIFdelbegin \DIFdel{FaIR }\DIFdelend \DIFaddbegin \DIFadd{FaIRv2.0.0 }\DIFaddend framework by assuming that the concentration-forcing relationship can be reasonably approximated by the sum of a logarithmic and square-root term. Best-estimate $f_1^{CO_2}$ and $f_3^{CO_2}$ parameters are found by first deriving the TCR of each model using the 1pctCO2 experiment. We can use the tuned impulse-response parameters and TCR to then calculate the forcing at a doubling of carbon dioxide using the relationship \DIFdelbegin \DIFdel{above}\DIFdelend \DIFaddbegin \DIFadd{in equation \ref{eq:TCR}}\DIFaddend . The forcings at carbon dioxide doubling and quadrupling uniquely specify $f_1^{CO_2}$ and $f_3^{CO_2}$ values for use in \DIFdelbegin \DIFdel{FaIR}\DIFdelend \DIFaddbegin \DIFadd{FaIRv2.0.0}\DIFaddend . The best-estimate impulse-response and \DIFaddbegin \DIFadd{$f$ parameters, climate sensitivities, and }\DIFaddend forcings at carbon dioxide doubling and quadrupling are given \DIFdelbegin \DIFdel{below}\DIFdelend \DIFaddbegin \DIFadd{in Table \ref{table:resp_p}}\DIFaddend . Corresponding energy balance model parameters are given in \DIFdelbegin \DIFdel{the supplement}\DIFdelend \DIFaddbegin \DIFadd{Table S5}\DIFaddend . Figure \ref{fig:resp_emulation} shows the emulated and original responses to the abrupt-4xCO2 and 1pctCO2 experiments for each model.
+\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD < \captionof{table}{Tuned CMIP6 thermal response parameters\label{table:resp_p}}
+%DIFDELCMD < {\small
+%DIFDELCMD < \renewcommand{\arraystretch}{0.9}
+%DIFDELCMD < \begin{tabular}{l||rrr|rrr|rr|rr}
+%DIFDELCMD <     %%%
+\DIFdelend \DIFaddbegin \clearpage
+\begin{table}[t]
+    \caption{\DIFaddFL{Tuned CMIP6 thermal response parameters.}}
+    \label{table:resp_p}
+    \DIFaddendFL {\DIFdelbeginFL \DIFdelFL{model}%DIFDELCMD < } &      %%%
+\DIFdelFL{d1 }%DIFDELCMD < &      %%%
+\DIFdelFL{d2  }%DIFDELCMD < &           %%%
+\DIFdelFL{d3 / yrs }%DIFDELCMD < &        %%%
+\DIFdelFL{q1 }%DIFDELCMD < &     %%%
+\DIFdelFL{q2 }%DIFDELCMD < &        %%%
+\DIFdelFL{q3 / K W$^{-1}$ m$^{2}$}%DIFDELCMD < &  %%%
+\DIFdelFL{F\_2x }%DIFDELCMD < &   %%%
+\DIFdelFL{F\_4x / W m$^{-2}$ }%DIFDELCMD < &   %%%
+\DIFdelFL{ECS }%DIFDELCMD < &   %%%
+\DIFdelFL{TCR / K }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdelFL{ACCESS-CM2      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.8140 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.980 }%DIFDELCMD < &        %%%
+\DIFdelFL{339.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.168000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.508 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.810000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.18 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.72 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.18 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{ACCESS-ESM1-5   }%DIFDELCMD < &  %%%
+\DIFdelFL{0.6380 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.010 }%DIFDELCMD < &        %%%
+\DIFdelFL{342.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.119000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.447 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.865000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.53 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.55 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.05 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.15 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{AWI-CM-1-1-MR   }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1600 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.950 }%DIFDELCMD < &        %%%
+\DIFdelFL{170.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.222000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.296 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.337000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.96 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.85 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.16 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{BCC-CSM2-MR     }%DIFDELCMD < &  %%%
+\DIFdelFL{1.2200 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.230 }%DIFDELCMD < &        %%%
+\DIFdelFL{225.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.176000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.341 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.566000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.28 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.16 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.55 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.83 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{BCC-ESM1        }%DIFDELCMD < &  %%%
+\DIFdelFL{2.0100 }%DIFDELCMD < &   %%%
+\DIFdelFL{9.880 }%DIFDELCMD < &        %%%
+\DIFdelFL{282.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.289000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.305 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.539000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.18 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.25 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.60 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.92 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CAMS-CSM1-0     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.3360 }%DIFDELCMD < &   %%%
+\DIFdelFL{4.230 }%DIFDELCMD < &        %%%
+\DIFdelFL{132.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.072500 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.297 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.166000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.61 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.74 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.47 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.79 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CESM2           }%DIFDELCMD < &  %%%
+\DIFdelFL{4.1300 }%DIFDELCMD < &  %%%
+\DIFdelFL{81.700 }%DIFDELCMD < &        %%%
+\DIFdelFL{929.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.676000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.644 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.120000 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.58 }%DIFDELCMD < &   %%%
+\DIFdelFL{5.52 }%DIFDELCMD < &  %%%
+\DIFdelFL{6.28 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.28 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CESM2-FV2       }%DIFDELCMD < &  %%%
+\DIFdelFL{0.5670 }%DIFDELCMD < &   %%%
+\DIFdelFL{4.600 }%DIFDELCMD < &        %%%
+\DIFdelFL{427.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.093900 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.448 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.280000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.35 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{6.09 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.04 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CESM2-WACCM     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.3180 }%DIFDELCMD < &   %%%
+\DIFdelFL{4.740 }%DIFDELCMD < &        %%%
+\DIFdelFL{330.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.052700 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.470 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.872000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.71 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.17 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.14 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CESM2-WACCM-FV2 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.6350 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.220 }%DIFDELCMD < &        %%%
+\DIFdelFL{469.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.140000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.461 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.190000 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.99 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.74 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.34 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.92 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CIESM           }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1600 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.600 }%DIFDELCMD < &        %%%
+\DIFdelFL{242.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.152000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.424 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.867000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.91 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.38 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.64 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.51 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CNRM-CM6-1      }%DIFDELCMD < &  %%%
+\DIFdelFL{1.5900 }%DIFDELCMD < &  %%%
+\DIFdelFL{25.700 }%DIFDELCMD < &       %%%
+\DIFdelFL{1160.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.352000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.401 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.045400 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.25 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.74 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.59 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.98 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CNRM-CM6-1-HR   }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1700 }%DIFDELCMD < &  %%%
+\DIFdelFL{11.600 }%DIFDELCMD < &        %%%
+\DIFdelFL{233.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.235000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.454 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.293000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.92 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.94 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.85 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.55 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CNRM-ESM2-1     }%DIFDELCMD < &  %%%
+\DIFdelFL{1.7300 }%DIFDELCMD < &  %%%
+\DIFdelFL{11.200 }%DIFDELCMD < &        %%%
+\DIFdelFL{367.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.280000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.542 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.683000 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.59 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.01 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.90 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.04 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{CanESM5         }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1600 }%DIFDELCMD < &  %%%
+\DIFdelFL{11.300 }%DIFDELCMD < &        %%%
+\DIFdelFL{296.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.232000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.571 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.770000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.43 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.42 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.71 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{E3SM-1-0        }%DIFDELCMD < &  %%%
+\DIFdelFL{0.9690 }%DIFDELCMD < &  %%%
+\DIFdelFL{11.300 }%DIFDELCMD < &        %%%
+\DIFdelFL{275.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.203000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.698 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.832000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.52 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.00 }%DIFDELCMD < &  %%%
+\DIFdelFL{6.10 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.10 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{EC-Earth3-Veg   }%DIFDELCMD < &  %%%
+\DIFdelFL{0.8550 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.570 }%DIFDELCMD < &        %%%
+\DIFdelFL{119.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.201000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.400 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.587000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.59 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.47 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.27 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.51 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{GFDL-CM4        }%DIFDELCMD < &  %%%
+\DIFdelFL{0.0298 }%DIFDELCMD < &   %%%
+\DIFdelFL{2.370 }%DIFDELCMD < &        %%%
+\DIFdelFL{253.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.000024 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.427 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.558000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.20 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.95 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.14 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.03 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{GFDL-ESM4       }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1300 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.890 }%DIFDELCMD < &        %%%
+\DIFdelFL{292.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.227000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.253 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.154000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.39 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.87 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.15 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.58 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{GISS-E2-1-G     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.9460 }%DIFDELCMD < &   %%%
+\DIFdelFL{5.610 }%DIFDELCMD < &        %%%
+\DIFdelFL{369.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.202000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.226 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.233000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.28 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.14 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.83 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.83 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{GISS-E2-1-H     }%DIFDELCMD < &  %%%
+\DIFdelFL{1.5400 }%DIFDELCMD < &  %%%
+\DIFdelFL{35.500 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.11e8 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.318000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.278 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.000075 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.61 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.38 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.75 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.15 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{GISS-E2-2-G     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.8250 }%DIFDELCMD < &   %%%
+\DIFdelFL{9.900 }%DIFDELCMD < &        %%%
+\DIFdelFL{896.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.209000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.235 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.038500 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.04 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.95 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.65 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{HadGEM3-GC31-LL }%DIFDELCMD < &  %%%
+\DIFdelFL{0.8600 }%DIFDELCMD < &   %%%
+\DIFdelFL{9.310 }%DIFDELCMD < &        %%%
+\DIFdelFL{279.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.167000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.604 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.863000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.30 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.22 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.60 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{HadGEM3-GC31-MM }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1200 }%DIFDELCMD < &  %%%
+\DIFdelFL{12.300 }%DIFDELCMD < &        %%%
+\DIFdelFL{237.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.276000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.477 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.762000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.36 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.10 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.58 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{INM-CM4-8       }%DIFDELCMD < &  %%%
+\DIFdelFL{1.0700 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.190 }%DIFDELCMD < &         %%%
+\DIFdelFL{79.3 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.207000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.224 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.201000 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.83 }%DIFDELCMD < &   %%%
+\DIFdelFL{5.93 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.79 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.35 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{INM-CM5-0       }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1300 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.330 }%DIFDELCMD < &        %%%
+\DIFdelFL{165.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.217000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.235 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.185000 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.92 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.29 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.86 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.33 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{IPSL-CM6A-LR    }%DIFDELCMD < &  %%%
+\DIFdelFL{1.0600 }%DIFDELCMD < &  %%%
+\DIFdelFL{13.500 }%DIFDELCMD < &        %%%
+\DIFdelFL{366.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.316000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.504 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.634000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.06 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.98 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.46 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.38 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{KACE-1-0-G      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.0318 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.260 }%DIFDELCMD < &        %%%
+\DIFdelFL{345.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.029900 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.480 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.867000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.68 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.11 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.07 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.02 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{MIROC-ES2L      }%DIFDELCMD < &  %%%
+\DIFdelFL{3.5700 }%DIFDELCMD < &  %%%
+\DIFdelFL{19.400 }%DIFDELCMD < &        %%%
+\DIFdelFL{552.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.324000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.168 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.113000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.84 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.89 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.33 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.68 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{MIROC6          }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1000 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.470 }%DIFDELCMD < &        %%%
+\DIFdelFL{440.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.268000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.178 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.246000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.56 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.80 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.46 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.56 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{MPI-ESM1-2-HR   }%DIFDELCMD < &  %%%
+\DIFdelFL{1.7200 }%DIFDELCMD < &   %%%
+\DIFdelFL{9.630 }%DIFDELCMD < &        %%%
+\DIFdelFL{254.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.298000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.167 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.378000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.52 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.82 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.97 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.70 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{MPI-ESM1-2-LR   }%DIFDELCMD < &  %%%
+\DIFdelFL{2.4600 }%DIFDELCMD < &  %%%
+\DIFdelFL{72.700 }%DIFDELCMD < &    %%%
+\DIFdelFL{6.72e6 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.375000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.172 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.032000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.19 }%DIFDELCMD < &   %%%
+\DIFdelFL{9.48 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.43 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.77 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{MRI-ESM2-0      }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1100 }%DIFDELCMD < &   %%%
+\DIFdelFL{5.280 }%DIFDELCMD < &        %%%
+\DIFdelFL{247.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.163000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.286 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.444000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.48 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.47 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.11 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.68 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{NESM3           }%DIFDELCMD < &  %%%
+\DIFdelFL{1.2400 }%DIFDELCMD < &  %%%
+\DIFdelFL{22.900 }%DIFDELCMD < &        %%%
+\DIFdelFL{445.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.472000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.345 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.267000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.75 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.86 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.70 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{NorCPM1         }%DIFDELCMD < &  %%%
+\DIFdelFL{2.5000 }%DIFDELCMD < &  %%%
+\DIFdelFL{42.500 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.77e8 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.334000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.246 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.065500 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.60 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.82 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.33 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.61 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{NorESM2-LM      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.2310 }%DIFDELCMD < &   %%%
+\DIFdelFL{0.938 }%DIFDELCMD < &       %%%
+\DIFdelFL{1350.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.000073 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.250 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.080000 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.47 }%DIFDELCMD < &  %%%
+\DIFdelFL{11.70 }%DIFDELCMD < &  %%%
+\DIFdelFL{7.30 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.50 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{NorESM2-MM      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.4290 }%DIFDELCMD < &   %%%
+\DIFdelFL{1.210 }%DIFDELCMD < &        %%%
+\DIFdelFL{302.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.000088 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.292 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.217000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.19 }%DIFDELCMD < &  %%%
+\DIFdelFL{10.80 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.13 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.30 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{SAM0-UNICON     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.8180 }%DIFDELCMD < &   %%%
+\DIFdelFL{4.580 }%DIFDELCMD < &        %%%
+\DIFdelFL{308.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.105000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.405 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.459000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.57 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.33 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.43 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.42 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{TaiESM1         }%DIFDELCMD < &  %%%
+\DIFdelFL{1.1600 }%DIFDELCMD < &   %%%
+\DIFdelFL{6.750 }%DIFDELCMD < &        %%%
+\DIFdelFL{274.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.152000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.428 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.553000 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.07 }%DIFDELCMD < &   %%%
+\DIFdelFL{8.15 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.61 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.45 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdelFL{UKESM1-0-LL     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.7530 }%DIFDELCMD < &  %%%
+\DIFdelFL{10.200 }%DIFDELCMD < &        %%%
+\DIFdelFL{277.0 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.210000 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.552 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.769000 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.60 }%DIFDELCMD < &   %%%
+\DIFdelFL{7.38 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.51 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.76 }%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}\\\\
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \footnotesize
+    \input{tables/Tab2}
+    \DIFaddendFL }
+\DIFdelbeginFL %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \end{table}
+\clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.8\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/CMIP6_response_emulation_grid".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig3".pdf}
+    \DIFaddendFL \caption{FaIRv2.0\DIFaddbeginFL \DIFaddFL{.0 }\DIFaddendFL emulation of CMIP6 model response to the \DIFdelbeginFL \DIFdelFL{abrupt4xCO2 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{abrupt-4xCO2, abrupt-2xCO2, abrupt-0p5xCO2, }\DIFaddendFL and 1pctCO2 experiments. \DIFdelbeginFL \DIFdelFL{Small }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Black line shows FaIRv2.0.0-alpha emulation, }\DIFaddendFL orange \DIFdelbeginFL \DIFdelFL{and blue dots show drift-corrected }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{line shows CMIP6 }\DIFaddendFL model \DIFdelbeginFL \DIFdelFL{surface temperature anomaly output for }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{data where available. Emulation parameters were fit using }\DIFaddendFL the abrupt-4xCO2 and 1pctCO2 experiments \DIFdelbeginFL \DIFdelFL{respectively. Dashed black lines show corresponding FaIRv2.0 emulation}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{so the abrupt-2xCO2 and abrupt-0p5xCO2 simulations can be considered as verification experiments for the models where the data for these experiments is available}\DIFaddendFL . \DIFdelbeginFL \DIFdelFL{Large orange }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Filled }\DIFaddendFL and \DIFdelbeginFL \DIFdelFL{blue }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{unfilled }\DIFaddendFL dots over the y-axis indicate the assessed model ECS and TCR respectively (see \DIFdelbeginFL \DIFdelFL{table }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Table }\DIFaddendFL \ref{table:resp_p}).}
+    \label{fig:resp_emulation}
+\end{figure}
+\clearpage
+\DIFdelbegin \DIFdel{We found that optimal parameters found over the first 150 years of the abrupt-4xCO2 experiment were not able to well-reproduce the remainder of the experiment for those models that continued the experiment past 150 years (CESM2 and NorESM2-LM). These models appear to exhibit particularly high ocean heat uptake efficacy, resulting in a sharp ``elbow'' feature in their Gregory plots (see figure S2), which tends to be underestimated by the maximum likelihood procedure when tuning to abbreviated data. Without longer runs from more models, it is difficult to predict whether the projection issues with tuning parameters to the first 150 years observed in these two models would apply more generally. \mbox{%DIFAUXCMD
+\cite{Rugenstein2020} }\hspace{0pt}%DIFAUXCMD
+suggests that the inclusion of an ocean heat uptake efficacy in the fit should alleviate this issue to a limited extent.
+}\DIFdelend %DIF >  We found that optimal parameters found over the first 150 years of the abrupt-4xCO2 experiment were not able to well-reproduce the remainder of the experiment for those models that continued the experiment past 150 years (CESM2 and NorESM2-LM). These models appear to exhibit particularly high ocean heat uptake efficacy, resulting in a sharp ``elbow'' feature in their Gregory plots (see figure S2), which tends to be underestimated by the maximum likelihood procedure when tuning to abbreviated data. Without longer runs from more models, it is difficult to predict whether the projection issues with tuning parameters to the first 150 years observed in these two models would apply more generally. \cite{Rugenstein2020} suggests that the inclusion of an ocean heat uptake efficacy in the fit should alleviate this issue to a limited extent.
+\subsection{Tuning the carbon cycle response} \label{cmip6_cc}
+We tune the carbon cycle using CMIP6 data from the C4MIP \citep{Jones2016} fully coupled and biogeochemically coupled 1pctCO2 runs \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Arora2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep{K.Arora2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . Since constraining the response coefficients $a_i$ and timescales $\tau_i$ requires pulse-emission experiments such as carried out by \cite{Joos2013}, here we only fit the $r$ feedback parameters and keep the response coefficients, $a$, and timescales, $\tau$, equal to the multi-model mean from \citet{Joos2013}. The inclusion of both the fully coupled and biogeochemically coupled runs in the procedure allows us to constrain $r_u$, $r_a$, and $r_T$ independently. We use equations \ref{eq:gaspool} and \ref{eq:conc} to diagnose the values of $\alpha$ required to reproduce the C4MIP emissions from the corresponding concentrations within the FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend carbon-cycle impulse-response framework. We then use equation \ref{eq:alpha} to convert $\alpha$ into iIRF$_{100}$ timeseries. Finally, we use an ordinary least squares estimator to calculate $r$ parameters by regressing the C4MIP cumulative uptake, temperature and atmospheric burden timeseries against the diagnosed iIRF$_{100}$ timeseries. $r_0$ is taken as the intercept of the estimator. We include the atmospheric burden as a predictor (and hence obtain non-zero $r_A$ values) due to a significant reduction in regression residual for several models when included. We find that all the C4MIP models display an exceptionally high, rapidly decreasing initial airborne fraction. In terms of the FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend equations, this corresponds to an $\alpha$ value that decreases initially before reaching a minimum, representing a carbon sink that initially increases in strength when concentrations start to rise before decreasing as the concentrations and temperatures rise further. FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend is unable to fully capture this initial adjustment, and as such in our tunings we prioritise emulating the long-term behaviour and carry out the regression \DIFdelbegin \DIFdel{over the final 75 years of the C4MIP data}\DIFdelend \DIFaddbegin \DIFadd{from year 60 onwards}\DIFaddend . It would be possible to better capture the initial adjustment by including additional terms in equation \ref{eq:alpha}, but since it remains to be seen whether this behaviour is apparent in scenarios where concentrations do not rise suddenly and rapidly from a pre-industrial level as is the case in the 1pctCO$_2$ experiment (such as a historical emission scenario), we do not do so here. Tuned parameters are given \DIFdelbegin \DIFdel{below, with figure }\DIFdelend \DIFaddbegin \DIFadd{in Table \ref{table:cc_p}, with Figure }\DIFaddend \ref{fig:cc_emulation} showing diagnosed C4MIP emissions and the FaIRv2.0\DIFaddbegin \DIFadd{.0-alpha }\DIFaddend emulation. We note that these tunings suggest that the pre-industrial sink strength (which is encapsulated by $r_0$) in \DIFdelbegin \DIFdel{all but one of the }\DIFdelend \DIFaddbegin \DIFadd{7/11 }\DIFaddend models is higher than the historically observed best-estimate found here (\ref{gas_cycle_parameters}), and in a previous study \citep{Jenkins2018}. 
+\DIFdelbegin %DIFDELCMD < \captionof{table}{Tuned CMIP6 carbon-cycle parameters\label{table:cc_p}}
+%DIFDELCMD < \begin{tabular}{l||rrrr}
+%DIFDELCMD <     {} &    %%%
+\DIFdel{$r_0$ }%DIFDELCMD < &        %%%
+\DIFdel{$r_u$ }%DIFDELCMD < &      %%%
+\DIFdel{$r_T$ }%DIFDELCMD < &       %%%
+\DIFdel{$r_a$ }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{ACCESS-ESM1-5 }%DIFDELCMD < &  %%%
+\DIFdel{32.8 }%DIFDELCMD < &  %%%
+\DIFdel{0.048200 }%DIFDELCMD < &  %%%
+\DIFdel{3.4400 }%DIFDELCMD < & %%%
+\DIFdel{-0.00627 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{BCC-CSM2-MR   }%DIFDELCMD < &  %%%
+\DIFdel{27.7 }%DIFDELCMD < &  %%%
+\DIFdel{0.001590 }%DIFDELCMD < &  %%%
+\DIFdel{4.5200 }%DIFDELCMD < &  %%%
+\DIFdel{0.00873 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{CESM2         }%DIFDELCMD < &  %%%
+\DIFdel{41.3 }%DIFDELCMD < &  %%%
+\DIFdel{0.007510 }%DIFDELCMD < &  %%%
+\DIFdel{1.1900 }%DIFDELCMD < &  %%%
+\DIFdel{0.00626 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{CNRM-ESM2-1   }%DIFDELCMD < &  %%%
+\DIFdel{38.5 }%DIFDELCMD < & %%%
+\DIFdel{-0.000362 }%DIFDELCMD < &  %%%
+\DIFdel{2.4400 }%DIFDELCMD < &  %%%
+\DIFdel{0.01030 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{CanESM5       }%DIFDELCMD < &  %%%
+\DIFdel{35.9 }%DIFDELCMD < & %%%
+\DIFdel{-0.007120 }%DIFDELCMD < & %%%
+\DIFdel{-0.0847 }%DIFDELCMD < &  %%%
+\DIFdel{0.01910 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{GFDL-ESM4     }%DIFDELCMD < &  %%%
+\DIFdel{35.8 }%DIFDELCMD < &  %%%
+\DIFdel{0.017700 }%DIFDELCMD < &  %%%
+\DIFdel{4.5100 }%DIFDELCMD < & %%%
+\DIFdel{-0.00156 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{IPSL-CM6A-LR  }%DIFDELCMD < &  %%%
+\DIFdel{34.8 }%DIFDELCMD < &  %%%
+\DIFdel{0.009360 }%DIFDELCMD < &  %%%
+\DIFdel{0.9340 }%DIFDELCMD < &  %%%
+\DIFdel{0.01560 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{MIROC-ES2L    }%DIFDELCMD < &  %%%
+\DIFdel{34.3 }%DIFDELCMD < &  %%%
+\DIFdel{0.010400 }%DIFDELCMD < &  %%%
+\DIFdel{3.2900 }%DIFDELCMD < &  %%%
+\DIFdel{0.00574 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{MPI-ESM1-2-LR }%DIFDELCMD < &  %%%
+\DIFdel{35.7 }%DIFDELCMD < &  %%%
+\DIFdel{0.020800 }%DIFDELCMD < &  %%%
+\DIFdel{1.2600 }%DIFDELCMD < &  %%%
+\DIFdel{0.00357 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{NorESM2-LM    }%DIFDELCMD < &  %%%
+\DIFdel{41.3 }%DIFDELCMD < &  %%%
+\DIFdel{0.005590 }%DIFDELCMD < &  %%%
+\DIFdel{1.4500 }%DIFDELCMD < &  %%%
+\DIFdel{0.00757 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{UKESM1-0-LL   }%DIFDELCMD < &  %%%
+\DIFdel{38.5 }%DIFDELCMD < &  %%%
+\DIFdel{0.018100 }%DIFDELCMD < &  %%%
+\DIFdel{2.5800 }%DIFDELCMD < &  %%%
+\DIFdel{0.00287 }%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \clearpage
+\begin{table}[t]
+    \caption{\DIFaddFL{Tuned CMIP6 carbon-cycle parameters.}}
+    \label{table:cc_p}
+    \input{tables/Tab3}
+\end{table}
+\clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.8\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/CMIP6_1pctCO2_cc_emulation_grid".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig4".pdf}
+    \DIFaddendFL \caption{FaIRv2.0\DIFaddbeginFL \DIFaddFL{.0 }\DIFaddendFL emulation of CMIP6 model carbon cycle response to the C4MIP 1pctCO2 experiments. \DIFdelbeginFL \DIFdelFL{Orange and blue dots show model annual and cumulative emissions for the experiments specified above the figure. Dashed black lines show corresponding }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Black line shows }\DIFaddendFL FaIRv2.0\DIFaddbeginFL \DIFaddFL{.0-alpha }\DIFaddendFL emulation\DIFaddbeginFL \DIFaddFL{, and orange line shows C4MIP model data}\DIFaddendFL . \DIFdelbeginFL \DIFdelFL{Red dots in the right-hand column show }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Top row shows diagnosed emission rates, middle row }\DIFaddendFL cumulative emissions\DIFdelbeginFL \DIFdelFL{arising from radiation feedback directly from }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{, and bottom row airborne fraction. Solid line indicates }\DIFaddendFL the \DIFdelbeginFL \DIFdelFL{radiatively-coupled 1pctCO2 experiment}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{fully coupled C4MIP runs}\DIFaddendFL , while \DIFdelbeginFL \DIFdelFL{blue dots }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{dashed lines }\DIFaddendFL show \DIFdelbeginFL \DIFdelFL{cumulative emissions calculated as the difference between the equivalent fully- and biogeochemically-coupled experiments}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{biogeochemically coupled runs (emulated in FaIRv2.0.0-alpha by setting $r_T=0$)}\DIFaddendFL .}
+    \label{fig:cc_emulation}
+\end{figure}
+\clearpage
+\subsection{Tuning aerosol ERF} \label{cmip6_erfaer}
+Aerosol forcing relationships are tuned to ERF data from 10 CMIP6 models and emission data from the RCMIP protocol \citep{Nicholls2019} following \cite{Smith2020a}. For each CMIP6 model, aerosol-radiation and aerosol-cloud interaction components of the ERF are calculated by the Approximate Partial Radiative Perturbation (APRP) method. For additional details on the exact procedure, see \cite{Smith2020a} and \cite{Zelinka2014}. For each model, we fit the $f$ coefficients in equation \ref{eq:ERFari} to the ERFari component using an ordinary least squares estimator. The resulting coefficients are almost identical to those from \cite{Smith2020a}, with differences arising only due to the emission data used. We then fit the $f$ coefficients and $C_0^{SO_2}$ in equation \ref{eq:ERFaci} to the ERFaci component by minimising the residual sum of squares using a simplex algorithm \citep{Nelder1965}. The tuned parameters are given \DIFdelbegin \DIFdel{below}\DIFdelend \DIFaddbegin \DIFadd{in Table \ref{table:ERFaer_p}}\DIFaddend . Figure \ref{fig:ERFaer_emulation}, following \DIFdelbegin \DIFdel{figure }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend 2 of \cite{Smith2020a}, shows the parameterised fits compared to the APRP derived model ERF components.
+\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD < \captionof{table}{Tuned CMIP6 aerosol forcing parameters\label{table:ERFaer_p}}
+%DIFDELCMD < \begin{tabular}{l||rrr|rrr}
+%DIFDELCMD <     \multicolumn{1}{c||}{Model} & \multicolumn{3}{c}{ERFari} & \multicolumn{3}{c}{ERFaci}\\
+%DIFDELCMD <     {} &       %%%
+\DIFdel{$f_2^{BC}$ }%DIFDELCMD < &        %%%
+\DIFdel{$f_2^{OC}$ }%DIFDELCMD < &       %%%
+\DIFdel{$f_2^{SO_2}$ }%DIFDELCMD < &    %%%
+\DIFdel{$f_1^{aci}$ }%DIFDELCMD < &        %%%
+\DIFdel{$C_0^{SO_2}$ }%DIFDELCMD < &     %%%
+\DIFdel{$f_2^{aci}$ }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{CanESM5         }%DIFDELCMD < &  %%%
+\DIFdel{0.03260 }%DIFDELCMD < & %%%
+\DIFdel{-0.000347 }%DIFDELCMD < & %%%
+\DIFdel{-0.002490 }%DIFDELCMD < &  %%%
+\DIFdel{-0.387 }%DIFDELCMD < &     %%%
+\DIFdel{23.8 }%DIFDELCMD < & %%%
+\DIFdel{-0.015200 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{E3SM            }%DIFDELCMD < &  %%%
+\DIFdel{0.02480 }%DIFDELCMD < & %%%
+\DIFdel{-0.012600 }%DIFDELCMD < & %%%
+\DIFdel{-0.000942 }%DIFDELCMD < &  %%%
+\DIFdel{-1.640 }%DIFDELCMD < &    %%%
+\DIFdel{113.0 }%DIFDELCMD < & %%%
+\DIFdel{-0.014200 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{GFDL-CM4        }%DIFDELCMD < &  %%%
+\DIFdel{0.02690 }%DIFDELCMD < & %%%
+\DIFdel{-0.002090 }%DIFDELCMD < & %%%
+\DIFdel{-0.002610 }%DIFDELCMD < &  %%%
+\DIFdel{-2.230 }%DIFDELCMD < &    %%%
+\DIFdel{427.0 }%DIFDELCMD < & %%%
+\DIFdel{-0.008030 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{GFDL-ESM4       }%DIFDELCMD < &  %%%
+\DIFdel{0.10200 }%DIFDELCMD < & %%%
+\DIFdel{-0.030400 }%DIFDELCMD < & %%%
+\DIFdel{-0.002640 }%DIFDELCMD < & %%%
+\DIFdel{-57.600 }%DIFDELCMD < &  %%%
+\DIFdel{17000.0 }%DIFDELCMD < & %%%
+\DIFdel{-0.015300 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{GISS-E2-1-G     }%DIFDELCMD < &  %%%
+\DIFdel{0.14600 }%DIFDELCMD < & %%%
+\DIFdel{-0.044100 }%DIFDELCMD < & %%%
+\DIFdel{-0.006680 }%DIFDELCMD < &  %%%
+\DIFdel{-0.156 }%DIFDELCMD < &     %%%
+\DIFdel{16.8 }%DIFDELCMD < & %%%
+\DIFdel{-0.017600 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{HadGEM3-GC31-LL }%DIFDELCMD < &  %%%
+\DIFdel{0.00196 }%DIFDELCMD < &  %%%
+\DIFdel{0.004150 }%DIFDELCMD < & %%%
+\DIFdel{-0.002910 }%DIFDELCMD < &  %%%
+\DIFdel{-0.783 }%DIFDELCMD < &     %%%
+\DIFdel{66.9 }%DIFDELCMD < & %%%
+\DIFdel{-0.006910 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{IPSL-CM6A-LR    }%DIFDELCMD < & %%%
+\DIFdel{-0.05610 }%DIFDELCMD < &  %%%
+\DIFdel{0.008850 }%DIFDELCMD < & %%%
+\DIFdel{-0.000748 }%DIFDELCMD < &  %%%
+\DIFdel{-0.951 }%DIFDELCMD < &    %%%
+\DIFdel{306.0 }%DIFDELCMD < & %%%
+\DIFdel{-0.001730 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{MIROC6          }%DIFDELCMD < &  %%%
+\DIFdel{0.03870 }%DIFDELCMD < & %%%
+\DIFdel{-0.014200 }%DIFDELCMD < & %%%
+\DIFdel{-0.001780 }%DIFDELCMD < &  %%%
+\DIFdel{-0.392 }%DIFDELCMD < &     %%%
+\DIFdel{46.6 }%DIFDELCMD < & %%%
+\DIFdel{-0.012400 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{NorESM2-LM      }%DIFDELCMD < &  %%%
+\DIFdel{0.00302 }%DIFDELCMD < & %%%
+\DIFdel{-0.003400 }%DIFDELCMD < & %%%
+\DIFdel{-0.001260 }%DIFDELCMD < & %%%
+\DIFdel{-68.600 }%DIFDELCMD < &  %%%
+\DIFdel{10300.0 }%DIFDELCMD < & %%%
+\DIFdel{-0.012300 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{UKESM1-0-LL     }%DIFDELCMD < &  %%%
+\DIFdel{0.00255 }%DIFDELCMD < &  %%%
+\DIFdel{0.000063 }%DIFDELCMD < & %%%
+\DIFdel{-0.002390 }%DIFDELCMD < &  %%%
+\DIFdel{-0.740 }%DIFDELCMD < &     %%%
+\DIFdel{38.9 }%DIFDELCMD < & %%%
+\DIFdel{-0.000265 }%DIFDELCMD < \\
+%DIFDELCMD <     \end{tabular}
+%DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \clearpage
+\begin{table}
+    \caption{\DIFaddFL{Tuned CMIP6 aerosol forcing parameters.}}
+    \label{table:ERFaer_p}
+    \input{tables/Tab4}
+\end{table}
+\clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=0.8\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/CMIP6_aer_emulation".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.45\textwidth]{"figures/Fig5".pdf}
+    \DIFaddendFL \caption{\DIFdelbeginFL \DIFdelFL{Top row shows entire CMIP6 model ensemble compared to the FULL and CONSTRAINED }\DIFdelendFL FaIRv2.0\DIFdelbeginFL \DIFdelFL{parameter ensembles described in \ref{NROY}. All other figures show FaIRv2}\DIFdelendFL .0 emulation of \DIFdelbeginFL \DIFdelFL{individual CMIP6 models. Orange dots show }\DIFdelendFL CMIP6 model \DIFdelbeginFL \DIFdelFL{output derived using APRP}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{aerosol forcing}\DIFaddendFL . Black \DIFdelbeginFL \DIFdelFL{dashed lines show }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{line shows }\DIFaddendFL FaIRv2.0\DIFaddbeginFL \DIFaddFL{.0-alpha }\DIFaddendFL emulation\DIFaddbeginFL \DIFaddFL{, and orange dots show CMIP6 model data}\DIFaddendFL . All series displayed are relative to zero effective radiative forcing in 1850.}
+    \label{fig:ERFaer_emulation}
+\end{figure}
+\clearpage
+\section{Constraining probabilistic parameter ensembles} \label{NROY}
+The computational efficiency of SCMs makes them an ideal tool for carrying out large ensemble simulations from which probabilistic projections can be derived. \cite{Smith2018} carried out such a large ensemble, and produced projections based on constraining the ensemble members to fall within the 5-95\% uncertainty range in observed warming to date from the Cowtan and Way dataset \citep{Cowtan2014}. Here we replicate this procedure with the new model, but \DIFdelbegin \DIFdel{with an additional constraint on the current rate of warming}\DIFdelend \DIFaddbegin \DIFadd{using a new constraint methodology}\DIFaddend , and updated prior parameters distributions.
+\subsection{The current level and rate of warming} \label{GWI}
+We determine the current level and rate of warming following the Global Warming Index methodology \citep{Haustein2017}. This takes into account multiple sources of uncertainty: observational, forcing, earth system response (through parameter variation in an identical \DIFdelbegin \DIFdel{thermal }\DIFdelend \DIFaddbegin \DIFadd{climate }\DIFaddend response model to the one used in \DIFdelbegin \DIFdel{FaIR}\DIFdelend \DIFaddbegin \DIFadd{FaIRv2.0.0}\DIFaddend ) and internal variability. \DIFdelbegin \DIFdel{We find that a 90\% credible interval on the 2014 level of warming relative to 1861-1880 is 0.75 - 1.26 K; and on the 2010-2014 rate of warming is 0.18 - 0.40 K decade$^{-1}$. We use 2014 as the year in which our constraint is applied as this is }\DIFdelend \DIFaddbegin \DIFadd{With this methodology, we obtain an estimate of the distribution of }\DIFaddend the \DIFdelbegin \DIFdel{final year for which historical aerosol emissions -- usedin the calculation of the forcing timeseries -- are available \mbox{%DIFAUXCMD
+\citep{Hoesly2018}}\hspace{0pt}%DIFAUXCMD
+. We could extend the calculation to the present day using the SSP2-4.5 emission scenario as was done in \mbox{%DIFAUXCMD
+\cite{Smith2020a}}\hspace{0pt}%DIFAUXCMD
+, but the rapid reduction in sulfate emissions following 2014 in this scenario }\DIFdelend \DIFaddbegin \DIFadd{current (2010-19) level and rate of the anthropogenic contribution to global warming (the anthropogenic warming index distribution). A key choice within this estimate is the observational data product used. There are six widely-used products available \mbox{%DIFAUXCMD
+\citep{Lenssen2019,Cowtan2014,Vose2012,Morice2011,Rohde2013,Morice2020}}\hspace{0pt}%DIFAUXCMD
+. Here we average over the distributions implied by each product to obtain our final distribution used to constrain our FaIRv2.0.0 ensemble. This choice clearly }\DIFaddend projects significantly onto \DIFdelbegin \DIFdel{the rate of warming constraint and this decline does not appear to reflect observed aerosol forcing trends from atmospheric reanalyses \mbox{%DIFAUXCMD
+\citep{Bellouin2020}}\hspace{0pt}%DIFAUXCMD
+. We note that the interval obtained for the level of warming here is larger than previous estimates \mbox{%DIFAUXCMD
+\citep{Haustein2017,Leach2018}}\hspace{0pt}%DIFAUXCMD
+; this is largely due to updates to the aerosol forcing timeseries}\DIFdelend \DIFaddbegin \DIFadd{our results, so we provide results for each dataset in turn in Section \ref{obsv_data_sensitivity} to demonstrate the sensitivity of our analysis to the choice of dataset}\DIFaddend . For full details of \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{this }\DIFaddend calculation, see the supplement.
+\subsubsection{Definition of global mean temperature}
+Recent studies \citep{Richardson2016,Richardson2018} have shown that the definition of globally averaged surface temperature used is important when comparing observations to climate model output, and is relevant when exploring policy-relevant quantities such as the carbon budget \citep{Tokarska2019}. Discrepancies arise since observations blend air temperatures over land and sea ice with water temperature over ocean, and do not have full global coverage (they are blended-masked); while climate model surface temperature output is globally complete, and always measured as the air temperature 2m above the surface of the Earth. It has been shown both historically, and over future climate scenarios \citep{Richardson2018}, that the blended-masked temperature definition (GMST) may be cooler than the globally complete 2m air temperature definition (GSAT). In our Global Warming Index calculation \DIFdelbegin \DIFdel{, we use the mean of 5 }\DIFdelend \DIFaddbegin \DIFadd{(\ref{GWI}), we combine 6 }\DIFaddend temperature observation datasets \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Lenssen2019,Cowtan2014,Vose2012,Morice2011,Rohde2013} }\hspace{0pt}%DIFAUXCMD
+following the IPCC Special Report on 1.5\textdegree C warming \mbox{%DIFAUXCMD
+\citep{IPCC2018}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep{Lenssen2019,Cowtan2014,Vose2012,Morice2011,Rohde2013,Morice2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend ; this implies that our constrained ensemble will \DIFaddbegin \DIFadd{broadly }\DIFaddend measure surface temperatures using the GMST definition. This \DIFdelbegin \DIFdel{will }\DIFdelend \DIFaddbegin \DIFadd{may }\DIFaddend lead to slightly lower model estimates of surface temperature than if we used the GSAT definition. We can estimate the difference between our definition of GMST and GSAT by regressing the \DIFdelbegin \DIFdel{5-dataset }\DIFdelend \DIFaddbegin \DIFadd{6-dataset }\DIFaddend mean used here against GSAT from ERA5 \citep{Hersbach2020}. A least squares estimator \DIFaddbegin [\DIFadd{confidence calculated using a block-bootstrap \mbox{%DIFAUXCMD
+\citep{Wilks1997}}\hspace{0pt}%DIFAUXCMD
+}] \DIFaddend suggests that our GMST definition is \DIFdelbegin \DIFdel{3.4 $\pm$ 0.01 }\DIFdelend \DIFaddbegin \DIFadd{4.6 }[\DIFadd{0.4 , 10.8}] \DIFaddend \% smaller than GSAT\DIFaddbegin \footnote{\DIFadd{square brackets indicate a 90\% credible interval}}\DIFaddend .
+\subsection{Sampled prior distributions} \label{NROY_priors}
+\subsubsection{Carbon cycle parameters} \label{cc_sampling}
+While including the atmospheric burden is necessary to well-emulate the carbon-cycle behaviour of individual C4MIP models, parameterising the iIRF$_{100}$ as a linear function of just cumulative carbon uptake and temperature is sufficient to capture the spread of the model ensemble. Correlations between parameters also complicate sampling from the inferred parameter distributions derived from \DIFdelbegin \DIFdel{table }\DIFdelend \DIFaddbegin \DIFadd{Table }\DIFaddend \ref{table:cc_p}. We therefore repeat the parameter tuning procedure described in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{cmip6_cc}, but exclude the atmospheric burden as a predictor for the C4MIP iIRF$_{100}$ timeseries. The resulting $r_0$, $r_u$ and $r_T$ parameter samples are uncorrelated. We sample these parameters by applying scaling factors inferred from the CMIP6 tunings to the default parameter values (for $r_u$ and $r_T$ this is equivalent to sampling directly from the distribution inferred from the CMIP6 tunings). The underlying uncorrelated scaling factor distributions are given \DIFdelbegin \DIFdel{below.
+}%DIFDELCMD < \\
+%DIFDELCMD < \captionof{table}{Carbon-cycle parameter sampling\label{table:cc_sampling}}
+%DIFDELCMD < \begin{tabular}{l||r|r}
+%DIFDELCMD <     {%%%
+\DIFdel{parameter}%DIFDELCMD < } &    %%%
+\DIFdel{default value }%DIFDELCMD < &  %%%
+\DIFdel{scaling factor, $X$}%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{$r_0$ }%DIFDELCMD < &  %%%
+\DIFdel{30.4 }%DIFDELCMD < &  %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.122\right)$ }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_u$   }%DIFDELCMD < &  %%%
+\DIFdel{0.0177 }%DIFDELCMD < &  %%%
+\DIFdel{$\mathrm{ln}(X)\sim\mathcal{N}\left(0,0.116\right)$ }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{$r_T$         }%DIFDELCMD < &  %%%
+\DIFdel{2.64 }%DIFDELCMD < &  %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.613\right)$ }%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{in Table \ref{table:cc_sampling}.
+}\begin{table}[h]
+    \caption{\DIFaddFL{Carbon-cycle parameter sampling.}}
+    \label{table:cc_sampling}
+    \input{tables/Tab5}
+\end{table}
+\clearpage
+\DIFaddend \subsubsection{Forcing parameters} \label{forcing_sampling}
+Uncertainty in effective radiative forcing is included by grouping individual forcing agents into broader forcing classes \citep{IPCC2013f}, and applying a randomly sampled scaling factor to all the $f$ parameters within each class (with the exception of aerosol forcings, which we discuss \DIFaddbegin \DIFadd{immediately }\DIFaddend below). Scaling factors between forcing classes are uncorrelated. The scaling factor distributions \DIFdelbegin \DIFdel{are given below}\DIFdelend \DIFaddbegin \DIFadd{used for each forcing class are given in Table \ref{table:erf_sampling}}\DIFaddend . Uncertainty in aerosol forcing is included as follows. ERFari $f$ coefficients (equation \ref{eq:ERFari}) are first drawn from a multivariate normal distribution inferred from the CMIP6 tuned parameters in \DIFaddbegin \DIFadd{Table }\DIFaddend \ref{table:ERFaer_p}. We then apply a quantile map to scale the resulting coefficients such that the 1850 to 2005-2015 mean ERFari distribution matches the process based assessment in \cite{Bellouin}. For ERFaci, $f_2^{aci}$ coefficients (equation \ref{eq:ERFaci}) are drawn from a normal distribution inferred from the CMIP6 tuned parameters in \DIFaddbegin \DIFadd{Table }\DIFaddend \ref{table:ERFaer_p}. $f_1^{aci}$ and $C_0^{SO_2}$ coefficients are drawn from a multivariate log-normal distribution; this ensures we sample the full range of ERFaci shapes provided by CMIP6 models. As with the ERFari coefficients, we then apply a quantile map to scale these coefficients such that the sampled 1850 to 2005-2015 mean ERFaci distribution matches \citet{Bellouin}.
+\DIFdelbegin \DIFdel{The underlying scaling factor distributions used for each forcing class (excluding aerosol forcing) are given below.}%DIFDELCMD < \\
+%DIFDELCMD < \captionof{table}{ERF parameter sampling\label{table:erf_sampling}}
+%DIFDELCMD < \begin{tabular}{l||r|r}
+%DIFDELCMD <     {%%%
+\DIFdel{forcing category}%DIFDELCMD < } &    %%%
+\DIFdel{scaling factor, $X$ }%DIFDELCMD < & %%%
+\DIFdel{5-95\% uncertainty (\%)}%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{CO$_2$ }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.122\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$20 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{CH$_4$ }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.170\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$28 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{N$_2$O }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.122\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$20 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{other WMGHGs }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.122\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$20 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{tropospheric ozone }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.304\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$50 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{stratospheric ozone }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,1.22\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$200 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{stratospheric H$_2$O from CH$_4$ }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.438\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$72 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{black carbon on snow }%DIFDELCMD < &   %%%
+\DIFdel{$\mathrm{ln}(X)\sim\mathcal{N}\left(0,0.457\right)$ }%DIFDELCMD < & %%%
+\DIFdel{- }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{contrails }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.456\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$75 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{land use change }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.456\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$75 }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{volcanic }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.304\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$50 }%DIFDELCMD < \\
+%DIFDELCMD <     %%%
+\DIFdel{solar }%DIFDELCMD < &   %%%
+\DIFdel{$X\sim\mathcal{N}\left(1,0.608\right)$ }%DIFDELCMD < & %%%
+\DIFdel{$\pm$100 }%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \begin{table}[h]
+    \caption{\DIFaddFL{ERF parameter sampling.}}
+    \label{table:erf_sampling}
+    \input{tables/Tab6}
+\end{table}
+\clearpage
+\DIFaddend \subsubsection{Thermal response parameters} \label{response_sampling}
+Uncertainty in thermal response is incorporated by sampling response parameters directly from distributions inferred from the CMIP6 tunings in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{table:resp_p}, taking correlations between parameters into account. Referring to parameters as in equations \ref{eq:response_comp}, \ref{eq:response_sum}, \ref{eq:ECS} and \ref{eq:TCR}, we draw parameters from the following distributions. $d_1$, $d_2$ and $q_1$ are highly correlated, and we therefore sample ln($d_1$), ln($d_2$) and $q_1$ from a multivariate normal distribution with covariances and means taken from the values in \DIFdelbegin \DIFdel{section }\DIFdelend \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{table:resp_p}. $d_3$ is not strongly correlated with any other parameter, and so we sample ln($d_3$) from a normal distribution. We then independently sample the TCR and the TCR/ECS ratio\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{: }\DIFaddend the Realised Warming Fraction (RWF)\DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{; }\DIFaddend as it has been shown that the TCR and RWF are much more weakly correlated than any other combination of ECS, TCR and RWF \citep{Millar2015}. We draw TCR samples from a normal distribution, $\mathrm{TCR}\sim\mathcal{N}\left(2,0.608\right)$, truncating the distribution at a distance of $\pm3\sigma$ from the central value of 2. We draw RWF samples from a normal distribution $\mathrm{RWF}\sim\mathcal{N}\left(0.55,0.15\right)$, again truncating at $\pm3\sigma$. The 90\% credible interval of the sampled TCR and RWF distributions closely, but not exactly, match the ranges inferred from the parameters in \DIFdelbegin \DIFdel{table }\DIFdelend \DIFaddbegin \DIFadd{Table }\DIFaddend \ref{table:resp_p}. Using equations \ref{eq:ECS} and \ref{eq:TCR}, we then calculate $q_2$ and $q_3$. We reject any samples in which any of the $q$ parameters are unphysical (negative). The quantiles of the \DIFdelbegin \DIFdel{underlying }\DIFdelend \DIFaddbegin \DIFadd{prior }\DIFaddend ECS and TCR distributions used are given \DIFdelbegin \DIFdel{below}\DIFdelend \DIFaddbegin \DIFadd{in Table \ref{table:constrained_results}}\DIFaddend .
+\subsection{The constrained ensemble} \label{NROY_results}
+Taking historical \DIFdelbegin \DIFdel{CO$_2$ emissions from GCP \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019}}\hspace{0pt}%DIFAUXCMD
+, and all other historical }\DIFdelend and future SSP \citep{Riahi2017} emissions from the RCMIP protocol \citep{Nicholls2019}; and land use change, volcanic, and solar forcing from the SSP effective radiative forcing timeseries \citep{Smith2020c}, we run a 1,000,000 member emission-driven ensemble (FULL), sampling uncertainty in the carbon cycle, effective radiative forcing and thermal response as described \DIFdelbegin \DIFdel{above. We then constrain this ensemble (CONSTRAINED) based on the assessed 90\% credible intervals of the 2014 }\DIFdelend \DIFaddbegin \DIFadd{in Sections \ref{cc_sampling}, \ref{forcing_sampling}, and \ref{response_sampling}. This FULL ensemble is then constrained by setting the selection probability of each member equal to the likelihood of its simulated present-day }\DIFaddend level and rate of \DIFdelbegin \DIFdel{the Global Warming Index \mbox{%DIFAUXCMD
+\citep{Haustein2017} }\hspace{0pt}%DIFAUXCMD
+as above (\ref{GWI}) }\DIFdelend \DIFaddbegin \DIFadd{anthropogenic warming within the anthropogenic warming index distribution. These likelihoods are calculated using a binning procedure at a resolution of 0.01 K (level) and 0.001 K year$^{-1}$ (rate). Finally, we subsample the FULL ensemble based on these selection probabilities to generate the CONSTRAINED ensemble. This procedure retains 9.6 \% of the FULL ensemble}\DIFaddend . Table \ref{table:constrained_results} \DIFdelbegin \DIFdel{gives }\DIFdelend outlines the results of this analysis in terms of the quantiles of key \DIFdelbegin \DIFdel{variables.
+}%DIFDELCMD < \\
+%DIFDELCMD < \captionof{table}{Constrained ensemble results for climate sensitivities and current ERF. ERF in 2019 is based on following an SSP2-4.5 pathway from 2014 onwards.\label{table:constrained_results}}
+%DIFDELCMD < \begin{tabular}{l||rrrrr|rrrrr}
+%DIFDELCMD <     %%%
+\DIFdelend \DIFaddbegin \DIFadd{metrics: the model climate sensitivity and present-day radiative forcing.
+}\clearpage
+\begin{table}[t]
+    \caption{\DIFaddFL{Constrained ensemble results for climate sensitivities and current ERF. ERF in 2019 is based on following an SSP2-4.5 pathway from 2014 onwards.}}
+    \label{table:constrained_results}
+    \DIFaddendFL {\DIFaddbeginFL \footnotesize
+    \input{tables/Tab7}
+    \DIFaddendFL }
+\DIFdelbeginFL %DIFDELCMD < & \multicolumn{5}{l|}{FULL} & \multicolumn{5}{l}{CONSTRAINED} \\
+%DIFDELCMD <     %%%
+\DIFdelFL{climate sensitivity }%DIFDELCMD < &    %%%
+\DIFdelFL{5\% }%DIFDELCMD < &   %%%
+\DIFdelFL{17\% }%DIFDELCMD < &   %%%
+\DIFdelFL{50\% }%DIFDELCMD < &   %%%
+\DIFdelFL{83\% }%DIFDELCMD < &   %%%
+\DIFdelFL{95\% }%DIFDELCMD < &          %%%
+\DIFdelFL{5\% }%DIFDELCMD < &   %%%
+\DIFdelFL{17\% }%DIFDELCMD < &   %%%
+\DIFdelFL{50\% }%DIFDELCMD < &   %%%
+\DIFdelFL{83\% }%DIFDELCMD < &   %%%
+\DIFdelFL{95\% }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdelFL{ECS                 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.91 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.55 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.73 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.43 }%DIFDELCMD < &  %%%
+\DIFdelFL{7.26 }%DIFDELCMD < &        %%%
+\DIFdelFL{1.94 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.36 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.17 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.45 }%DIFDELCMD < &  %%%
+\DIFdelFL{5.84 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{TCR                 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.18 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.53 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.62 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.02 }%DIFDELCMD < &        %%%
+\DIFdelFL{1.25 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.45 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.77 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.13 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.41 }%DIFDELCMD < \\
+%DIFDELCMD < \hline
+%DIFDELCMD < \hline
+%DIFDELCMD < %%%
+\DIFdelFL{2019 ERF relative to 1750 / W m$^{-2}$ }%DIFDELCMD < & \multicolumn{5}{l|}{} & \multicolumn{5}{l}{} \\
+%DIFDELCMD < \hline
+%DIFDELCMD < %%%
+\DIFdelFL{CO$_2$ }%DIFDELCMD < &  %%%
+\DIFdelFL{1.62 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.80 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.08 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.37 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.58 }%DIFDELCMD < &        %%%
+\DIFdelFL{1.67 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.84 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.11 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.38 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.59 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{CH$_4$       }%DIFDELCMD < &  %%%
+\DIFdelFL{0.45 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.53 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.63 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.73 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.81 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.45 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.52 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.63 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.73 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.80 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{N$_2$O  }%DIFDELCMD < &  %%%
+\DIFdelFL{0.16 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.18 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.22 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.24 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.16 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.18 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.22 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.24 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{other WMGHGs   }%DIFDELCMD < &  %%%
+\DIFdelFL{0.29 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.32 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.36 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.40 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.43 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.29 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.32 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.36 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.40 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.43 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{tropospheric O$_3$        }%DIFDELCMD < &  %%%
+\DIFdelFL{0.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.28 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.40 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.51 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.59 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.20 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.28 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.51 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.59 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{stratospheric O$_3$       }%DIFDELCMD < & %%%
+\DIFdelFL{-0.14 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.10 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.05 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.01 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.05 }%DIFDELCMD < &       %%%
+\DIFdelFL{-0.14 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.10 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.05 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.01 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.05 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{stratospheric H$_2$O from CH$_4$      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.02 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.09 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.11 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.02 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.09 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.11 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{total WMGHGs            }%DIFDELCMD < &  %%%
+\DIFdelFL{3.14 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.36 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.69 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.02 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.27 }%DIFDELCMD < &        %%%
+\DIFdelFL{3.18 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.39 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.71 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.03 }%DIFDELCMD < &  %%%
+\DIFdelFL{4.27 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{ERFari            }%DIFDELCMD < & %%%
+\DIFdelFL{-0.59 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.46 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.30 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.14 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.02 }%DIFDELCMD < &       %%%
+\DIFdelFL{-0.58 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.46 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.31 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.16 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.05 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{ERFaci            }%DIFDELCMD < & %%%
+\DIFdelFL{-2.26 }%DIFDELCMD < & %%%
+\DIFdelFL{-1.46 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.69 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.26 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.05 }%DIFDELCMD < &       %%%
+\DIFdelFL{-1.25 }%DIFDELCMD < & %%%
+\DIFdelFL{-1.00 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.63 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.30 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.11 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{total aerosols            }%DIFDELCMD < & %%%
+\DIFdelFL{-2.59 }%DIFDELCMD < & %%%
+\DIFdelFL{-1.79 }%DIFDELCMD < & %%%
+\DIFdelFL{-1.00 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.52 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.26 }%DIFDELCMD < &       %%%
+\DIFdelFL{-1.56 }%DIFDELCMD < & %%%
+\DIFdelFL{-1.32 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.95 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.60 }%DIFDELCMD < & %%%
+\DIFdelFL{-0.37 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{black carbon on snow     }%DIFDELCMD < &  %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.05 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.09 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.13 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.18 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.05 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.08 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.13 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.18 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{contrails      }%DIFDELCMD < &  %%%
+\DIFdelFL{0.01 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.02 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.07 }%DIFDELCMD < &        %%%
+\DIFdelFL{0.01 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.02 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.04 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.06 }%DIFDELCMD < &  %%%
+\DIFdelFL{0.07 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelFL{total anthropogenic         }%DIFDELCMD < &  %%%
+\DIFdelFL{0.90 }%DIFDELCMD < &  %%%
+\DIFdelFL{1.73 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.59 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.22 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.63 }%DIFDELCMD < &        %%%
+\DIFdelFL{1.98 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.25 }%DIFDELCMD < &  %%%
+\DIFdelFL{2.67 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.13 }%DIFDELCMD < &  %%%
+\DIFdelFL{3.46 }%DIFDELCMD < \\
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \end{table}
+\clearpage
+\DIFaddend \subsubsection{Current effective radiative forcing}
+The constraint applied only significantly affects the estimated ranges of ERFaci, total aerosol and anthropogenic forcings in 2019 (based on an SSP2-45 pathway following 2014). ERFaci is constrained from \DIFdelbegin \DIFdel{-0.69 }\DIFdelend \DIFaddbegin \DIFadd{-0.70 }\DIFaddend [\DIFdelbegin \DIFdel{-2.26 }\DIFdelend \DIFaddbegin \DIFadd{-2.28 }\DIFaddend , -0.05] \DIFdelbegin \footnote{\DIFdel{square brackets indicate a 90\% credible interval}} %DIFAUXCMD
+\addtocounter{footnote}{-1}%DIFAUXCMD
+\DIFdel{to -0.63 }\DIFdelend \DIFaddbegin \DIFadd{to -0.55 }\DIFaddend [\DIFdelbegin \DIFdel{-1.25 , -0.11}\DIFdelend \DIFaddbegin \DIFadd{-1.16 , -0.10}\DIFaddend ]; total aerosol forcing from \DIFdelbegin \DIFdel{-1.00 }\DIFdelend \DIFaddbegin \DIFadd{-1.02 }\DIFaddend [\DIFdelbegin \DIFdel{-2.59 , -0.26}\DIFdelend \DIFaddbegin \DIFadd{-2.63 , -0.27}\DIFaddend ] to \DIFdelbegin \DIFdel{-0.95 }\DIFdelend \DIFaddbegin \DIFadd{-0.88 }\DIFaddend [\DIFdelbegin \DIFdel{-1.55 , -0.37}\DIFdelend \DIFaddbegin \DIFadd{-1.47 , -0.36}\DIFaddend ]; and total anthropogenic forcing from \DIFdelbegin \DIFdel{2.59 }\DIFdelend \DIFaddbegin \DIFadd{2.73 }\DIFaddend [\DIFdelbegin \DIFdel{0.90 , 3.63}\DIFdelend \DIFaddbegin \DIFadd{1.01 , 3.81}\DIFaddend ] to \DIFdelbegin \DIFdel{2.67 }\DIFdelend \DIFaddbegin \DIFadd{2.90 }\DIFaddend [\DIFdelbegin \DIFdel{1.98 , 3.46}\DIFdelend \DIFaddbegin \DIFadd{2.19 , 3.68}\DIFaddend ]. These results are consistent with a recent study that used similar methods but concentrated on aerosol forcing and used a constraint based on observed warming and Earth energy uptake \citep{Smith2020a}. Other forcing categories are not affected by the constraint due to their relatively smaller magnitude and/or prior uncertainty.
+%
+\subsubsection{Climate sensitivities}
+We find that the TCR is constrained from \DIFdelbegin \DIFdel{2.06 }\DIFdelend \DIFaddbegin \DIFadd{2.03 }\DIFaddend [\DIFdelbegin \DIFdel{1.18 , 3.02}\DIFdelend \DIFaddbegin \DIFadd{1.14 , 3.01}\DIFaddend ] to \DIFdelbegin \DIFdel{1.77 }\DIFdelend \DIFaddbegin \DIFadd{1.79 }\DIFaddend [\DIFdelbegin \DIFdel{1.25 , 2.41}\DIFdelend \DIFaddbegin \DIFadd{1.30 , 2.44}\DIFaddend ] and the ECS from \DIFdelbegin \DIFdel{3.73 }\DIFdelend \DIFaddbegin \DIFadd{3.69 }\DIFaddend [\DIFdelbegin \DIFdel{1.91 , 7.26}\DIFdelend \DIFaddbegin \DIFadd{1.80 , 8.05}\DIFaddend ] to \DIFdelbegin \DIFdel{3.17 }\DIFdelend \DIFaddbegin \DIFadd{3.24 }\DIFaddend [1.94 , \DIFdelbegin \DIFdel{5.84}\DIFdelend \DIFaddbegin \DIFadd{6.59}\DIFaddend ]. These results are \DIFdelbegin \DIFdel{relatively }\DIFdelend consistent with several recent studies that have used emergent constraint techniques \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{Nijsse2020,Jimenez-de-la-Cuesta2019,Tokarska2020a} }\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citep[Figure \ref{fig:clim_sens_comp}]{Nijsse2020,Jimenez-de-la-Cuesta2019,Tokarska2020a,Brunner2020,Ribes2021} }\hspace{0pt}%DIFAUXCMD
+}\DIFaddend or drawn on multiple lines of evidence \citep{Sherwood2020}\DIFaddbegin \DIFadd{; our constrained likely range of TCR exactly matches \mbox{%DIFAUXCMD
+\citeauthor{Sherwood2020} }\hspace{0pt}%DIFAUXCMD
+to two significant places}\DIFaddend . The largest discrepancies with these studies occur at the upper tails of the constrained \DIFdelbegin \DIFdel{distributions}\DIFdelend \DIFaddbegin \DIFadd{ECS distribution}\DIFaddend ; the constraint applied here is unable to rule out \DIFdelbegin \DIFdel{some }\DIFdelend higher values of the ECS which \DIFaddbegin \DIFadd{some of }\DIFaddend these other studies have done\DIFdelbegin \DIFdel{, though we note that the 95\textsuperscript{th} percentile of the CONSTRAINED ECS distribution is only slightly above the robust upper bound in \mbox{%DIFAUXCMD
+\cite{Sherwood2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend . The CONSTRAINED RWF distribution does not differ significantly from the FULL distribution of 0.55 [0.3 , 0.8].
+\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdelend %
+\DIFdelbegin %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/Clim_sens_comparison".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig6".pdf}
+    \DIFaddendFL \caption{Climate sensitivities of our FULL \DIFdelbeginFL \DIFdelFL{, CONSTRAINED }\DIFdelendFL and \DIFdelbeginFL \DIFdelFL{ALTERNATIVE }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{CONSTRAINED }\DIFaddendFL ensembles in the context of other studies. Black line indicates median values; grey shading likely range; unfilled bars 5-95\% range. Studies included are: \DIFdelbeginFL \DIFdelFL{\mbox{%DIFAUXCMD
+\citet{Nijsse2020,Tokarska2020a,Jimenez-de-la-Cuesta2019,Sherwood2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{\mbox{%DIFAUXCMD
+\citet[B20]{Brunner2020}}\hspace{0pt}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet[C19]{Jimenez-de-la-Cuesta2019}}\hspace{0pt}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet[N20]{Nijsse2020}}\hspace{0pt}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet[R21]{Ribes2021}}\hspace{0pt}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet[S20]{Sherwood2020}}\hspace{0pt}%DIFAUXCMD
+, \mbox{%DIFAUXCMD
+\citet[T20]{Tokarska2020a}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddendFL . CMIP6 indicates climate sensitivities derived from the energy balance model fits calculated \DIFdelbeginFL \DIFdelFL{above }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{in Section \ref{cmip6_response} }\DIFaddendFL (including ocean heat uptake efficacy), CMIP6* indicates climate sensitivities derived using the Gregory method \citep{Gregory2004} over the first 150 years of the abrupt-4xCO2 experiment.}
+    \label{fig:clim_sens_comp}
+\end{figure}
+\clearpage
+\subsubsection{Correlations between climate sensitivities and ERF}
+There are significant correlations between key variables in the CONSTRAINED ensemble, consistent with previous studies \citep{Smith2018,Millar2015,Sanderson2020a,Forest2002,Marvel2016}. These are shown in the contour plots in \DIFdelbegin \DIFdel{figure }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend \ref{fig:NROY_corr}.
+\pagebreak
+\begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/NROY_corr_1e6mem".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=0.95\textwidth]{"figures/Fig7".pdf}
+    \DIFaddendFL \caption{Corner plot \DIFdelbeginFL \DIFdelFL{depiction }\DIFdelendFL of \DIFaddbeginFL \DIFaddFL{key quantities within the }\DIFaddendFL FULL and CONSTRAINED ensembles\DIFaddbeginFL \DIFaddFL{, based on following a historical trajectory to 2014 and SSP2-45 thereafter}\DIFaddendFL . Diagonal plots show marginal probability density functions of each key variable; FULL shown in grey, CONSTRAINED in black\DIFdelbeginFL \DIFdelFL{, and FULL constrained by the current level of warming only in red}\DIFdelendFL . Subdiagonal plots show contour plots of \DIFdelbeginFL \DIFdelFL{gaussian kernel density estimates of }\DIFdelendFL joint probability density \DIFaddbeginFL \DIFaddFL{function}\DIFaddendFL . Contours \DIFdelbeginFL \DIFdelFL{show }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{shown }\DIFaddendFL indicate \DIFdelbeginFL \DIFdelFL{regions containing 95, 67}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{normalised likelihoods of 5}\DIFaddendFL , 33\DIFaddbeginFL \DIFaddFL{, 66 }\DIFaddendFL and \DIFdelbeginFL \DIFdelFL{5 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{95 }\DIFaddendFL \%\DIFdelbeginFL \DIFdelFL{of the ensemble members}\DIFdelendFL . Purple crosses and lines indicate the positions of individual CMIP6 models. \DIFdelbeginFL \DIFdelFL{The temperature and ERF variables are based }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{2010-2019 warming rate for CMIP6 models is calculated as the slope of a linear regression over 2000-2029 due to internal variability projecting strongly }\DIFaddendFL on \DIFdelbeginFL \DIFdelFL{following an SSP2-45 trajectory from 2014 onwards}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{the slope estimate and error if a shorter period is used}\DIFaddendFL .}
+    \label{fig:NROY_corr}
+\end{figure}
+\clearpage
+%
+\subsubsection{Sensitivity to prior response parameter distributions}
+Previous work has shown that posterior marginal distributions of ECS and TCR depend strongly on the assumed prior distributions \citep{Bodman2016}. Here we test the sensitivity of our CONSTRAINED results to the response parameters sampled in FULL by replacing the TCR and RWF sample distributions stated in \DIFaddbegin \DIFadd{Section }\DIFaddend \ref{response_sampling} with: $\mathrm{TCR}\sim\mathcal{U}\left(0.5,3.5\right)$ and $\mathrm{RWF}\sim\mathcal{U}\left(0.2,0.85\right)$. The actual prior distributions of TCR and RWF differ slightly from those stated here due to the rejection of unphysical response parameter sets, which tends to occur more often for lower values of TCR and higher values of RWF: the quantiles of the \DIFaddbegin \DIFadd{ALT }\DIFaddend input TCR and ECS distributions are \DIFdelbegin \DIFdel{2.24 }\DIFdelend \DIFaddbegin \DIFadd{2.17 }\DIFaddend [\DIFdelbegin \DIFdel{0.87 }\DIFdelend \DIFaddbegin \DIFadd{0.85 }\DIFaddend , 3.37] and \DIFdelbegin \DIFdel{4.11 }\DIFdelend \DIFaddbegin \DIFadd{4.03 }\DIFaddend [\DIFdelbegin \DIFdel{1.44 , 10.55}\DIFdelend \DIFaddbegin \DIFadd{1.38 , 10.46}\DIFaddend ] respectively. The posterior distributions of TCR and ECS after applying the constraint (\DIFdelbegin \DIFdel{ALTERNATIVE}\DIFdelend \DIFaddbegin \DIFadd{ALT-CONSTRAINED}\DIFaddend ) described in \DIFdelbegin \DIFdel{\ref{GWI} are 1.69 }\DIFdelend \DIFaddbegin \DIFadd{Section \ref{GWI} are 1.73 }\DIFaddend [\DIFdelbegin \DIFdel{1.15 , 2.54}\DIFdelend \DIFaddbegin \DIFadd{1.21 , 2.59}\DIFaddend ] and \DIFdelbegin \DIFdel{3.14 }\DIFdelend \DIFaddbegin \DIFadd{3.28 }\DIFaddend [\DIFdelbegin \DIFdel{1.74 , 7.42}\DIFdelend \DIFaddbegin \DIFadd{1.82 , 7.63}\DIFaddend ]. The resulting marginal posterior distributions are wider than in the CONSTRAINED ensemble; though not considerably so for the TCR estimate. The upper end of the \DIFdelbegin \DIFdel{ALTERNATIVE }\DIFdelend \DIFaddbegin \DIFadd{ALT-CONSTRAINED }\DIFaddend ECS distribution is most affected by the change in prior, suggesting that the current level and rate of warming does not provide an exceptionally tight constraint on the upper bound of the ECS. The \DIFdelbegin \DIFdel{ALTERNATIVE }\DIFdelend \DIFaddbegin \DIFadd{ALT-CONSTRAINED }\DIFaddend TCR distribution is not significantly different from CONSTRAINED, differing only by 0.1 K over the range of the distribution, demonstrating the close relationship between the TCR and historical warming \citep{Sanderson2020a} that enforces a tight constraint even with a significantly less informed prior.
+\DIFdelbegin \DIFdel{An analogous figure to figure \ref{fig:NROY_corr} but for the ALTERNATIVE ensemble is in the Supplement (figure S3). 
+%DIF < 
+}\DIFdelend \DIFaddbegin \begin{table}[h]
+    \caption{\DIFaddFL{Results for the key metrics under a less informed climate sensitivity prior.}}
+    \label{table:alt_results}
+    {\footnotesize
+    \input{tables/Tab8}
+    }
+\end{table}
+\clearpage
+\subsubsection{\DIFadd{Sensitivity to observational dataset}} \label{obsv_data_sensitivity}
+\DIFadd{As stated in Section \ref{GWI}, the choice of observational dataset used in the Global Warming Index calculation may project significantly onto our results. Here we carry out an identical constraining procedure to that described in Section \ref{NROY_results}, but with the distribution of present-day level / rate calculated for each observational product in turn. Constrained values of the ECS, TCR and projected 2100 warming under an SSP2-45 pathway are shown in Table \ref{table:obs_results}. This sensitivity analysis demonstrates how important the chosen observational dataset is: projections under an SSP2-45 pathway can vary by over 0.2 K depending on the dataset used to determine the constraint. 
+}\begin{table}[h]
+    \caption{\DIFaddFL{Sensitivity of results for the key metrics to the choice of observational dataset used in the Global Warming Index calculation.}}
+    \label{table:obs_results}
+    {\footnotesize
+    \input{tables/Tab9}
+    }
+\end{table}
+\clearpage
+\DIFaddend \subsection{Constrained idealised experiments} \label{NROY_idealised}
+Here we carry out standard CMIP6 experiments used in diagnosing the key properties of the climate - the abrupt-4xCO2 and 1pctCO2 experiments - with the FULL and CONSTRAINED parameter ensembles. This represents a test of whether our parameter sampling methods are sufficient to ensure that the range of carbon cycle and climate system responses are sampled from (as informed by the CMIP6 ensemble). We see in \DIFdelbegin \DIFdel{fig }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend \ref{fig:idealisedNROY}a, b that the FULL 90\% credible interval \DIFdelbegin \DIFdel{closely matches }\DIFdelend \DIFaddbegin \DIFadd{spans }\DIFaddend the CMIP6 model ensemble range\DIFdelbegin \DIFdel{. The most significant discrepancy between the FULL ensemble and the CMIP6 model ensemble is apparent in figures \ref{fig:idealisedNROY}d, e, f; the FULL ensemble carbon cycle does not completely span the range of 11 C4MIP models, particularly at the high end of airborne fraction. This occurs due to the use of a lower central $r_0$ value, consistent with historical observations, in the FULL parameter sample, rather than taking the central value as the mean of the C4MIP model tunings}\DIFdelend \DIFaddbegin \DIFadd{, though with a longer lower tail}\DIFaddend . The FULL ensemble \DIFdelbegin \DIFdel{does span }\DIFdelend \DIFaddbegin \DIFadd{also spans }\DIFaddend the range of carbon-cycle \DIFdelbegin \DIFdel{radiation feedback behaviour found in the }\DIFdelend \DIFaddbegin \DIFadd{behaviour in 11 }\DIFaddend C4MIP models \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep[fig \ref{fig:idealisedNROY}g]{Arora2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{on decadal timescales in Figures \ref{fig:idealisedNROY}d, e, f, including radiation feedbacks \mbox{%DIFAUXCMD
+\citep[Figure \ref{fig:idealisedNROY}g]{K.Arora2020}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddend . The CONSTRAINED ensemble, as expected from the climate sensitivity results \DIFdelbegin \DIFdel{above}\DIFdelend \DIFaddbegin \DIFadd{in Section \ref{NROY_results}}\DIFaddend , is significantly less spread than the CMIP6 model ensemble. It precludes both models with high and low climate sensitivities. Although our constraint does not significantly affect the carbon-cycle parameters, it does preclude some FULL ensemble members with a high airborne fraction, more apparent towards the end of the experiments. The CONSTRAINED ensemble implies a likely range (\DIFdelbegin \DIFdel{fig }\DIFdelend \DIFaddbegin \DIFadd{Figure }\DIFaddend \ref{fig:idealisedNROY}c) for the (CO$_2$-only) TCRE \citep{Matthews2009a,Allen2009,Zickfeld2016,MacDougall2016} of \DIFdelbegin \DIFdel{1.17 }\DIFdelend \DIFaddbegin \DIFadd{1.27 }\DIFaddend - \DIFdelbegin \DIFdel{1.81}\DIFdelend \DIFaddbegin \DIFadd{1.85}\DIFaddend , with a central estimate of \DIFdelbegin \DIFdel{1.45 }\DIFdelend \DIFaddbegin \DIFadd{1.53 }\DIFaddend and 5-95\% range of \DIFdelbegin \DIFdel{1.00 }\DIFdelend \DIFaddbegin \DIFadd{1.11 }\DIFaddend - \DIFdelbegin \DIFdel{2.13 }\DIFdelend \DIFaddbegin \DIFadd{2.12 }\DIFaddend K TtC$^{-1}$, based on the temperature response at a cumulative CO$_2$ emission of 1000 GtC. \DIFdelbegin \DIFdel{If instead we estimate the TCRE at a cumulative emission of 3000 GtC, this estimate is reduced by around 12\% due to the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend slight non-linearity in the temperature--cumulative emission relationship \DIFaddbegin \DIFadd{results in the best-estimate instantaneous TCRE reducing by around 15 \% per additional 1000 GtC}\DIFaddend . These estimates are consistent with recent estimates based on the observational record \citep{Millar20160449,Gillett2013}; though our best-estimate is slightly higher and the range less spread. This tighter range may be due to the noise reduction from using an idealised experiment and model with no representation of internal variability. \DIFaddbegin \DIFadd{It is important to note that our TCRE estimates hold the same sensitivity to the choice of observational dataset used in the Global Warming Index calculation as the TCR (Table \ref{table:obs_results}). 
+}\DIFaddend %
+\DIFdelbegin %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/Idealised_exp_constrained".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig8".pdf}
+    \DIFaddendFL \caption{Idealised CMIP6 experiments with FULL and CONSTRAINED FaIRv2.0\DIFaddbeginFL \DIFaddFL{.0-alpha }\DIFaddendFL ensembles. Thin black lines show drift-corrected CMIP6 model data. Light-grey shading indicates FULL ensemble 5-95 \% range. Dark-grey shading indicates CONSTRAINED ensemble \DIFaddbeginFL \DIFaddFL{likely (}\DIFaddendFL 17-83 \%\DIFaddbeginFL \DIFaddFL{) }\DIFaddendFL range. Thick black line shows central CONSTRAINED series. Dashed grey line in d shows airborne fraction for the most recent decade estimated from the \DIFaddbeginFL \DIFaddFL{most recent }\DIFaddendFL Global Carbon \DIFdelbeginFL \DIFdelFL{Project data \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Budget \mbox{%DIFAUXCMD
+\citep{Friedlingstein2020}}\hspace{0pt}%DIFAUXCMD
+, calculated by dividing the atmospheric carbon flux by the mean CO$_2$ emission rate over this period (see \mbox{%DIFAUXCMD
+\citeauthor{Friedlingstein2020} }\hspace{0pt}%DIFAUXCMD
+Figure 9)}\DIFaddendFL . Thin red lines in g show data directly from the radiatively-coupled C4MIP experiment, while thin black lines show an estimate of the radiation feedback on carbon sink strength as the difference between the fully- and biogeochemically-coupled C4MIP experiments.}
+    \label{fig:idealisedNROY}
+\end{figure}
+\clearpage
+\subsection{Constrained scenario projections} \label{NROY_ssp}
+We use our CONSTRAINED parameter ensemble to project end-of-century warming and ERF in FaIRv2.0\DIFdelbegin \DIFdel{. Taking CO$_2$ emissions until 2014 from the Global Carbon Project \mbox{%DIFAUXCMD
+\citep{Friedlingstein2019}}\hspace{0pt}%DIFAUXCMD
+, all other emissions from the RCMIP protocol, and land-use change and natural ERF timeseries from the SSP ERF timeseries database \mbox{%DIFAUXCMD
+\citep{Smith2020c} }\hspace{0pt}%DIFAUXCMD
+, we run both the FULL and CONSTRAINED ensembles for each SSP \mbox{%DIFAUXCMD
+\citep{Riahi2017}}\hspace{0pt}%DIFAUXCMD
+. The FULL ensemble should not be used for projection and is included only to demonstrate the impact of the constraint.}%DIFDELCMD < \\ %%%
+%DIF <  comment about MAGICC vs FaIR? Probably wise.
+%DIFDELCMD < \begin{tabular}{l|rrrrr|rrrrr}
+%DIFDELCMD <                 &        \multicolumn{5}{l|}{FULL} & \multicolumn{5}{l}{CONSTRAINED} \\
+%DIFDELCMD <                 %%%
+\DIFdel{2100 warming relative to 1861-1880 / K  }%DIFDELCMD < &   %%%
+\DIFdel{5  }%DIFDELCMD < &  %%%
+\DIFdel{17 }%DIFDELCMD < &  %%%
+\DIFdel{50 }%DIFDELCMD < &  %%%
+\DIFdel{83 }%DIFDELCMD < &   %%%
+\DIFdel{95 }%DIFDELCMD < &        %%%
+\DIFdel{5  }%DIFDELCMD < &  %%%
+\DIFdel{17 }%DIFDELCMD < &  %%%
+\DIFdel{50 }%DIFDELCMD < &   %%%
+\DIFdel{83 }%DIFDELCMD < &   %%%
+\DIFdel{95 }%DIFDELCMD < \\
+%DIFDELCMD <     \hline
+%DIFDELCMD <     %%%
+\DIFdel{ssp119                    }%DIFDELCMD < &  %%%
+\DIFdel{0.749 }%DIFDELCMD < &  %%%
+\DIFdel{1.02 }%DIFDELCMD < &  %%%
+\DIFdel{1.49 }%DIFDELCMD < &  %%%
+\DIFdel{2.10 }%DIFDELCMD < &   %%%
+\DIFdel{2.67 }%DIFDELCMD < &       %%%
+\DIFdel{0.848 }%DIFDELCMD < &  %%%
+\DIFdel{1.00 }%DIFDELCMD < &  %%%
+\DIFdel{1.27 }%DIFDELCMD < &   %%%
+\DIFdel{1.63 }%DIFDELCMD < &   %%%
+\DIFdel{1.96 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp126                    }%DIFDELCMD < &  %%%
+\DIFdel{0.984 }%DIFDELCMD < &  %%%
+\DIFdel{1.33 }%DIFDELCMD < &  %%%
+\DIFdel{1.92 }%DIFDELCMD < &  %%%
+\DIFdel{2.65 }%DIFDELCMD < &   %%%
+\DIFdel{3.32 }%DIFDELCMD < &       %%%
+\DIFdel{1.100 }%DIFDELCMD < &  %%%
+\DIFdel{1.29 }%DIFDELCMD < &  %%%
+\DIFdel{1.63 }%DIFDELCMD < &   %%%
+\DIFdel{2.05 }%DIFDELCMD < &   %%%
+\DIFdel{2.44 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp245                    }%DIFDELCMD < &  %%%
+\DIFdel{1.550 }%DIFDELCMD < &  %%%
+\DIFdel{2.08 }%DIFDELCMD < &  %%%
+\DIFdel{2.97 }%DIFDELCMD < &  %%%
+\DIFdel{4.03 }%DIFDELCMD < &   %%%
+\DIFdel{4.93 }%DIFDELCMD < &       %%%
+\DIFdel{1.800 }%DIFDELCMD < &  %%%
+\DIFdel{2.08 }%DIFDELCMD < &  %%%
+\DIFdel{2.56 }%DIFDELCMD < &   %%%
+\DIFdel{3.12 }%DIFDELCMD < &   %%%
+\DIFdel{3.60 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370                    }%DIFDELCMD < &  %%%
+\DIFdel{2.150 }%DIFDELCMD < &  %%%
+\DIFdel{2.91 }%DIFDELCMD < &  %%%
+\DIFdel{4.18 }%DIFDELCMD < &  %%%
+\DIFdel{5.65 }%DIFDELCMD < &   %%%
+\DIFdel{6.84 }%DIFDELCMD < &       %%%
+\DIFdel{2.720 }%DIFDELCMD < &  %%%
+\DIFdel{3.08 }%DIFDELCMD < &  %%%
+\DIFdel{3.67 }%DIFDELCMD < &   %%%
+\DIFdel{4.31 }%DIFDELCMD < &   %%%
+\DIFdel{4.81 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370-lowNTCF-aerchemmip }%DIFDELCMD < &  %%%
+\DIFdel{2.460 }%DIFDELCMD < &  %%%
+\DIFdel{3.25 }%DIFDELCMD < &  %%%
+\DIFdel{4.53 }%DIFDELCMD < &  %%%
+\DIFdel{6.01 }%DIFDELCMD < &   %%%
+\DIFdel{7.19 }%DIFDELCMD < &       %%%
+\DIFdel{2.790 }%DIFDELCMD < &  %%%
+\DIFdel{3.20 }%DIFDELCMD < &  %%%
+\DIFdel{3.89 }%DIFDELCMD < &   %%%
+\DIFdel{4.67 }%DIFDELCMD < &   %%%
+\DIFdel{5.29 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370-lowNTCF-gidden     }%DIFDELCMD < &  %%%
+\DIFdel{2.060 }%DIFDELCMD < &  %%%
+\DIFdel{2.74 }%DIFDELCMD < &  %%%
+\DIFdel{3.86 }%DIFDELCMD < &  %%%
+\DIFdel{5.17 }%DIFDELCMD < &   %%%
+\DIFdel{6.23 }%DIFDELCMD < &       %%%
+\DIFdel{2.370 }%DIFDELCMD < &  %%%
+\DIFdel{2.72 }%DIFDELCMD < &  %%%
+\DIFdel{3.32 }%DIFDELCMD < &   %%%
+\DIFdel{4.01 }%DIFDELCMD < &   %%%
+\DIFdel{4.55 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp434                    }%DIFDELCMD < &  %%%
+\DIFdel{1.150 }%DIFDELCMD < &  %%%
+\DIFdel{1.55 }%DIFDELCMD < &  %%%
+\DIFdel{2.24 }%DIFDELCMD < &  %%%
+\DIFdel{3.10 }%DIFDELCMD < &   %%%
+\DIFdel{3.87 }%DIFDELCMD < &       %%%
+\DIFdel{1.360 }%DIFDELCMD < &  %%%
+\DIFdel{1.57 }%DIFDELCMD < &  %%%
+\DIFdel{1.93 }%DIFDELCMD < &   %%%
+\DIFdel{2.38 }%DIFDELCMD < &   %%%
+\DIFdel{2.78 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp460                    }%DIFDELCMD < &  %%%
+\DIFdel{1.790 }%DIFDELCMD < &  %%%
+\DIFdel{2.39 }%DIFDELCMD < &  %%%
+\DIFdel{3.39 }%DIFDELCMD < &  %%%
+\DIFdel{4.57 }%DIFDELCMD < &   %%%
+\DIFdel{5.56 }%DIFDELCMD < &       %%%
+\DIFdel{2.100 }%DIFDELCMD < &  %%%
+\DIFdel{2.41 }%DIFDELCMD < &  %%%
+\DIFdel{2.93 }%DIFDELCMD < &   %%%
+\DIFdel{3.53 }%DIFDELCMD < &   %%%
+\DIFdel{4.02 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp534-over               }%DIFDELCMD < &  %%%
+\DIFdel{1.140 }%DIFDELCMD < &  %%%
+\DIFdel{1.54 }%DIFDELCMD < &  %%%
+\DIFdel{2.24 }%DIFDELCMD < &  %%%
+\DIFdel{3.14 }%DIFDELCMD < &   %%%
+\DIFdel{3.96 }%DIFDELCMD < &       %%%
+\DIFdel{1.280 }%DIFDELCMD < &  %%%
+\DIFdel{1.50 }%DIFDELCMD < &  %%%
+\DIFdel{1.90 }%DIFDELCMD < &   %%%
+\DIFdel{2.41 }%DIFDELCMD < &   %%%
+\DIFdel{2.88 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp585                    }%DIFDELCMD < &  %%%
+\DIFdel{2.880 }%DIFDELCMD < &  %%%
+\DIFdel{3.80 }%DIFDELCMD < &  %%%
+\DIFdel{5.29 }%DIFDELCMD < &  %%%
+\DIFdel{6.99 }%DIFDELCMD < &   %%%
+\DIFdel{8.33 }%DIFDELCMD < &       %%%
+\DIFdel{3.250 }%DIFDELCMD < &  %%%
+\DIFdel{3.73 }%DIFDELCMD < &  %%%
+\DIFdel{4.54 }%DIFDELCMD < &   %%%
+\DIFdel{5.46 }%DIFDELCMD < &   %%%
+\DIFdel{6.18 }%DIFDELCMD < \\
+%DIFDELCMD < \hline
+%DIFDELCMD < \hline
+%DIFDELCMD < %%%
+\DIFdel{2100 anthropogenic ERF / W m$^{-2}$ }%DIFDELCMD < & \multicolumn{5}{l|}{} & \multicolumn{5}{l}{}\\
+%DIFDELCMD < \hline
+%DIFDELCMD < %%%
+\DIFdel{ssp119                    }%DIFDELCMD < &  %%%
+\DIFdel{1.700 }%DIFDELCMD < &  %%%
+\DIFdel{1.89 }%DIFDELCMD < &  %%%
+\DIFdel{2.16 }%DIFDELCMD < &  %%%
+\DIFdel{2.45 }%DIFDELCMD < &   %%%
+\DIFdel{2.67 }%DIFDELCMD < &       %%%
+\DIFdel{1.760 }%DIFDELCMD < &  %%%
+\DIFdel{1.93 }%DIFDELCMD < &  %%%
+\DIFdel{2.18 }%DIFDELCMD < &   %%%
+\DIFdel{2.45 }%DIFDELCMD < &   %%%
+\DIFdel{2.64 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp126                    }%DIFDELCMD < &  %%%
+\DIFdel{2.260 }%DIFDELCMD < &  %%%
+\DIFdel{2.50 }%DIFDELCMD < &  %%%
+\DIFdel{2.85 }%DIFDELCMD < &  %%%
+\DIFdel{3.22 }%DIFDELCMD < &   %%%
+\DIFdel{3.50 }%DIFDELCMD < &       %%%
+\DIFdel{2.330 }%DIFDELCMD < &  %%%
+\DIFdel{2.55 }%DIFDELCMD < &  %%%
+\DIFdel{2.87 }%DIFDELCMD < &   %%%
+\DIFdel{3.20 }%DIFDELCMD < &   %%%
+\DIFdel{3.45 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp245                    }%DIFDELCMD < &  %%%
+\DIFdel{3.710 }%DIFDELCMD < &  %%%
+\DIFdel{4.14 }%DIFDELCMD < &  %%%
+\DIFdel{4.73 }%DIFDELCMD < &  %%%
+\DIFdel{5.33 }%DIFDELCMD < &   %%%
+\DIFdel{5.79 }%DIFDELCMD < &       %%%
+\DIFdel{3.960 }%DIFDELCMD < &  %%%
+\DIFdel{4.30 }%DIFDELCMD < &  %%%
+\DIFdel{4.80 }%DIFDELCMD < &   %%%
+\DIFdel{5.33 }%DIFDELCMD < &   %%%
+\DIFdel{5.71 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370                    }%DIFDELCMD < &  %%%
+\DIFdel{5.240 }%DIFDELCMD < &  %%%
+\DIFdel{6.10 }%DIFDELCMD < &  %%%
+\DIFdel{7.18 }%DIFDELCMD < &  %%%
+\DIFdel{8.20 }%DIFDELCMD < &   %%%
+\DIFdel{8.92 }%DIFDELCMD < &       %%%
+\DIFdel{6.020 }%DIFDELCMD < &  %%%
+\DIFdel{6.55 }%DIFDELCMD < &  %%%
+\DIFdel{7.34 }%DIFDELCMD < &   %%%
+\DIFdel{8.16 }%DIFDELCMD < &   %%%
+\DIFdel{8.75 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370-lowNTCF-aerchemmip }%DIFDELCMD < &  %%%
+\DIFdel{6.190 }%DIFDELCMD < &  %%%
+\DIFdel{6.79 }%DIFDELCMD < &  %%%
+\DIFdel{7.65 }%DIFDELCMD < &  %%%
+\DIFdel{8.53 }%DIFDELCMD < &   %%%
+\DIFdel{9.19 }%DIFDELCMD < &       %%%
+\DIFdel{6.440 }%DIFDELCMD < &  %%%
+\DIFdel{6.97 }%DIFDELCMD < &  %%%
+\DIFdel{7.74 }%DIFDELCMD < &   %%%
+\DIFdel{8.54 }%DIFDELCMD < &   %%%
+\DIFdel{9.11 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp370-lowNTCF-gidden     }%DIFDELCMD < &  %%%
+\DIFdel{5.120 }%DIFDELCMD < &  %%%
+\DIFdel{5.70 }%DIFDELCMD < &  %%%
+\DIFdel{6.54 }%DIFDELCMD < &  %%%
+\DIFdel{7.40 }%DIFDELCMD < &   %%%
+\DIFdel{8.05 }%DIFDELCMD < &       %%%
+\DIFdel{5.380 }%DIFDELCMD < &  %%%
+\DIFdel{5.88 }%DIFDELCMD < &  %%%
+\DIFdel{6.63 }%DIFDELCMD < &   %%%
+\DIFdel{7.39 }%DIFDELCMD < &   %%%
+\DIFdel{7.95 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{ssp434                    }%DIFDELCMD < &  %%%
+\DIFdel{2.640 }%DIFDELCMD < &  %%%
+\DIFdel{2.96 }%DIFDELCMD < &  %%%
+\DIFdel{3.41 }%DIFDELCMD < &  %%%
+\DIFdel{3.86 }%DIFDELCMD < &   %%%
+\DIFdel{4.21 }%DIFDELCMD < &       %%%
+\DIFdel{2.850 }%DIFDELCMD < &  %%%
+\DIFdel{3.10 }%DIFDELCMD < &  %%%
+\DIFdel{3.46 }%DIFDELCMD < &   %%%
+\DIFdel{3.85 }%DIFDELCMD < &   %%%
+\DIFdel{4.13 }\DIFdelend \DIFaddbegin \DIFadd{.0 for each SSP \mbox{%DIFAUXCMD
+\citep{Riahi2017}}\hspace{0pt}%DIFAUXCMD
+. In Figures \ref{fig:NROY_SSP_ERF} \& \ref{fig:NROY_SSP} we also compare our CONSTRAINED FaIRv2.0.0 projections to the default setup of MAGICC7.1.0-beta. The two models exhibit some notable differences, particularly in radiative forcing projections due to aerosol emissions and ozone concentrations. For a complete comparison of the CONSTRAINED ensemble with the probabilistic setup of MAGICC7, see \mbox{%DIFAUXCMD
+\cite{Nicholls2021}}\hspace{0pt}%DIFAUXCMD
+. }\DIFaddend \\\DIFdelbegin \DIFdel{ssp460                    }%DIFDELCMD < &  %%%
+\DIFdel{4.320 }%DIFDELCMD < &  %%%
+\DIFdel{4.80 }%DIFDELCMD < &  %%%
+\DIFdel{5.48 }%DIFDELCMD < &  %%%
+\DIFdel{6.18 }%DIFDELCMD < &   %%%
+\DIFdel{6.69 }%DIFDELCMD < &       %%%
+\DIFdel{4.630 }%DIFDELCMD < &  %%%
+\DIFdel{5.01 }%DIFDELCMD < &  %%%
+\DIFdel{5.58 }%DIFDELCMD < &   %%%
+\DIFdel{6.17 }%DIFDELCMD < &   %%%
+\DIFdel{6.60 }\DIFdelend \\
+\DIFdelbegin \DIFdel{ssp534-over               }%DIFDELCMD < &  %%%
+\DIFdel{2.500 }%DIFDELCMD < &  %%%
+\DIFdel{2.78 }%DIFDELCMD < &  %%%
+\DIFdel{3.19 }%DIFDELCMD < &  %%%
+\DIFdel{3.64 }%DIFDELCMD < &   %%%
+\DIFdel{3.99 }%DIFDELCMD < &       %%%
+\DIFdel{2.590 }%DIFDELCMD < &  %%%
+\DIFdel{2.85 }%DIFDELCMD < &  %%%
+\DIFdel{3.22 }%DIFDELCMD < &   %%%
+\DIFdel{3.62 }%DIFDELCMD < &   %%%
+\DIFdel{3.92 }\DIFdelend %DIF > 
+\DIFaddbegin \DIFadd{The apparent slight warm bias at the present-day arises due to a combination of natural variability, in particular the so-called “hiatus” period \mbox{%DIFAUXCMD
+\citep{Trenberth2013}}\hspace{0pt}%DIFAUXCMD
+, and a too-high response to natural forcings. As the CONSTRAINED ensemble is selected on the basis of the contributions of anthropogenic forcings to global warming only (via the anthropogenic warming index), any bias in the response to natural forcings will project onto the total temperature response. Although the estimated contribution of natural forcings to the present-day level of warming is observational dataset dependent, the mean contribution over all six datasets calculated within our global warming index methodology (ie. scaled by the optimal fingerprinting regression coefficients) is 0.03 K lower than within our CONSTRAINED ensemble relative to the 1850-1900 baseline period, suggesting that the climate response to natural forcings is slightly too high. This could be resolved by scaling the prescribed natural forcing data \mbox{%DIFAUXCMD
+\citep{Smith2020c} }\hspace{0pt}%DIFAUXCMD
+by the average estimated optimal fingerprinting coefficient. However, we do not do this here, instead using the raw data for transparency. The selected 1850-1900 baseline period exacerbates this high response due to the significant volcanic activity during this period. }\DIFaddend \\\DIFdelbegin \DIFdel{ssp585                    }%DIFDELCMD < &  %%%
+\DIFdel{7.260 }%DIFDELCMD < &  %%%
+\DIFdel{7.95 }%DIFDELCMD < &  %%%
+\DIFdel{8.95 }%DIFDELCMD < &  %%%
+\DIFdel{9.97 }%DIFDELCMD < &  %%%
+\DIFdel{10.70 }%DIFDELCMD < &       %%%
+\DIFdel{7.530 }%DIFDELCMD < &  %%%
+\DIFdel{8.15 }%DIFDELCMD < &  %%%
+\DIFdel{9.06 }%DIFDELCMD < &  %%%
+\DIFdel{10.00 }%DIFDELCMD < &  %%%
+\DIFdel{10.70 }\DIFdelend \\
+\DIFdelbegin %DIFDELCMD < \end{tabular}
+%DIFDELCMD < %%%
+\DIFdelend %
+\DIFdelbegin %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{The projections of future warming are comparable to other recent studies that have used various methodologies to constrain future warming \mbox{%DIFAUXCMD
+\citep{Brunner2020,Tokarska2020a,Ribes2021}}\hspace{0pt}%DIFAUXCMD
+. Overall, our central estimates agree very well with \mbox{%DIFAUXCMD
+\citet{Tokarska2020a,Ribes2021}}\hspace{0pt}%DIFAUXCMD
+, lying a little below those from \mbox{%DIFAUXCMD
+\citet{Ribes2021}}\hspace{0pt}%DIFAUXCMD
+. The lower quantiles of our projections generally lie between the estimates from \mbox{%DIFAUXCMD
+\citet{Tokarska2020a} }\hspace{0pt}%DIFAUXCMD
+and \mbox{%DIFAUXCMD
+\citet{Ribes2021}}\hspace{0pt}%DIFAUXCMD
+. Our upper quantiles (specifically 95 \%) agree well with the estimates given in \mbox{%DIFAUXCMD
+\citet{Ribes2021}}\hspace{0pt}%DIFAUXCMD
+. Overall, we find that our projections are comparable to other recent studies, though in general a little less tightly constrained. Here we have used one relatively straightforward methodology to perform these constrained projections, but we expect that it would be possible to constrain these further through the use of more sophisticated methods or by adding in additional information to the constraint (such as the present level of CO$_2$ concentrations, or an estimate of the total ocean heat uptake - though this would require the energy balance model formulation of the FaIRv2.0.0 climate response to be used). A reasonable next step to improve the probabilistic projections from FaIRv2.0.0 might be to switch to a Markov chain Monte-Carlo approach, as used by other SCMs \mbox{%DIFAUXCMD
+\citep{Meinshausen2011b,Meinshausen2019}}\hspace{0pt}%DIFAUXCMD
+.
+}\clearpage
+\begin{table}[t]
+    \caption{\DIFaddFL{Global warming and radiative forcing projections from the FaIRv2.0.0-alpha CONSTRAINED ensemble under the SSPs. Table S6 displays these warming projections relative to a pre-industrial baseline of 1850-1900.}}
+    \label{table:SSP_projections}
+    \input{tables/Tab10}
+\end{table}
+%DIF > 
+\clearpage
+\DIFaddend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/SSP_NROY_ERF_grid".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig9".pdf}
+    \DIFaddendFL \caption{ERF timeseries \DIFaddbeginFL \DIFaddFL{in W m$^{-2}$ }\DIFaddendFL by category for a range of SSP pathways using the \DIFaddbeginFL \DIFaddFL{FaIRv2.0.0-alpha }\DIFaddendFL CONSTRAINED \DIFdelbeginFL \DIFdelFL{parameter }\DIFdelendFL ensemble. Solid lines indicate central estimate and shading shows the 5-95\% range. Dashed lines show default \DIFdelbeginFL \DIFdelFL{projection }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{projections }\DIFaddendFL from \DIFdelbeginFL \DIFdelFL{a development version of the MAGICC SCM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MAGICC7.1.0-beta from RCMIP \mbox{%DIFAUXCMD
+\citep{Nicholls2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddendFL .}
+    \label{fig:NROY_SSP_ERF}
+\end{figure}
+\clearpage
+%
+\DIFdelbegin %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \begin{figure}[t]
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/SSP_NROY_temp".pdf}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\textwidth]{"figures/Fig10".pdf}
+    \DIFaddendFL \caption{Surface temperature response projections for a range of SSPs with the \DIFaddbeginFL \DIFaddFL{FaIRv2.0.0-alpha }\DIFaddendFL CONSTRAINED \DIFdelbeginFL \DIFdelFL{parameter }\DIFdelendFL ensemble. Solid lines indicate central projection. Shading indicates a 5-95\% range. Dashed line indicates default projection from \DIFdelbeginFL \DIFdelFL{a development version of the MAGICC SCM}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{MAGICC7.1.0-beta from RCMIP \mbox{%DIFAUXCMD
+\citep{Nicholls2019}}\hspace{0pt}%DIFAUXCMD
+}\DIFaddendFL . Dots show the mean of \DIFdelbeginFL \DIFdelFL{5 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{6 }\DIFaddendFL observational datasets. Bars on the right-hand side of the figure show end-of-century (2081-2100) warming. Filled bars show CONSTRAINED best-estimate, and likely and 5-95\% ranges. Unfilled bars show CMIP6 median, and likely and minimum--maximum range. The number of CMIP6 models used in each scenario is given in \DIFdelbeginFL \DIFdelFL{table }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Table }\DIFaddendFL S4.}
+    \label{fig:NROY_SSP}
+\end{figure}
+\clearpage
+%
+\section{The response of simple climate models} \label{SCM_response_discuss}
+The IPCC Special Report on 1.5\textdegree C warming \citep{IPCC2018} included results from two SCMs, FaIRv1.3 \citep{Smith2018} and MAGICC6 \citep{Meinshausen2011}. One point of discussion following the report was the difference in results between these two models, with FaIRv1.3 tending to project a lower temperature response than MAGICC6 \citep{Huppmann:2018:scenario-data}. This has resulted in a widely-held belief that FaIRv1.3 is intrinsically ``cooler'' than MAGICC6 in general, a belief that some of these authors have unintentionally contributed to previously \citep{Leach2018}. This belief is unfounded: the response of an SCM is a function of the parameters used. Although some parameters may be chosen to be consistent with geophysical observation or theory, in general SCM parameters are tuned such that they emulate, or reproduce, either the output of more complex models, or observations of the Earth. Relating this to the models used in SR15, the FaIRv1.3 ensemble was tuned such that the model response lay within observed changes in global mean surface temperature since pre-industrial \citep{Smith2018,Cowtan2014}; the MAGICC6 ensemble was constrained to observations up until 2009 \citep{Meinshausen2009}. The two different tuning targets naturally leads to differences in the response of FaIRv1.3 and MAGICC6. Here we emphasize that the differences between the models' output is not systematic -- it is the parameters used, and how these are selected (which is often a subjective decision on the part of the modellers), that determines the model response.\\\\
+%
+%DIF <  A recent paper, \citet[S19]{Schwarber2019}, carried out a comparison of several SCMs in order to characterise the ``fundamental'' response of each model, and draw comparisons between the models. To do this, they ran pulse-concentration and pulse-emission scenarios through the default set-up of each model. While the paper does provide some useful, and much needed, comparisons between commonly used SCMs, we suggest that the use of default parameters in each model renders some of the conclusions of the paper obsolete. The issues surrounding using only the default parameters of each model are acknowledged by the authors, but not sufficiently. S19 states that FaIRv1.0, as an idealised SCM, does not perform as well as the ``comprehensive'' SCMs (including MAGICC6). The ``performance'' of the individual SCMS in S19 was generally assessed against the multi-model-mean of the comprehensive SCMs. Noting the above discussion, we argue that basing the performance of any one SCM on its default parameter set is inadequate: SCMs are generally flexible enough that the model could be re-tuned to perform better to the metrics used for assessment. To illustrate this point, we carry out concentration and emission pulse experiments in FaIRv2.0, replicating Figures 1 and 2 in S19 (fig \ref{fig:Unit_test}), but use the parameters tuned to CMIP6 models in sections \ref{cmip6_cc} and \ref{cmip6_response}. This demonstrates that FaIRv2.0 is able to the range of SCMs in S19; for the best performance as assessed in S19 one could simply pick the parameter set that lay closest to their comprehensive multi-SCM mean. We suggest that a proper metric of SCM performance is how well the underlying equations of an SCM are able to realistically span the possible range of Earth system response (as inferred from observations or more complex models). We believe that we have demonstrated in this study that FaIRv2.0 is adequate in this regard. An ongoing project, \cite{Nicholls2019}, aims to fully characterise the difference between SCMs in a comprehensive manner, including emulation ability and probabilistic projections.
+%DIF <  %
+%DIF <  \pagebreak
+%DIF <  \begin{figure}[t]
+%DIF <      \includegraphics[width=\textwidth]{"/home/leachl/Documents/Simple_models/FaIR_v2-0_paper/Plots/Unit_testing_CMIP6".pdf}
+%DIF <      \caption{CMIP6 emulation in FaIRv2.0 response to unit tests described in \cite{Schwarber2019}. a) and b) show temperature response to a 200ppm concentration pulse in 2015. c) and d) show temperature and forcing response to a 9.2 GtC pulse in 2015. Both unit tests are carried out over an SSP2-45 background scenario.}
+%DIF <      \label{fig:Unit_test}
+%DIF <  \end{figure}
+%DIF <  \clearpage
+\section{Uses of FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend } \label{FaIR_uses}
+We envisage that FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend will primarily be used for similar assessments as are carried out with \DIFdelbegin \DIFdel{the current SCMs, such as providing probabilistic projections of atmospheric concentrations, radiative forcings and temperature anomalies for wide ranges of scenarios, such as in the SR15 scenario explorer \mbox{%DIFAUXCMD
+\citep{Huppmann:2018:scenario-data}}\hspace{0pt}%DIFAUXCMD
+. FaIRv2.0 could also easily be coupled to integrated assessment models (IAMs) to explore impacts of climate policy options}\DIFdelend \DIFaddbegin \DIFadd{current SCMs}\DIFaddend . One advantage that FaIRv2.0\DIFdelbegin \DIFdel{has it }\DIFdelend \DIFaddbegin \DIFadd{.0 has is }\DIFaddend that it was built with performance in mind, hence is easily vectorised. It can be vectorised in a programming language designed for array operations (such as Fortran, MATLAB, or the NumPy Python module) and hence FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend is extremely quick to run. For example, using \DIFdelbegin \DIFdel{its present }\DIFdelend \DIFaddbegin \DIFadd{the alpha }\DIFaddend Python implementation, FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend can compute the 1 million member FULL ensemble (emission driven for 52 gases, \DIFdelbegin \DIFdel{78 }\DIFdelend \DIFaddbegin \DIFadd{81 }\DIFaddend forcing components, over the period 1750-2100) in under \DIFdelbegin \DIFdel{30 }\DIFdelend \DIFaddbegin \DIFadd{40 }\DIFaddend minutes \footnote{on a laptop with 31GB RAM and an Intel(R) Core(TM) i7-8750H@2.2GHz, 12 cores}. This speed provides significant advantages when computing large probabilistic ensembles, or when optimizing parameters. An important consideration for users computing probabilistic ensembles will be the memory required by FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend output, as this is more likely to be the limiting factor on a modern computer, rather than the model runtime. A related point is that \DIFaddbegin \DIFadd{the minimal equation set that }\DIFaddend FaIRv2.0\DIFdelbegin \DIFdel{can be run in programs for analysis of tabular data, including (but not limited to ) }\DIFdelend \DIFaddbegin \DIFadd{.0 is composed of is easily transcribed into other programming languages. Although we would recommend using the official Python FaIR release}\footnote{\url{https://github.com/OMS-NetZero/FAIR}} \DIFadd{where possible, there are many cases where it might be required for FaIRv2.0.0 to be converted into another language - such as GAMS, for use in integrated assessment models. We believe that the relative simplicity of FaIRv2.0.0 lends itself to this purpose. Of particular note is that FaIRv2.0.0, in its entirety, is able to be run in }\DIFaddend Excel. This opens up climate system exploration \DIFaddbegin \DIFadd{and experimentation }\DIFaddend to a large group of potential \DIFdelbegin \DIFdel{new }\DIFdelend users who are familiar with spreadsheets, but not \DIFdelbegin \DIFdel{formal scientific }\DIFdelend programming languages. \DIFdelbegin %DIFDELCMD < \\\\
+%DIFDELCMD < %%%
+\DIFdel{We suggest that the speed, simplicity and transparency }\DIFdelend \DIFaddbegin \DIFadd{The user-base of Excel is estimated to be around 100 times larger than that of Python }\footnote{\DIFadd{https://info.cambridgespark.com/latest/python-vs-excel}}\DIFadd{. To aid with implementation in alternative languages where required, we have provided a brief set of notes on our own Python implementation of the development version }\DIFaddend of FaIRv2.0\DIFdelbegin \DIFdel{lends it to use in undergraduate and high-school education in addition to scientific research.It can be used to explain (and demonstrate) important features of both the carbon (or other GHG) cycle and Earth's thermal response to radiative forcing, and is simple enough to use that students could themselves carry out experiments (such as a CO$_2$ doubling) easily with no prior experience and only basic computing skills. }\DIFdelend \DIFaddbegin \DIFadd{.0 in the supplement.}\DIFaddend \\\\
+\DIFaddbegin \DIFadd{In terms of possible academic uses of }\DIFaddend FaIRv2.0\DIFdelbegin \DIFdel{can also }\DIFdelend \DIFaddbegin \DIFadd{.0, we have demonstrated two of the main ones: emulation of more complex models and probabilistic scenario projections. FaIRv2.0.0 can }\DIFaddend be used to rapidly investigate differences between ESMs, \DIFaddbegin \DIFadd{by }\DIFaddend tuning FaIRv2.0\DIFdelbegin \DIFdel{to emulate different full }\DIFdelend \DIFaddbegin \DIFadd{.0 to emulate these complex }\DIFaddend models and comparing differences between the tuned parameter sets to identify which aspects of the models differ most, as was done with MAGICC in \cite{Meinshausen2011,Meinshausen2011b}. The ability to tune FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , as demonstrated here and in other work \citep{Tsutsui2017,Joos2013,Millar2016}, to more complex models also allows estimation of complex model response to a particular scenario or experiment without having to expend computer power to run the model itself; which could allow climate system uncertainties to be introduced more fully into integrated assessment studies by emulating the full CMIP6 ensemble within IAMs (providing some of the capability demonstrated by \cite{Meinshausen2011} with a simpler model). \DIFaddbegin \DIFadd{The probabilistic scenario projection we demonstrated in Section \ref{NROY} is a potentially more policy-relevant academic use of FaIRv2.0.0, since CMIP6 model emulations do not necessarily represent the best-estimate of some key properties of the real-life Earth system when historical observations are taken into account \mbox{%DIFAUXCMD
+\citep{Tokarska2020a, Gillett2021}}\hspace{0pt}%DIFAUXCMD
+. The speed of FaIRv2.0.0 allows very large parameter ensembles to be run rapidly, enabling all regions of plausible parameter space to be explored without requiring large quantities of computing resource. Although here we have performed one relatively simple methodology for the creation of an observationally constrained large ensemble, there are many possible ways to do this, for example using the Markov chain Monte-Carlo methods employed in several other SCMs \mbox{%DIFAUXCMD
+\citep{Nicholls2020,Meinshausen2019,Meinshausen2011b}}\hspace{0pt}%DIFAUXCMD
+. A third academic use of FaIRv2.0.0, which we are interested in, is its incorporation into integrated assessment models (IAMs). Its simplicity and computational efficiency may make implementation within existing IAMs relatively more straightforward than for other SCMs, even if the whole model was required to be built up from scratch in whatever format would be required by the particular IAM.}\\\\
+\DIFadd{Outside of academia, we propose that FaIRv2.0.0 could be used for emission climate impact accounting in industry. The UNFCCC standard for the reporting of greenhouse gas emissions is to account for emissions of all gases as a CO$_2$ equivalent quantity via the 100-year Global Warming Potential (GWP). However, GWPs do not adequately capture the behaviour of short-lived climate pollutants such as methane \mbox{%DIFAUXCMD
+\citep{Cain2019}}\hspace{0pt}%DIFAUXCMD
+, leading to the development of alternative metrics such as GWP*. We suggest that such warming impacts could potentially instead be simulated using a simple climate model as an improvement upon the use of any of these metrics. Although this does represent a step-up in complexity, we believe that the relative simplicity of FaIRv2.0.0, when compared to other SCMs, makes it a strong candidate for this usage. In particular, the ability of FaIRv2.0.0 to be run in Excel could encourage this particular use-case.
+We suggest that the speed, simplicity and transparency of FaIRv2.0.0 also lends it to use in undergraduate and high-school education. It can be used to explain (and demonstrate) important features of both the carbon (or other GHG) cycle and Earth's thermal response to radiative forcing, and is simple enough to use that students could themselves carry out experiments (such as a CO$_2$ doubling) easily with no prior experience and only basic computing skills.}\DIFaddend \\\\
+\DIFaddbegin 
+
+\DIFaddend %
+\conclusions  %% \conclusions[modified heading if necessary]
+In this paper we have presented a significant update to the \DIFdelbegin \DIFdel{FaIRv1.3 }\DIFdelend \DIFaddbegin \DIFadd{FaIR }\DIFaddend SCM \citep{Smith2018}, focussed on reducing the structural complexity of the model as much as possible. The updated model, FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , uses the five equations of the AR5 impulse response model \citep{Myhre2013a} plus just one additional equation to allow the model to represent non-linearities in the carbon-cycle. We demonstrate that this reduction in complexity does not come at the cost of the model’s ability to reproduce globally-averaged observations or output of more complex models from CMIP6 \citep{Eyring2016}. After demonstrating the ability of the model in emulating more complex models, we show how the model can be used for climate projection by constraining a large parameter ensemble.\\\\
+%
+There are many potential uses for FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend as a result of its simplicity and transparency. In addition to being available for the same probabilistic scenario assessment as is carried out by SCMs in reports such as SR15 \citep{IPCC2018}, it could be \DIFdelbegin \DIFdel{very easily }\DIFdelend implemented into IAMs; and likely \DIFdelbegin \DIFdel{improves }\DIFdelend \DIFaddbegin \DIFadd{improve }\DIFaddend computational efficiency due to its vectorisation and resulting extremely rapid runtime. We encourage policy-makers to use FaIRv2.0\DIFaddbegin \DIFadd{.0 }\DIFaddend in order to directly assess whether warming implications are aligned with the intended outcomes of mitigation policies; since GHG accounting metrics used at present such as GWP do not provide accurate results for targets such as Net-Zero \emph{CO$_2$} due to the short life of some GHGs \citep{Allen2018a}. To aid this use of FaIRv2.0\DIFaddbegin \DIFadd{.0}\DIFaddend , we will provide an Excel file containing the model with its default parameter set, ensuring FaIRv2.0\DIFdelbegin \DIFdel{as }\DIFdelend \DIFaddbegin \DIFadd{.0 is }\DIFaddend available for all interested parties, even those unfamiliar with computer programming languages. The Excel version of the model could also be used to assist teaching of climate change and climate processes; and could even allow students access to an easy-to-understand model that they could use themselves to explore future scenarios and the relative impacts of future emissions of different greenhouse gases; or demonstrate the importance of climate sensitivity in an interactive manner.\\\\
+%
+\DIFdelbegin \DIFdel{We aim to be able to provide complete gas-cycle parameter sets tuned to each of the CMIP6 ESMs in the near future, such }\DIFdelend \DIFaddbegin \DIFadd{FaIRv2.0.0 sits at the very low end of complexity within the broad spectrum of currently available simple climate models. It is a very highly parameterised model for simulating globally averaged relationships between greenhouse gas and aerosol emissions, atmospheric greenhouse gas concentrations, radiative forcing and surface temperature response. We have shown that despite its simplicity, it is able to span the wide range of behaviours exhibited by much more complex models, and that inferred from observations. In addition, we have provided some basic comparisons to both the previous version of FaIR(v1.5), and the widely used MAGICC SCM  \mbox{%DIFAUXCMD
+\citep{Meinshausen2011,Meinshausen2011b,Meinshausen2019}}\hspace{0pt}%DIFAUXCMD
+. More detailed comparisons are outside the remit of this paper, but RCMIP \mbox{%DIFAUXCMD
+\citep{Nicholls2020,Nicholls2019} }\hspace{0pt}%DIFAUXCMD
+covers this topic comprehensively. We expect }\DIFaddend that FaIRv2.0\DIFdelbegin \DIFdel{is able to be used to emulate the full CMIP6 ensemble and to improve understanding of how these models differ in a single consistent framework.  We hope that such parameter sets may also provide users in otherrelated fields, such as climate policy, who do not have experience with climate models, access to a robust emulation of complex climate models with little learning curve}\DIFdelend \DIFaddbegin \DIFadd{.0 is very close to as simple as an SCM could get without losing a significant proportion of this representation ability.  However, it does not explicitly simulate the physical processes behind these variables, which may preclude it from some applications where other, more complex SCMs such as MAGICC would be usable. Overall, however, we hope that FaIRv2.0.0 will be an important contribution to the available set of SCMs given its wide range of potential use-cases and may open up climate system modelling to a wide range of novel users in both industry and education}\DIFaddend .
+
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+% \codeavailability{TEXT} %% use this section when having only software code available
+
+
+% \dataavailability{TEXT} %% use this section when having only data sets available
+
+
+\DIFdelbegin %DIFDELCMD < \codedataavailability{The code used to produce the figures is publicly available at \url{https://github.com/njleach/GIR}. However, we stress that the code here is \emph{not} a model release. This update to the FaIR model will be made available at \url{https://github.com/OMS-NetZero/FAIR} when fully integrated and tested. All data used in this study is publicly available at the relevant cited sources.} %%%
+\DIFdelend \DIFaddbegin \codedataavailability{FaIRv2.0.0-alpha code and the code used to produce the figures is publicly available at \url{TODO}. All data used in this study is publicly available at the relevant cited sources.} \DIFaddend %% use this section when having data sets and software code available
+
+
+% \sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+% \videosupplement{TEXT} %% use this section when having video supplements available
+
+
+% \appendix
+% \section{}    %% Appendix A
+
+% \subsection{}     %% Appendix A1, A2, etc.
+
+
+\noappendix       %% use this to mark the end of the appendix section
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+\appendixfigures  %% needs to be added in front of appendix figures
+
+\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+
+\authorcontribution{NJL, SJ and MRA conceived the study. NJL and SJ wrote the model code. NJL tuned the model to CMIP6 data and carried out the constrained ensemble. BW and TW assisted with tuning model parameters. CJS provided CMIP6 aerosol forcing data from RFMIP and advised on the forcing component parameterisations. JT advised on the thermal response component. JL and MC advised on model uses and tested the model. NJL produced the figures. NJL, CJS, ZN, SJ, JL and MRA wrote the manuscript.} %% this section is mandatory
+
+\competinginterests{The authors declare that they have no competing interests.} %% this section is mandatory even if you declare that no competing interests are present
+
+% \disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+We acknowledge the World Climate Research Programme, which, through its Working Group on Coupled Modelling, coordinated and promoted both CMIP5 and CMIP6.
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+
+% \begin{thebibliography}{}
+
+% \bibitem[AUTHOR(YEAR)]{LABEL1}
+% REFERENCE 1
+
+% \bibitem[AUTHOR(YEAR)]{LABEL2}
+% REFERENCE 2
+
+% \end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+\bibliographystyle{copernicus}
+\DIFdelbegin %DIFDELCMD < \bibliography{GIR_bib.bib}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \bibliography{reference_list.bib}
+\DIFaddend %%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citet{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
+

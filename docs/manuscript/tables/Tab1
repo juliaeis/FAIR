@@ -1,0 +1,29 @@
+\begin{tabular}{lll}
+\toprule
+\textbf{parameter} & \textbf{units} & \textbf{qualitative description}\\
+\midrule
+$E(t)$ & see table S1 & Quantity of agent emitted into atmosphere\\
+$C(t)$ & see table S1 & Concentration of agent in atmosphere\\
+$C_0$ & unit($C$) & Pre-industrial concentration of agent in atmosphere\\
+$R_i(t)$ & unit($E$) & Quantity of agent in $i$\textsuperscript{th} atmospheric pool\\
+$a_i$ & - & Fraction of emissions entering $i$\textsuperscript{th} atmospheric pool\\
+$\tau_i$ & yrs & Atmospheric lifetime of gas in $i$\textsuperscript{th} pool\\
+$\alpha(t)$ & - & Multiplicative adjustment coefficient of pool lifetimes\\
+$r_0$ & - & Strength of pre-industrial uptake from atmosphere\\
+$r_u$ & unit($E$)$^{-1}$ & Sensitivity of uptake from atmosphere to cumulative uptake of agent since model initialisation\\
+$r_T$ & K$^{-1}$ & Sensitivity of uptake from atmosphere to model temperature change since initialisation\\
+$r_a$ & unit($E$)$^{-1}$ & Sensitivity of uptake from atmosphere to current atmospheric burden of agent\\
+$G_u(t)$ & unit($E$) & Cumulative uptake of agent since model initialisation\\
+$T$ & K & Model temperature change since initialisation\\
+$G_a(t)$ & unit($E$) & Atmospheric burden of agent above pre-industrial levels\\
+$F(t)$ & W m$^{-2}$ & Effective radiative forcing change since the pre-industrial period\\
+$f_1$ & W m$^{-2}$ & Logarithmic concentration--forcing coefficient\\
+$f_2$ & W m$^{-2}$ unit($C$)$^{-1}$ & Linear concentration--forcing coefficient\\
+$f_3$ & W m$^{-2}$ unit($C$)$^{\frac{-1}{2}}$ & Square root concentration--forcing coefficient\\
+\hline
+$S_j(t)$ & K & Response of $j$\textsuperscript{th} thermal box\\
+$q_j$ & K W$^{-1}$ m$^{2}$ & Equilibrium response of $j$\textsuperscript{th} thermal box\\
+$d_j$ & yrs & Response timescale of $j$\textsuperscript{th} thermal box\\
+$T(t)$ & K & Surface temperature response since model initialisation\\
+\bottomrule
+\end{tabular}
