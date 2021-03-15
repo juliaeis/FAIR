@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import numexpr as ne
 import scipy as sp
-from pathlib import Path
+import os
 from tqdm import tqdm
 
 ## begin auxiliary functions ##
@@ -165,7 +165,7 @@ def get_gas_parameter_defaults(choose_gases=return_gas_namelist()):
     This function returns the FaIRv2.0.0-alpha default parameter set for a gas set of your choice. Available gases can be viewed using the return_gas_namelist() function.
     """
     
-    CHOOSE_params = pd.read_csv(Path(__file__) / "./aux/parameter-sets/Complete_gas_cycle_params.csv",header=[0,1],index_col=0).reindex(choose_gases,axis=1,level=1)
+    CHOOSE_params = pd.read_csv(os.path.join(os.path.dirname(__file__), "./aux/parameter-sets/Complete_gas_cycle_params.csv"),header=[0,1],index_col=0).reindex(choose_gases,axis=1,level=1)
     
     return CHOOSE_params
 
