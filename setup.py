@@ -39,7 +39,7 @@ setup(
         'tqdm',
     ],
     extras_require = {
-        'examples': ['jupyter'],
+        'examples': ['jupyter', 'seaborn', 'matplotlib'],
     },
     zip_safe=False,
 )
