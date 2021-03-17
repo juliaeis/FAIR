@@ -11,6 +11,8 @@ This repo contains model code and supporting notebooks to accompany the paper de
 | fair/scripts/stats.py  | A function for calculating ordinary least squares estimators rapidly.  |
 
 ## Example notebook
+| path/to/file.py  | description |
+| ------------- | ------------- |
 | notebooks/example-nb.ipynb  | Demonstration of FaIRv2.0.0-alpha I/O formats, plus some examples of how to run experiments.  |
 
 To install and run the notebook examples, clone the repository, create a virtual environment and from the base directory run
