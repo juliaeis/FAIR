@@ -1,4 +1,0 @@
-Upon submitting our revision, we will publish all the code used to create the figures and carry out the analysis within this manuscript in a permanent repository. This includes code for the version of the model (FaIRv2.0.0-alpha) used within this manuscript. 
-
-Best wishes,
-Nicholas Leach & co-authors

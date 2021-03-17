@@ -1,8 +1,0 @@
-\begin{tabular}{l r r r r r r r r r r}
-\toprule
-\textbf{Variable} & CO$_2$ & CH$_4$ & N$_2$O & SOx & NOx & BC & OC & NH3 & VOC & All other WMGHGs\\
-\midrule
-\textbf{Emissions} & PgC & TgCH$_4$ & TgN & TgSO$_2$ & TgN & TgC & TgC & Tg & Tg & Tg  \\
-\textbf{Concentrations} & ppm & ppb & ppb & - & - & - & - & - & - & ppb \\
-\bottomrule
-\end{tabular}
