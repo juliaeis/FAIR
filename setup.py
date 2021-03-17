@@ -38,5 +38,8 @@ setup(
         'scipy',
         'tqdm',
     ],
+    extras_require = {
+        'examples': ['jupyter'],
+    },
     zip_safe=False,
 )
