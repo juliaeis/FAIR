@@ -3,7 +3,7 @@
 
 import numpy as np
 import pandas as pd
-from ..fair import calculate_alpha,unstep_concentration
+from fair import calculate_alpha,unstep_concentration
 
 
 def invert_carbon_cycle_prescribed_T(C,T,a,tau,r,PI_conc,emis2conc):
