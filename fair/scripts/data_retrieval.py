@@ -8,8 +8,8 @@ from pathlib import Path
 
 ## read in the input maps:
 
-FaIR_to_RCMIP_map = pd.read_csv(Path(__file__).parent / "../aux/FaIRv2.0.0-alpha_RCMIP_inputmap.csv",index_col=0)
-FaIR_to_RCMIP_map_forc = pd.read_csv(Path(__file__).parent / "../aux/FaIRv2.0.0-alpha_RCMIP_inputmap.csv",index_col=0)
+FaIR_to_RCMIP_map = pd.read_csv(Path(__file__).parent / "../util/FaIRv2.0.0-alpha_RCMIP_inputmap.csv",index_col=0)
+FaIR_to_RCMIP_map_forc = pd.read_csv(Path(__file__).parent / "../util/FaIRv2.0.0-alpha_RCMIP_inputmap.csv",index_col=0)
 
 
 ## pre-load the data upon import 
